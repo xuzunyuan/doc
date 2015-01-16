@@ -53,13 +53,14 @@
  ---------------------------------------- */
 
 .form-join fieldset {
-	padding: 30px;
+	margin: 30px 0;
+	padding: 0 30px;
 }
 .form-join .legend {
 	margin-bottom: 20px;
 }
 .form-join .form-item {
-	margin-bottom: 20px;
+	margin: 0 0 20px;
 }
 .form-join .item-label {
 	width: 160px;

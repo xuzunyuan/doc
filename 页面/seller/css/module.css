@@ -46,8 +46,16 @@
 	float: left;
 	margin-right: 20px;
 }
+.mod-tips dd {
+	padding-top: 5px;
+	line-height: 20px;
+}
 .mod-tips dd p {
 	margin-bottom: 5px;
+}
+.mod-tips h4 {
+	color: #f00;
+	font-size: 14px;
 }
 
 /* fruitless */

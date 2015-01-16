@@ -75,8 +75,8 @@
 .form .item-cont>label {
 	margin-right: 20px;
 }
-.form .item-cont .fixedTel,
-.form .item-cont .or{
+.form .item-cont .txt-tel,
+.form .item-cont .txt-section {
 	margin-right: 10px;
 }
 /* form-inline */

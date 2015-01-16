@@ -58,7 +58,7 @@
 .i-dangerSM {/* samll */
 	width: 26px;
 	height: 26px;
-	background-position: -53px -77px;
+	background-position: 0 -83px;
 }
 .i-danger {
 	width: 40px;
@@ -120,7 +120,8 @@
  ---------------------------------------- */
 
 .i-warn, .i-cartSM,
-.i-gold, .i-clock, .i-ok, .i-err {
+.i-gold, .i-clock, .i-ok, .i-err,
+.i-zoom {
 	width: 20px;
 	height: 20px;
 }
@@ -142,6 +143,9 @@
 }
 .i-err {
 	background-position: -100px 0;
+}
+.i-zoom {
+	background-position: -120px 0;
 }
 
 /* 24*24

@@ -15,11 +15,12 @@
  * CSS Menu
  * 
  * ProductGlobal
+ * BrandGlobal
  * 
  * IssueProduct
  * ProductGlobal
  * AddCategory
- * 
+ * BrandForm
  * Layout
  * 
  */
@@ -28,12 +29,18 @@
 /* Product Global
  ---------------------------------------- */
 
-.product .mainCaption {
-	margin: 0 0 10px;
-}
 .product .mod-tipsPop {
 	margin: 0 2px;
 }
+
+/* Brand Global
+ ---------------------------------------- */
+
+.wrap-brand .section {
+	background: #fff;
+	border: 1px solid #e5e5e5;
+}
+
 
 /* AddCategory
  ---------------------------------------- */
@@ -181,6 +188,62 @@
 .addCategory .btnWrap {
 	padding: 32px 0 0;
 	text-align: center;
+}
+
+/* Brand Form
+ ---------------------------------------- */
+
+.form-brand .mod-tips {
+	margin: 10px 15px 0;
+	padding: 5px 20px;
+}
+.form-brand .mod-tips dd {
+	padding-top: 5px;
+	line-height: 20px;
+}
+.form-brand fieldset {
+	padding: 30px;
+}
+.form-brand .legend {
+	margin-bottom: 20px;
+}
+.form-brand .form-item {
+	margin: 0 0 20px;
+}
+.form-brand .item-label {
+	width: 190px;
+	line-height: 32px;
+}
+.form-brand .item-cont {
+	margin-left: 200px;
+	line-height: 32px;
+}
+.form-brand .legend h3 {
+	padding: 0 10px;
+	font: 700 18px/24px 'Helvetica Neue', Helvetica, 'Microsoft YaHei', '\5fae\8f6f\96c5\9ed1','Hiragino Sans GB';
+}
+.form-brand .item-category .table {
+	margin-top: 15px;
+}
+.form-brand .brandResult {
+	overflow-y: scroll;
+	border: 1px solid #c5c5c5;
+	border-top: 0;
+	width: 238px;
+	height: 134px;
+	color: #666;
+}
+.form-brand .brandResult ul {
+	padding: 6px 0;
+}
+.form-brand .brandResult li {
+	margin-bottom: 2px;
+	padding: 0 6px;
+	line-height: 24px;
+	cursor: pointer;
+}
+.form-brand .brandResult li:hover {
+	background: #e5e5e5;
 }
 
 /* Layout

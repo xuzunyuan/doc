@@ -90,7 +90,7 @@ select:focus {
 
 /* note */
 .note {
-	color: #666;
+	color: #999;
 	vertical-align: middle;
 }
 span.note {
@@ -120,7 +120,7 @@ div.note {
 label .radio,
 label .chk {
 	position: relative;
-	top: -2px;
+	top: -1px;
 	*top: 0;
 	left: 0;
 }
@@ -172,13 +172,16 @@ span.btn:hover {
 a.btn-primary,
 span.btn-primary {
 	background: #7a39b2;
+	border-color: #7a39b2;
 	color: #fff;
 }
 .btn-primary:hover {
 	background: #a26cd0;
+	border-color: #a26cd0;
 }
 .btn-primary:active {
 	background: #a26cd0;
+	border-color: #a26cd0;
 }
 .btn-bezelFree,
 a.btn-bezelFree,
@@ -248,7 +251,7 @@ span.btn.xl {
 .btn.p-lg {
 	/* large */
 	padding: 0 35px;
-	*padding: 0;
+	*padding: 0 14px;
 }
 a.btn.p-lg,
 span.btn.p-lg {
@@ -319,6 +322,7 @@ span.btn.p-xl {
 
 /* date text */
 .txt-date {
+	width: 98px;
 	padding-right: 26px;
 	background: url(../img/control/control_date.png) no-repeat right center;
 }
@@ -370,6 +374,39 @@ span.btn.p-xl {
 }
 .txt-section.xs i {
 	line-height: 22px;
+}
+
+/* searchGroup */
+.searchGroup {
+	position: relative;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	display: inline-block;
+	*display: inline;
+}
+.searchGroup .txt {
+	padding-right: 26px;
+}
+.searchGroup .icon {
+	position: absolute;
+	top: 50%;
+	right: 5px;
+	z-index: 2;
+	margin-top: -10px;
+	cursor: pointer;
+}
+.searchGroup .txt.w-lg {
+	/* long */
+	width: 138px;
+}
+.searchGroup .txt.w-lgl {
+	/* long */
+	width: 208px;
+}
+.searchGroup .txt.w-xl {
+	/* long */
+	width: 388px;
 }
 
 /* select */

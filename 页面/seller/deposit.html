@@ -2,12 +2,12 @@
 <html>
 <head>
 	<meta charset="UTF-8" />
-	<title>卖家|在售商品无商品</title>
+	<title>卖家|保证金</title>
 	<link rel="stylesheet" type="text/css" href="css/allstyle.min.css"/>
-	<link rel="stylesheet" href="css/product.css" />
+	<link rel="stylesheet" href="css/helper.css" />
 </head>
 <body>
-	<div class="wrapper product">
+	<div class="wrapper wrap-helper">
 		<!-- header -->
 		<div id="header">
 			<div class="wrap">
@@ -43,8 +43,8 @@
 		<div id="mainNav">
 			<div class="wrap">
 				<ul>
-					<li class="nav-01"><a href="#"><i class="icon"></i>商家助手</a></li>
-					<li class="nav-02 curr"><a href="#"><i class="icon"></i>商品管理</a></li>
+					<li class="nav-01 curr"><a href="#"><i class="icon"></i>商家助手</a></li>
+					<li class="nav-02"><a href="#"><i class="icon"></i>商品管理</a></li>
 					<li class="nav-03"><a href="#"><i class="icon"></i>品牌特卖</a></li>
 					<li class="nav-04"><a href="#"><i class="icon"></i>交易管理</a></li>
 				</ul>
@@ -58,10 +58,13 @@
 				<div id="aside">
 					<div id="asideNav">
 						<ul>
-							<li><a href="#"><i class="icon"></i>发布新商品</a></li>
-							<li class="curr"><a href="#"><i class="icon"></i>在售商品管理</a></li>
-							<li><a href="#"><i class="icon"></i>审核中商品</a></li>
-							<li><a href="#"><i class="icon"></i>品牌管理</a></li>
+							<li><a href="#"><i class="icon"></i>概览</a></li>
+							<li class="curr"><a href="#"><i class="icon"></i>保证金</a></li>
+							<li><a href="bankaccount.html"><i class="icon"></i>收款银行账户</a></li>
+							<li><a href="ticket.html"><i class="icon"></i>开票信息</a></li>
+							<li><a href="baseinfo.html"><i class="icon"></i>基本信息</a></li>
+							<li><a href="#"><i class="icon"></i>退货地址</a></li>
+							<li><a href="#"><i class="icon"></i>修改密码</a></li>
 						</ul>
 					</div>
 				</div>
@@ -69,44 +72,34 @@
 				<!-- main -->
 				<div id="main">
 					<!-- mainCaption -->
-					<div class="mainCaption mc-mb">
-						<h2>我的商品</h2>
+					<div class="mainCaption">
+						<h2>保证金</h2>
 					</div>
 					<!-- mainCaption end -->
-					<!-- screening -->
-					<div class="screening">
-						<form class="form form-inline">
-							<legend></legend>
-							<div class="formGroup">
-								<div class="form-item">
-									<div class="item-label">
-										<label>品牌：</label>
-									</div>
-									<div class="item-cont">
-										<select name="" id="" class="select">
-											<option value="1">好孩子好孩子</option>
-											<option value="2">361</option>
-										</select>
-									</div>
-								</div>
-								<div class="form-item">
-									<div class="item-label">
-										<label>商品名称：</label>
-									</div>
-									<div class="item-cont">
-										<input type="text" class="txt w-lg" />
-										<input type="button" class="btn btn-def" value="查&nbsp;&nbsp;询">
-									</div>
-								</div>
+					<div id="deposit">
+						<div class="mod-tips">
+							<dl>
+								<dt class="imgIcon"><i class="icon i-danger"></i></dt>
+								<dd>
+									<h4>您公司保证金未缴纳 ！</h4>
+									<p>您公司保证金审核未通过，因此暂时不能申请或管理“品牌专场”功能，请尽快完成缴费。</p>
+								</dd>
+							</dl>
+						</div>
+						<h3>如何缴纳保证金？</h3>
+						<div class="textInfo">
+							<p>目前我们接受线下打款的方式来缴纳保证金，你可以根据以下信息进行汇款，我们会在收到款后两个工作日内审核入账。</p>
+							<div class="bankInfo">
+								<p><strong>开户名：</strong>北京阿凡达科技有限公司</p>
+								<p><strong>开户银行：</strong>招商银行股份有限公司北京中关村支行</p>
+								<p><strong>银行账号：</strong>23716 8172 7271 7272 212</p>
 							</div>
-							<div class="searchBtn"><a href="#" class="btn btn-def">发布新商品</a></div>
-						</form>
+							<div class="note"><em class="textMark warnColor">*</em>保证金不接受个人帐号汇款！请务必使用企业对公帐号汇款，汇款备注为 “ <b>阿凡达保证金</b> ” ，以便核查。</div>
+							<div class="note"><em class="textMark warnColor">*</em>阿凡达仅提供如上唯一的保证金收款账号，请勿相信其他任何个人或组织以任何方式提供的银行账号。</div>
+						</div>
+						<h3><a href="#" target="_blank">保证金收费标准</a></h3>
+						<h3><a href="#" target="_blank">保证金管理规则</a></h3>
 					</div>
-					<!-- screening end -->
-					<!-- table -->
-					<div class="mod-tips fruitless">您还没有发布过商品？现在就 <a href="#">发布商品</a></div>
-					<div class="mod-tips fruitless">没有找到符合条件的商品！</div>
-					<!-- table edn -->
 				</div>
 				<!-- main end -->
 			</div>
