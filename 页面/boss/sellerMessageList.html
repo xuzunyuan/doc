@@ -1,0 +1,453 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>卖家后台|卖家信息管理列表</title>
+	<link rel="stylesheet" href="css/all-debug.css" />
+</head>
+<body id="">
+	<div class="wrapper">
+		<!-- hd -->
+		<div id="hd">
+			<div class="header">
+				<h1><a href="#" title="阿凡达">阿凡达</a><span>后台管理系统</span></h1>
+		        <ul class="header-menu">
+		        	<li>欢迎您，邵秀云（系统管理员）<li>
+		            <li><a href="#">退出</a></li>
+		        </ul>
+			</div>
+		</div>		
+		<!-- hd end -->
+		<!-- bd -->
+		<div id="bd" class="wrap"><!-- 点击.foldbarV下的foldBtn后在此添加class名unfold来实现展开效果 -->
+			<!-- aside -->
+			<div class="aside">
+				<!-- boss-menu -->
+				<div class="boss-menu">
+					<h2>后台管理系统</h2>
+					<!--menu-->
+					<div class="menu">
+					<h3 class="system"><i class="ico"></i>系统管理 <i class="arrow arrA-D"></i></h3><!-- arrA-D是展开状态,arrA-R是收起状态 -->
+					<ul>
+						<li><a href="#">角色管理</a></li>
+						<li><a href="#">用户管理</a></li>
+						<li><a href="#" class="on">权限管理</a></li>
+						<li><a href="#">日志管理</a></li>
+						<li><a href="#">密码修改</a></li>
+						<li><a href="#">销售区域管理</a></li>
+					</ul>
+					<h3 class="category"><i class="ico"></i>类目管理 <i class="arrow arrA-R"></i></h3>
+					<ul>
+						<li><a href="#">基础类目管理</a></li>
+						<li><a href="#">签约类目管理</a></li>
+						<li><a href="#">销售类目管理</a></li>
+						<li><a href="#">品牌管理</a></li>
+						<li><a href="#">属性管理</a></li>
+						<li><a href="#">规格管理</a></li>
+					</ul>
+					<h3 class="goods"><i class="ico"></i>商品管理 <i class="arrow arrA-D"></i></h3>
+					<ul>
+						<li><a href="#">商品信息查询</a></li>
+						<li><a href="#">商品信息修改</a></li>
+						<li><a href="#">商品审核</a></li>
+						<li><a href="#">商品图片批量审核</a></li>
+					</ul>
+					<h3 class="order"><i class="ico"></i>订单管理 <i class="arrow arrA-D"></i></h3>
+					<ul>
+						<li><a href="#">电话下单</a></li>
+						<li><a href="#">订单查询</a></li>
+						<li><a href="#">退货订单</a></li>
+						<li><a href="#">换货订单</a></li>
+						<li><a href="#">订单收货</a></li>
+						<li><a href="#">订单分拣</a></li>
+						<li><a href="#">订单发货</a></li>
+						<li><a href="#">订单打印</a></li>
+						<li><a href="#">物流跟踪</a></li>
+					</ul>
+					<h3 class="logistics"><i class="ico"></i>物流管理 <i class="arrow arrA-D"></i></h3>
+					<ul>
+						<li><a href="#">物流公司管理</a></li>
+						<li><a href="#">标准运费管理</a></li>
+						<li><a href="#">运费折扣</a></li>
+					</ul>
+					<h3 class="seller"><i class="ico"></i>卖家管理 <i class="arrow arrA-D"></i></h3>
+					<ul>
+						<li><a href="#">卖家信息管理</a></li>
+						<li><a href="#">卖家申请审核</a></li>
+					</ul>
+					<h3 class="buyer"><i class="ico"></i>买家会员管理 <i class="arrow arrA-D"></i></h3>
+					<ul>
+						<li><a href="#">信息管理</a></li>
+						<li><a href="#">等级管理</a></li>
+					</ul>
+					<h3 class="coupon"><i class="ico"></i>优惠券管理 <i class="arrow arrA-D"></i></h3>
+					<ul>
+						<li><a href="#">创建优惠券</a></li>
+						<li><a href="#">优惠券批次查询</a></li>
+						<li><a href="#">优惠券明细查询</a></li>
+						<li><a href="#">优惠券申请审核</a></li>
+					</ul>
+					<h3 class="serve"><i class="ico"></i>客户服务 <i class="arrow arrA-D"></i></h3>
+					<ul>
+						<li><a href="#">咨询管理</a></li>
+						<li><a href="#">投诉管理</a></li>
+						<li><a href="#">取消订单查询</a></li>
+					</ul>
+					<h3 class="clearing"><i class="ico"></i>费用管理 <i class="arrow arrA-D"></i></h3>
+					<ul>
+						<li><a href="#">买家帐户管理</a></li>
+						<li><a href="#">退款单管理</a></li>
+						<li><a href="#">客户提现管理</a></li>
+					</ul>
+					</div>
+					<!-- menu end -->
+				</div>
+				<!-- boss-menu end-->
+			</div>
+			<!-- aside end -->
+			<!-- main -->
+			<div class="main">
+				<!-- foldbarV -->
+				<div id="foldbarV"><div class="foldbarV"><div class="foldBtn"></div></div></div>
+				<!-- foldbarV end -->
+				<!-- goodsList -->
+				<div class="sellerMessageList">
+					<!-- screening -->
+					<div class="screening">
+						<form class="form">
+							<fieldset class="default">
+								<legend><h3>查询条件</h3></legend>
+								<ul class="formBox">
+									<li class="item">
+										<div class="item-label"><label>验证手机号：</label></div>
+										<div class="item-cont">
+											<input type="text" class="txt textA">
+										</div>
+									</li>
+									<li class="item">
+										<div class="item-label"><label>卖家账号：</label></div>
+										<div class="item-cont">
+											<input type="text" class="txt textA">
+										</div>
+									</li>
+									<li class="item">
+										<div class="item-label"><label>注册时间：</label></div>
+										<div class="item-cont"><input type="text" class="dateTxt"><span>至</span><input type="text" class="dateTxt"></div>
+									</li>
+									<li class="item">
+										<div class="item-label"><label>账号状态：</label></div>
+										<div class="item-cont">
+											<div class="select">
+												<select>
+												    <option>请选择</option>
+												</select>
+											</div>
+										</div>
+									</li>
+									<li class="item">
+										<div class="item-label"><label>验证手机号：</label></div>
+										<div class="item-cont">
+											<input type="text" class="txt textA">
+										</div>
+									</li>
+									<li class="item">
+										<div class="item-label"><label>卖家名称：</label></div>
+										<div class="item-cont">
+											<input type="text" class="txt textC">
+										</div>
+									</li>
+									<li class="item">
+										<div class="item-label"><label>状态：</label></div>
+										<div class="item-cont">
+											<div class="select">
+												<select>
+												    <option>请选择</option>
+												</select>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</fieldset>
+							<!-- foldbarH -->
+							<div class="foldbarH"><!-- 展开后添加class命open -->
+								<div class="foldBtn"><i class="ico"></i></div>
+								<div class="searchBtn"><input type="button" class="btn btn-s" value="查&nbsp;&nbsp;询"></div>
+							</div>
+							<!-- foldbarH end -->
+						</form>
+					</div>
+					<!-- screening end -->
+					<!-- actionBar -->
+					<div class="actionBar">
+						<div class="pagingMini">
+							<div class="pagingBtn">
+								<a href="javascript:void(0)" class="pageUp disable"></a>
+								<a href="#" class="pageDown"></a>
+							</div>
+							<div class="pageNum"><span><b>1</b></span>/<span>20</span>页</div>
+							<div class="count">共<em>23145</em>条记录，本页显示<em>20</em>条</div>
+						</div>
+					</div>
+					<!-- actionBar end -->
+					<!-- table -->
+					<div class="tableWrap">
+						<table class="table tableA">
+							<colgroup>
+								<col width="40" />
+								<col width="200"/>
+								<col width="200" />
+								<col />
+								<col />
+								<col width="200">
+							</colgroup>
+							<thead>
+								<tr>
+									<th>序号</th>
+									<th>卖家账号</th>
+									<th>验证手机号</th>
+									<th>注册时间</th>
+									<th>状态</th>
+									<th>操作</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>01</td>
+									<td><a href="#">shaoxiuyun</a></td>
+									<td>13696581989</td>
+									<td><p>2014-06-20 17:58:00</p></td>
+									<td>正常</td>
+									<td class="t-operate">
+										<p><a href="#">密码重置</a></p>
+									</td>
+								</tr>
+								<tr>
+									<td>01</td>
+									<td><a href="#">shaoxiuyun</a></td>
+									<td>13696581989</td>
+									<td><p>2014-06-20 17:58:00</p></td>
+									<td>正常</td>
+									<td class="t-operate">
+										<p><a href="#">密码重置</a></p>
+									</td>
+								</tr>
+								<tr>
+									<td>01</td>
+									<td><a href="#">shaoxiuyun</a></td>
+									<td>13696581989</td>
+									<td><p>2014-06-20 17:58:00</p></td>
+									<td>正常</td>
+									<td class="t-operate">
+										<p><a href="#">密码重置</a></p>
+									</td>
+								</tr>
+								<tr>
+									<td>01</td>
+									<td><a href="#">shaoxiuyun</a></td>
+									<td>13696581989</td>
+									<td><p>2014-06-20 17:58:00</p></td>
+									<td>正常</td>
+									<td class="t-operate">
+										<p><a href="#">密码重置</a></p>
+									</td>
+								</tr>
+								<tr>
+									<td>01</td>
+									<td><a href="#">shaoxiuyun</a></td>
+									<td>13696581989</td>
+									<td><p>2014-06-20 17:58:00</p></td>
+									<td>正常</td>
+									<td class="t-operate">
+										<p><a href="#">密码重置</a></p>
+									</td>
+								</tr>
+								<tr>
+									<td>01</td>
+									<td><a href="#">shaoxiuyun</a></td>
+									<td>13696581989</td>
+									<td><p>2014-06-20 17:58:00</p></td>
+									<td>正常</td>
+									<td class="t-operate">
+										<p><a href="#">密码重置</a></p>
+									</td>
+								</tr>
+								<tr>
+									<td>01</td>
+									<td><a href="#">shaoxiuyun</a></td>
+									<td>13696581989</td>
+									<td><p>2014-06-20 17:58:00</p></td>
+									<td>正常</td>
+									<td class="t-operate">
+										<p><a href="#">密码重置</a></p>
+									</td>
+								</tr>
+								<tr>
+									<td>01</td>
+									<td><a href="#">shaoxiuyun</a></td>
+									<td>13696581989</td>
+									<td><p>2014-06-20 17:58:00</p></td>
+									<td>正常</td>
+									<td class="t-operate">
+										<p><a href="#">密码重置</a></p>
+									</td>
+								</tr>
+								<tr>
+									<td>01</td>
+									<td><a href="#">shaoxiuyun</a></td>
+									<td>13696581989</td>
+									<td><p>2014-06-20 17:58:00</p></td>
+									<td>正常</td>
+									<td class="t-operate">
+										<p><a href="#">密码重置</a></p>
+									</td>
+								</tr>
+								<tr>
+									<td>01</td>
+									<td><a href="#">shaoxiuyun</a></td>
+									<td>13696581989</td>
+									<td><p>2014-06-20 17:58:00</p></td>
+									<td>正常</td>
+									<td class="t-operate">
+										<p><a href="#">密码重置</a></p>
+									</td>
+								</tr>
+								<tr>
+									<td>01</td>
+									<td><a href="#">shaoxiuyun</a></td>
+									<td>13696581989</td>
+									<td><p>2014-06-20 17:58:00</p></td>
+									<td>正常</td>
+									<td class="t-operate">
+										<p><a href="#">密码重置</a></p>
+									</td>
+								</tr>
+								<tr>
+									<td>01</td>
+									<td><a href="#">shaoxiuyun</a></td>
+									<td>13696581989</td>
+									<td><p>2014-06-20 17:58:00</p></td>
+									<td>正常</td>
+									<td class="t-operate">
+										<p><a href="#">密码重置</a></p>
+									</td>
+								</tr>
+								<tr>
+									<td>01</td>
+									<td><a href="#">shaoxiuyun</a></td>
+									<td>13696581989</td>
+									<td><p>2014-06-20 17:58:00</p></td>
+									<td>正常</td>
+									<td class="t-operate">
+										<p><a href="#">密码重置</a></p>
+									</td>
+								</tr>
+								<tr>
+									<td>01</td>
+									<td><a href="#">shaoxiuyun</a></td>
+									<td>13696581989</td>
+									<td><p>2014-06-20 17:58:00</p></td>
+									<td>正常</td>
+									<td class="t-operate">
+										<p><a href="#">密码重置</a></p>
+									</td>
+								</tr>
+								<tr>
+									<td>01</td>
+									<td><a href="#">shaoxiuyun</a></td>
+									<td>13696581989</td>
+									<td><p>2014-06-20 17:58:00</p></td>
+									<td>正常</td>
+									<td class="t-operate">
+										<p><a href="#">密码重置</a></p>
+									</td>
+								</tr>
+								<tr>
+									<td>01</td>
+									<td><a href="#">shaoxiuyun</a></td>
+									<td>13696581989</td>
+									<td><p>2014-06-20 17:58:00</p></td>
+									<td>正常</td>
+									<td class="t-operate">
+										<p><a href="#">密码重置</a></p>
+									</td>
+								</tr>
+								<tr>
+									<td>01</td>
+									<td><a href="#">shaoxiuyun</a></td>
+									<td>13696581989</td>
+									<td><p>2014-06-20 17:58:00</p></td>
+									<td>正常</td>
+									<td class="t-operate">
+										<p><a href="#">密码重置</a></p>
+									</td>
+								</tr>
+								<tr>
+									<td>01</td>
+									<td><a href="#">shaoxiuyun</a></td>
+									<td>13696581989</td>
+									<td><p>2014-06-20 17:58:00</p></td>
+									<td>正常</td>
+									<td class="t-operate">
+										<p><a href="#">密码重置</a></p>
+									</td>
+								</tr>
+								<tr>
+									<td>01</td>
+									<td><a href="#">shaoxiuyun</a></td>
+									<td>13696581989</td>
+									<td><p>2014-06-20 17:58:00</p></td>
+									<td>正常</td>
+									<td class="t-operate">
+										<p><a href="#">密码重置</a></p>
+									</td>
+								</tr>
+								<tr>
+									<td>01</td>
+									<td><a href="#">shaoxiuyun</a></td>
+									<td>13696581989</td>
+									<td><p>2014-06-20 17:58:00</p></td>
+									<td>正常</td>
+									<td class="t-operate">
+										<p><a href="#">密码重置</a></p>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<!-- table end -->
+					<!-- paging -->
+					<div class="paging">
+						<div class="pagingWrap">
+							<div class="pageup disable"><i class="ico"></i>&nbsp;上一页</div>
+							<ul>
+								<li><span class="on">1</span></li>
+								<li><a href="">2</a></li>
+								<li><a href="">3</a></li>
+								<li><a href="">4</a></li>
+								<li><b>...</b></li>
+								<li><a href="">100</a></li>
+							</ul>
+							<div class="pagedown"><a href="">下一页&nbsp;<i class="ico"></i></a></div>
+							<div class="goto"><span>到第</span><input type="text" name="" id="" value="1"><span>页</span><button class="btn">确定</button></div>
+						</div>
+						<div class="count">共<em>23145</em>条记录，本页显示<em>20</em>条</div>
+					</div>
+					<!-- paging end -->
+				</div>
+				<!-- goodsList end -->
+			</div>
+			<!-- main end -->
+		</div>
+		<!-- bd end -->
+		<!-- footer -->
+		<div id="footer" class="wrap">
+			<div class="links">
+				<a href="#" title="关于一网全城" target="_blank">关于一网全城</a>|<a href="#" title="联系我们" target="_blank">联系我们</a>|<a href="#" title="网站地图" target="_blank">网站地图</a>|<a href="#" title="联系我们" target="_blank">网站合作</a>|<a href="#" title="友情链接" target="_blank">友情链接</a>|<a href="#" title="网站联盟" target="_blank">网站联盟</a>|<a href="#" title="帮助中心" target="_blank">帮助中心</a>|<a href="#" title="版权声明" target="_blank">版权声明</a>
+			</div>
+			<p>Copyright &copy; 2008-2013 Yiwang.com All Rights Reserved.</p>
+			<p>ICP经营许可证号：吉B2-20140008</p>
+		</div>
+		<!-- footer end -->
+	</div>
+</body>
+</html>

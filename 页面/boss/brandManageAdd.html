@@ -1,0 +1,302 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>卖家后台|品牌管理-品牌修改页</title>
+	<link rel="stylesheet" href="css/all-debug.css" />
+</head>
+<body id="">
+	<div class="wrapper">
+		<!-- hd -->
+		<div id="hd">
+			<div class="header">
+				<h1><a href="#" title="阿凡达">阿凡达</a><span>后台管理系统</span></h1>
+		        <ul class="header-menu">
+		        	<li>欢迎您，邵秀云（系统管理员）<li>
+		            <li><a href="#">退出</a></li>
+		        </ul>
+			</div>
+		</div>		
+		<!-- hd end -->
+		<!-- bd -->
+		<div id="bd" class="wrap"><!-- 点击.foldbarV下的foldBtn后在此添加class名unfold来实现展开效果 -->
+			<!-- aside -->
+			<div class="aside">
+				<!-- boss-menu -->
+				<div class="boss-menu">
+					<h2>后台管理系统</h2>
+					<!--menu-->
+					<div class="menu">
+					<h3 class="system"><i class="ico"></i>系统管理 <i class="arrow arrA-D"></i></h3><!-- arrA-D是展开状态,arrA-R是收起状态 -->
+					<ul>
+						<li><a href="#">角色管理</a></li>
+						<li><a href="#">用户管理</a></li>
+						<li><a href="#" class="on">权限管理</a></li>
+						<li><a href="#">日志管理</a></li>
+						<li><a href="#">密码修改</a></li>
+						<li><a href="#">销售区域管理</a></li>
+					</ul>
+					<h3 class="category"><i class="ico"></i>类目管理 <i class="arrow arrA-R"></i></h3>
+					<ul>
+						<li><a href="#">基础类目管理</a></li>
+						<li><a href="#">签约类目管理</a></li>
+						<li><a href="#">销售类目管理</a></li>
+						<li><a href="#">属性管理</a></li>
+						<li><a href="#">规格管理</a></li>
+					</ul>
+					<h3 class="brand"><i class="ico"></i>品牌管理 <i class="arrow arrA-D"></i></h3>
+					<ul>
+						<li><a href="#" class="on">添加品牌</a></li>
+						<li><a href="#">品牌维护</a></li>
+					</ul>
+					<h3 class="goods"><i class="ico"></i>商品管理 <i class="arrow arrA-D"></i></h3>
+					<ul>
+						<li><a href="#">商品信息查询</a></li>
+						<li><a href="#">商品信息修改</a></li>
+						<li><a href="#">商品审核</a></li>
+						<li><a href="#">商品图片批量审核</a></li>
+					</ul>
+					<h3 class="order"><i class="ico"></i>订单管理 <i class="arrow arrA-D"></i></h3>
+					<ul>
+						<li><a href="#">电话下单</a></li>
+						<li><a href="#">订单查询</a></li>
+						<li><a href="#">退货订单</a></li>
+						<li><a href="#">换货订单</a></li>
+						<li><a href="#">订单收货</a></li>
+						<li><a href="#">订单分拣</a></li>
+						<li><a href="#">订单发货</a></li>
+						<li><a href="#">订单打印</a></li>
+						<li><a href="#">物流跟踪</a></li>
+					</ul>
+					<h3 class="logistics"><i class="ico"></i>物流管理 <i class="arrow arrA-D"></i></h3>
+					<ul>
+						<li><a href="#">物流公司管理</a></li>
+						<li><a href="#">标准运费管理</a></li>
+						<li><a href="#">运费折扣</a></li>
+					</ul>
+					<h3 class="seller"><i class="ico"></i>卖家管理 <i class="arrow arrA-D"></i></h3>
+					<ul>
+						<li><a href="#">卖家信息管理</a></li>
+						<li><a href="#">卖家申请审核</a></li>
+					</ul>
+					<h3 class="buyer"><i class="ico"></i>买家会员管理 <i class="arrow arrA-D"></i></h3>
+					<ul>
+						<li><a href="#">信息管理</a></li>
+						<li><a href="#">等级管理</a></li>
+					</ul>
+					<h3 class="coupon"><i class="ico"></i>优惠券管理 <i class="arrow arrA-D"></i></h3>
+					<ul>
+						<li><a href="#">创建优惠券</a></li>
+						<li><a href="#">优惠券批次查询</a></li>
+						<li><a href="#">优惠券明细查询</a></li>
+						<li><a href="#">优惠券申请审核</a></li>
+					</ul>
+					<h3 class="serve"><i class="ico"></i>客户服务 <i class="arrow arrA-D"></i></h3>
+					<ul>
+						<li><a href="#">咨询管理</a></li>
+						<li><a href="#">投诉管理</a></li>
+						<li><a href="#">取消订单查询</a></li>
+					</ul>
+					<h3 class="clearing"><i class="ico"></i>费用管理 <i class="arrow arrA-D"></i></h3>
+					<ul>
+						<li><a href="#">买家帐户管理</a></li>
+						<li><a href="#">退款单管理</a></li>
+						<li><a href="#">客户提现管理</a></li>
+					</ul>
+					</div>
+					<!-- menu end -->
+				</div>
+				<!-- boss-menu end-->
+			</div>
+			<!-- aside end -->
+			<!-- main -->
+			<div class="main">
+				<!-- foldbarV -->
+				<div id="foldbarV"><div class="foldbarV"><div class="foldBtn"></div></div></div>
+				<!-- foldbarV end -->
+				<!-- crumbs -->
+				<div class="crumbs crumbsA">
+					<ul>
+						<li><a href="#">后台首页</a><em>&gt;</em></li>
+						<li><a href="#">卖家管理</a><em>&gt;</em></li>
+						<li><strong>当前功能名称</strong></li>
+					</ul>
+				</div>
+				<!-- crumbs end -->
+				<!-- relateType -->
+				<div class="relateType result">
+					<div class="hintBar">
+						<dl>
+							<dt><i class="icon i-exclaim"></i></dt>
+							<dd>
+								<h4>请注意：</h4>
+								<ul>
+									<li><em>·</em>添加品牌时可以同时对多个基础类目进行添加。</li>
+									<li><em>·</em>中文品牌名称和英文品牌名称至少填写一项，同一个三级类目下面，品牌名称不能重复；品牌全拼是自动生成项，为中文品牌全拼，如果没有中文品牌则显示英文品牌。</li>
+									<li><em>·</em>品牌Logo须与商标注册图文信息一致，尺寸400X200像素，格式jpg，大小不超过100K。</li>
+								</ul>
+							</dd>
+						</dl>
+					</div>
+				</div>
+				<!-- relateType end -->
+				<!-- resultUploding -->
+					<div class="brandManagement">
+						<form class="form formB">
+							<div class="legend">
+							   <div class="legend-meg">
+									<span>品牌输入规则</span>
+									<div class="mod-help">
+										<i class="ico"></i>
+										<div class="text">
+											<div class="text-meg">
+												<h6>品牌输入规划：</h6>
+												<p>1.品牌名称严格采用该品牌官方描述名称，包括品牌中的中文描述、英文字符的大小写以及字符之间的符号（如两个单词间的空格有且仅有一个）；</p>
+												<p>2.对于没有明确官方描述的英文名称，品牌采用每个单词首字母大写，单词的其他字母小写方式录入；</p>
+												<p>3.英文品牌所有字符（含非字母字符）皆须是在英文半角状态下输入的字符，不能出现在中文状态下的或全角字符状态下输入的字符；</p>
+												<p>4.同一个品牌有且只有一个品牌名称，即官方发布的品牌；</p>
+												<p>5.至少填写一个中或英文品牌，同一个三级类目下品牌不可重复</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<h3>修改品牌</h3></div>
+							<fieldset>
+								<dl class="item">
+									<dt class="item-label"><label><em>*</em>类目选择：</label></dt>
+									<dd class="item-cont">
+										<input type="button" class="btn" value="+ 添加基础类目">
+										<table class="table tableD">
+											<colgroup>
+												<col width="170">
+												<col width="170">
+												<col width="180">
+												<col width="100">
+												<col width="100">
+												<col width="80">
+											</colgroup>
+											<thead>
+												<tr>
+													<th>一级类目</th>
+													<th>二级类目</th>
+													<th>三级类目</th>
+													<th>是否web筛选项</th>
+													<th>是否手机标签</th>
+													<th>操作</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td rowspan="3">女装</td>
+													<td rowspan="2">女士上装</td>
+													<td>肉禽蛋奶</td>
+													<td><input type="checkbox" class="chk chks" checked="checked"></td>
+													<td><input type="checkbox" class="chk chks" checked="checked"></td>
+													<td><a href="#">删除</a></td>
+												</tr>
+												<tr>
+													<td>肉禽蛋奶</td>
+													<td><input type="checkbox" class="chk chks" checked="checked"></td>
+													<td><input type="checkbox" class="chk chks" checked="checked"></td>
+													<td><a href="#">删除</a></td>
+												</tr>
+												<tr>
+													<td>女士上装</td>
+													<td>肉禽蛋奶</td>
+													<td><input type="checkbox" class="chk chks" checked="checked"></td>
+													<td><input type="checkbox" class="chk chks" checked="checked"></td>
+													<td><a href="#">删除</a></td>
+												</tr>
+												<tr>
+													<td rowspan="3">母婴玩具</td>
+													<td rowspan="2">女士上装</td>
+													<td>肉禽蛋奶</td>
+													<td><input type="checkbox" class="chk chks" checked="checked"></td>
+													<td><input type="checkbox" class="chk chks" checked="checked"></td>
+													<td><a href="#">删除</a></td>
+												</tr>
+												<tr>
+													<td>肉禽蛋奶</td>
+													<td><input type="checkbox" class="chk chks" checked="checked"></td>
+													<td><input type="checkbox" class="chk chks" checked="checked"></td>
+													<td><a href="#">删除</a></td>
+												</tr>
+												<tr>
+													<td>女士上装</td>
+													<td>肉禽蛋奶</td>
+													<td><input type="checkbox" class="chk chks" checked="checked"></td>
+													<td><input type="checkbox" class="chk chks" checked="checked"></td>
+													<td><a href="#">删除</a></td>
+												</tr>
+											</tbody>
+										</table>
+									</dd>
+								</dl>
+							</fieldset>
+							<fieldset class="last">
+								<dl class="item">
+									<dt class="item-label"><label>品牌添加：</label></dt>
+									<dd class="item-cont item-conts">
+										<dl class="item">
+											<dt class="item-label"><label><em>*</em>中文名称：</label></dt>
+											<dd class="item-cont"><input type="text" class="txt textC">
+												<span>中文品牌名称和英文品牌名称至少填写一项</span>
+												<div class="hint error">错误提示</div>
+											</dd>
+										</dl>
+										<dl class="item">
+											<dt class="item-label"><label><em>*</em>英文名称：</label></dt>
+											<dd class="item-cont"><input type="text" class="txt textC">
+											</dd>
+										</dl>
+										<dl class="item">
+											<dt class="item-label"><label><em>*</em>拼音码：</label></dt>
+											<dd class="item-cont"><input type="text" class="txt textC"></dd>
+										</dl>
+										<dl class="item">
+											<dt class="item-label"><label>品牌缩写名：</label></dt>
+											<dd class="item-cont"><input type="text" class="txt textC">
+											</dd>
+										</dl>
+										<dl class="item">
+											<dt class="item-label"><label>品牌Logo：</label></dt>
+											<dd class="item-cont">
+												<div class="idImg"><a href="#"><img src="img/bramLogo.jpg" alt=""></a>
+												<input type="button" class="btn" value="浏览">
+												</div>
+											</dd>
+										</dl>
+										<dl class="item">
+											<dt class="item-label"><label>品牌故事：</label></dt>
+											<dd class="item-cont">
+												<div class="editer">
+													<img src="img/editer.jpg" alt="">
+												</div>
+											</dd>
+										</dl>
+									</dd>
+								</dl>
+							</fieldset>
+						</form>
+						<div class="formBtn">
+							<button type="button" class="btnC">保 存</button>
+							<input type="button" class="btn" value="取 消">
+						</div>
+					</div>
+				<!-- resultUploding end-->
+			</div>
+			<!-- main end -->
+		</div>
+		<!-- bd end -->
+		<!-- footer -->
+		<div id="footer" class="wrap">
+			<div class="links">
+				<a href="#" title="关于一网全城" target="_blank">关于一网全城</a>|<a href="#" title="联系我们" target="_blank">联系我们</a>|<a href="#" title="网站地图" target="_blank">网站地图</a>|<a href="#" title="联系我们" target="_blank">网站合作</a>|<a href="#" title="友情链接" target="_blank">友情链接</a>|<a href="#" title="网站联盟" target="_blank">网站联盟</a>|<a href="#" title="帮助中心" target="_blank">帮助中心</a>|<a href="#" title="版权声明" target="_blank">版权声明</a>
+			</div>
+			<p>Copyright &copy; 2008-2013 Yiwang.com All Rights Reserved.</p>
+			<p>ICP经营许可证号：吉B2-20140008</p>
+		</div>
+		<!-- footer end -->
+	</div>
+</body>
+</html>

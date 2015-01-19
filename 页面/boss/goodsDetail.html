@@ -1,0 +1,574 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>卖家后台|商品管理详情页</title>
+		<link rel="stylesheet" href="css/all-debug.css" />
+	</head>
+	<body id="">
+		<div class="wrapper">
+			<!-- hd -->
+			<div id="hd">
+				<div class="header">
+					<h1>
+					<a href="#" title="阿凡达">
+						阿凡达
+					</a><span>后台管理系统</span></h1>
+					<ul class="header-menu">
+						<li>
+							欢迎您，邵秀云（系统管理员）
+						<li>
+						<li>
+							<a href="#">退出</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- hd end -->
+			<!-- bd -->
+			<div id="bd" class="wrap">
+				<!-- 点击.foldbarV下的foldBtn后在此添加class名unfold来实现展开效果 -->
+				<!-- aside -->
+				<div class="aside">
+					<!-- boss-menu -->
+					<div class="boss-menu">
+						<h2>后台管理系统</h2>
+						<!--menu-->
+						<div class="menu">
+							<h3 class="system"><i class="ico"></i>系统管理 <i class="arrow arrA-D"></i></h3><!-- arrA-D是展开状态,arrA-R是收起状态 -->
+							<ul>
+								<li>
+									<a href="#">
+										角色管理
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										用户管理
+									</a>
+								</li>
+								<li>
+									<a href="#" class="on">
+										权限管理
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										日志管理
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										密码修改
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										销售区域管理
+									</a>
+								</li>
+							</ul>
+							<h3 class="category"><i class="ico"></i>类目管理 <i class="arrow arrA-R"></i></h3>
+							<ul>
+								<li>
+									<a href="#">
+										基础类目管理
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										签约类目管理
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										销售类目管理
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										品牌管理
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										属性管理
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										规格管理
+									</a>
+								</li>
+							</ul>
+							<h3 class="goods"><i class="ico"></i>商品管理 <i class="arrow arrA-D"></i></h3>
+							<ul>
+								<li>
+									<a href="#">
+										商品信息查询
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										商品信息修改
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										商品审核
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										商品图片批量审核
+									</a>
+								</li>
+							</ul>
+							<h3 class="order"><i class="ico"></i>订单管理 <i class="arrow arrA-D"></i></h3>
+							<ul>
+								<li>
+									<a href="#">
+										电话下单
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										订单查询
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										退货订单
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										换货订单
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										订单收货
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										订单分拣
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										订单发货
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										订单打印
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										物流跟踪
+									</a>
+								</li>
+							</ul>
+							<h3 class="logistics"><i class="ico"></i>物流管理 <i class="arrow arrA-D"></i></h3>
+							<ul>
+								<li>
+									<a href="#">
+										物流公司管理
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										标准运费管理
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										运费折扣
+									</a>
+								</li>
+							</ul>
+							<h3 class="seller"><i class="ico"></i>卖家管理 <i class="arrow arrA-D"></i></h3>
+							<ul>
+								<li>
+									<a href="#">
+										卖家信息管理
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										卖家申请审核
+									</a>
+								</li>
+							</ul>
+							<h3 class="buyer"><i class="ico"></i>买家会员管理 <i class="arrow arrA-D"></i></h3>
+							<ul>
+								<li>
+									<a href="#">
+										信息管理
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										等级管理
+									</a>
+								</li>
+							</ul>
+							<h3 class="coupon"><i class="ico"></i>优惠券管理 <i class="arrow arrA-D"></i></h3>
+							<ul>
+								<li>
+									<a href="#">
+										创建优惠券
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										优惠券批次查询
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										优惠券明细查询
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										优惠券申请审核
+									</a>
+								</li>
+							</ul>
+							<h3 class="serve"><i class="ico"></i>客户服务 <i class="arrow arrA-D"></i></h3>
+							<ul>
+								<li>
+									<a href="#">
+										咨询管理
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										投诉管理
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										取消订单查询
+									</a>
+								</li>
+							</ul>
+							<h3 class="clearing"><i class="ico"></i>费用管理 <i class="arrow arrA-D"></i></h3>
+							<ul>
+								<li>
+									<a href="#">
+										买家帐户管理
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										退款单管理
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										客户提现管理
+									</a>
+								</li>
+							</ul>
+						</div>
+						<!-- menu end -->
+					</div>
+					<!-- boss-menu end-->
+				</div>
+				<!-- aside end -->
+				<!-- main -->
+				<div class="main">
+					<!-- foldbarV -->
+					<div id="foldbarV">
+						<div class="foldbarV">
+							<div class="foldBtn"></div>
+						</div>
+					</div>
+					<!-- foldbarV end -->
+					<div class="goodsDetail">
+						<form class="form formA">
+							<div class="legend">
+								<h3>商品基础信息</h3>
+								<a href="#" class="lnkA">返回商品列表页</a>
+							</div>
+							<fieldset>
+								<dl class="item">
+									<dt class="item-label">
+										<label><em>*</em>商品类目：</label>
+									</dt>
+									<dd class="item-cont">
+										<p></p>
+									</dd>
+								</dl>
+								<dl class="item">
+									<dt class="item-label">
+										<label><em>*</em>商品标题：</label>
+									</dt>
+									<dd class="item-cont">
+										<p>
+											米子旗  运动套装女款春秋夏2014春装新款女士卫衣 运动休闲套装
+										</p>
+									</dd>
+								</dl>
+								<dl class="item">
+									<dt class="item-label">
+										<label>商品卖点：</label>
+									</dt>
+									<dd class="item-cont">
+										<p>
+											2014美女必备人手一套！ 最流行色系！最显瘦的款式！高档呼吸棉！春秋款面料！舒适 透气 超百搭时尚运动休闲佳品！
+										</p>
+									</dd>
+								</dl>
+								<dl class="item">
+									<dt class="item-label">
+										<label><em>*</em>货号：</label>
+									</dt>
+									<dd class="item-cont">
+										<p>1010101</p>
+									</dd>
+								</dl>
+								<dl class="item">
+									<dt class="item-label">
+										<label><em>*</em>品牌：</label>
+									</dt>
+									<dd class="item-cont">
+										<p>好孩子</p>
+									</dd>
+								</dl>
+								<dl class="item">
+									<dt class="item-label">
+										<label><em>*</em>产地：</label>
+									</dt>
+									<dd class="item-cont">
+										<p>中国</p>
+									</dd>
+								</dl>
+								<dl class="item">
+									<dt class="item-label">
+										<label><em>*</em>材质：</label>
+									</dt>
+									<dd class="item-cont">
+										<p>棉</p>
+									</dd>
+								</dl>
+								<dl class="item">
+									<dt class="item-label">
+										<label><em>*</em>款式：</label>
+									</dt>
+									<dd class="item-cont">
+										<p>棉</p>
+									</dd>
+								</dl>
+							</fieldset>
+							<fieldset>
+								<dl class="item item-attr">
+									<dt class="item-label">
+										<label>SKU销售属性：</label>
+									</dt>
+									<dd class="item-cont">
+										<table class="table tableD">
+											<colgroup>
+												<col />
+												<col />
+												<col />
+												<col />
+												<col />
+												<col />
+											</colgroup>
+											<thead>
+												<tr>
+													<td>颜色</td>
+													<td>尺码</td>
+													<td>单价</td>
+													<td>特卖价</td>
+													<td>数量</td>
+													<td>商家编号</td>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>荧光绿短袖</td>
+													<td>3XL/适合128-140</td>
+													<td>&yen;1265.00</td>
+													<td>&yen;123.00</td>
+													<td>1954</td>
+													<td>198235</td>
+												</tr>
+												<tr>
+													<td>荧光绿短袖</td>
+													<td>3XL/适合128-140</td>
+													<td>&yen;1265.00</td>
+													<td>&yen;123.00</td>
+													<td>1954</td>
+													<td>198235</td>
+												</tr>
+											</tbody>
+										</table>
+									</dd>
+								</dl>
+							</fieldset>
+							<fieldset>
+								<dl class="item item-img">
+									<dt class="item-label">
+										<label>商品图片：</label>
+									</dt>
+									<dd class="item-cont">
+										<ul>
+											<li>
+												<div class="mod-pic">
+													<img src="img/temp/temp1.jpg" alt="" />
+													<div class="maskBar"></div>
+													<p class="textBar"><a href="#">查看大图</a></p>
+												</div>
+											</li>
+											<li>
+												<div class="mod-pic">
+													<img src="img/temp/temp1.jpg" alt="" />
+													<div class="maskBar"></div>
+													<p class="textBar"><a href="#">查看大图</a></p>
+												</div>
+											</li>
+											<li>
+												<div class="mod-pic">
+													<img src="img/temp/temp1.jpg" alt="" />
+													<div class="maskBar"></div>
+													<p class="textBar"><a href="#">查看大图</a></p>
+												</div>
+											</li>
+										</ul>
+									</dd>
+								</dl>
+								<dl class="item">
+									<dt class="item-label">
+										<label><em>*</em>商品描述：</label>
+									</dt>
+									<dd class="item-cont">
+										<div class="mod-frame">
+											<img src="img/temp/temp2.jpg" alt="" />
+											<img src="img/temp/temp2.jpg" alt="" />
+										</div>
+										<div class="editerHint"><span>共<strong>1000</strong>个字（包含字母、数字、标点符号）</span></div>
+									</dd>
+								</dl>
+							</fieldset>
+						</form>
+						<!-- table --><table class="table tableC">
+							<colgroup>
+								<col>
+								<col>
+								<col width="430">
+							</colgroup>
+							<thead>
+								<tr>
+									<th colspan="3" class="caption">商品修改历史</th>	
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th>状态更新时间</th>
+									<th>操作人</th>
+									<th>操作说明</th>		
+								</tr>
+								<tr>
+									<td>2014-04-05 12:00:40</td>
+									<td>shaoxiuyun</td>
+									<td>身份证与照片不符</td>
+									
+								</tr>
+								<tr>
+									<td>2014-04-05 12:00:40</td>
+									<td>买家</td>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>
+						<!-- table end -->
+					</div>
+				</div>
+				<!-- main end -->
+			</div>
+			<!-- bd end -->
+			<!-- footer -->
+			<div id="footer" class="wrap">
+				<div class="links">
+					<a href="#" title="关于一网全城" target="_blank">
+						关于一网全城
+					</a>
+					|
+					<a href="#" title="联系我们" target="_blank">
+						联系我们
+					</a>
+					|
+					<a href="#" title="网站地图" target="_blank">
+						网站地图
+					</a>
+					|
+					<a href="#" title="联系我们" target="_blank">
+						网站合作
+					</a>
+					|
+					<a href="#" title="友情链接" target="_blank">
+						友情链接
+					</a>
+					|
+					<a href="#" title="网站联盟" target="_blank">
+						网站联盟
+					</a>
+					|
+					<a href="#" title="帮助中心" target="_blank">
+						帮助中心
+					</a>
+					|
+					<a href="#" title="版权声明" target="_blank">
+						版权声明
+					</a>
+				</div>
+				<p>
+					Copyright &copy; 2008-2013 Yiwang.com All Rights Reserved.
+				</p>
+				<p>
+					ICP经营许可证号：吉B2-20140008
+				</p>
+			</div>
+			<!-- footer end -->
+		</div>
+		<div class="pop">
+		<div class="hd">
+			<h1>操作确认</h1>
+			<span><i class="icon i-close" title="关闭"></i></span>
+		</div>
+		<div class="bd">
+			<div class="pop-con">
+				<dl>
+					<dt><label><em>*</em>驳回理由：</label></dt>
+					<dd>
+						<div class="select">
+							<select>
+								<option>真实姓名与身份证不符</option>
+							</select>
+						</div>
+					</dd>
+				</dl>
+				<dl>
+					<dt><label>描述：</label></dt>
+					<dd>
+						<textarea name="" id="" rows="5"></textarea>
+						<div class="hint popHint">最多可输入150个中文汉字</div>
+					</dd>
+				</dl>
+			</div>
+			<div class="formBtn">
+				<input type="button" value="确 定" class="btnB btn-s">
+				<input type="button" value="取 消" class="btn btn-s">
+			</div>
+		</div>
+	</div>
+	<div class="mask"></div>
+	</body>
+</html>

@@ -1,0 +1,361 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>卖家后台|创建红包-无固定有效期</title>
+	<link rel="stylesheet" href="css/all-debug.css" />
+</head>
+<body id="">
+	<div class="wrapper">
+		<!-- hd -->
+		<div id="hd">
+			<div class="header">
+				<h1><a href="#" title="阿凡达">阿凡达</a><span>后台管理系统</span></h1>
+		        <ul class="header-menu">
+		        	<li>欢迎您，邵秀云（系统管理员）<li>
+		            <li><a href="#">退出</a></li>
+		        </ul>
+			</div>
+		</div>		
+		<!-- hd end -->
+		<!-- bd -->
+		<div id="bd" class="wrap"><!-- 点击.foldbarV下的foldBtn后在此添加class名unfold来实现展开效果 -->
+			<!-- aside -->
+			<div class="aside">
+				<!-- boss-menu -->
+				<div class="boss-menu">
+					<h2>后台管理系统</h2>
+					<!--menu-->
+					<div class="menu">
+					<h3 class="system"><i class="ico"></i>系统管理 <i class="arrow arrA-D"></i></h3><!-- arrA-D是展开状态,arrA-R是收起状态 -->
+					<ul>
+						<li><a href="#">角色管理</a></li>
+						<li><a href="#">用户管理</a></li>
+						<li><a href="#">权限管理</a></li>
+						<li><a href="#">日志管理</a></li>
+						<li><a href="#">密码修改</a></li>
+						<li><a href="#">销售区域管理</a></li>
+					</ul>
+					<h3 class="category"><i class="ico"></i>类目管理 <i class="arrow arrA-R"></i></h3>
+					<ul>
+						<li><a href="#">基础类目管理</a></li>
+						<li><a href="#">签约类目管理</a></li>
+						<li><a href="#">销售类目管理</a></li>
+						<li><a href="#">品牌管理</a></li>
+						<li><a href="#">属性管理</a></li>
+						<li><a href="#">规格管理</a></li>
+					</ul>
+					<h3 class="goods"><i class="ico"></i>商品管理 <i class="arrow arrA-D"></i></h3>
+					<ul>
+						<li><a href="#">商品信息查询</a></li>
+						<li><a href="#">商品信息修改</a></li>
+						<li><a href="#">商品审核</a></li>
+						<li><a href="#">商品图片批量审核</a></li>
+					</ul>
+					<h3 class="order"><i class="ico"></i>订单管理 <i class="arrow arrA-D"></i></h3>
+					<ul>
+						<li><a href="#">电话下单</a></li>
+						<li><a href="#">订单查询</a></li>
+						<li><a href="#">退货订单</a></li>
+						<li><a href="#">换货订单</a></li>
+						<li><a href="#">订单收货</a></li>
+						<li><a href="#">订单分拣</a></li>
+						<li><a href="#">订单发货</a></li>
+						<li><a href="#">订单打印</a></li>
+						<li><a href="#">物流跟踪</a></li>
+					</ul>
+					<h3 class="active"><i class="ico"></i>活动管理 <i class="arrow arrA-D"></i></h3>
+					<ul>
+						<li><a href="#">创建限时抢购活动</a></li>
+						<li><a href="#">创建直降活动</a></li>
+						<li><a href="#">活动报名审核</a></li>
+						<li><a href="#">活动查询</a></li>
+					</ul>
+					<h3 class="coupon"><i class="ico"></i>红包管理 <i class="arrow arrA-D"></i></h3>
+					<ul>
+						<ul>
+						<li><a href="#" class="on">创建红包</a></li>
+						<li><a href="#">红包批次查询</a></li>
+						<li><a href="#">红包明细查询</a></li>
+					</ul>
+					<h3 class="storeactive"><i class="ico"></i>店铺活动 <i class="arrow arrA-D"></i></h3>
+					<ul>
+						<li><a href="#">活动管理</a></li>
+					</ul>
+					<h3 class="logistics"><i class="ico"></i>物流管理 <i class="arrow arrA-D"></i></h3>
+					<ul>
+						<li><a href="#">物流公司管理</a></li>
+						<li><a href="#">标准运费管理</a></li>
+						<li><a href="#">运费折扣</a></li>
+					</ul>
+					<h3 class="seller"><i class="ico"></i>卖家管理 <i class="arrow arrA-D"></i></h3>
+					<ul>
+						<li><a href="#">卖家信息管理</a></li>
+						<li><a href="#">卖家申请审核</a></li>
+					</ul>
+					<h3 class="buyer"><i class="ico"></i>买家会员管理 <i class="arrow arrA-D"></i></h3>
+					<ul>
+						<li><a href="#">信息管理</a></li>
+						<li><a href="#">等级管理</a></li>
+					</ul>
+					
+					<h3 class="serve"><i class="ico"></i>客户服务 <i class="arrow arrA-D"></i></h3>
+					<ul>
+						<li><a href="#">咨询管理</a></li>
+						<li><a href="#">投诉管理</a></li>
+						<li><a href="#">取消订单查询</a></li>
+					</ul>
+					<h3 class="clearing"><i class="ico"></i>费用管理 <i class="arrow arrA-D"></i></h3>
+					<ul>
+						<li><a href="#">买家帐户管理</a></li>
+						<li><a href="#">退款单管理</a></li>
+						<li><a href="#">客户提现管理</a></li>
+					</ul>
+					</div>
+					<!-- menu end -->
+				</div>
+				<!-- boss-menu end-->
+			</div>
+			<!-- aside end -->
+			<!-- main -->
+			<div class="main">
+				<!-- foldbarV -->
+				<div id="foldbarV"><div class="foldbarV"><div class="foldBtn"></div></div></div>
+				<!-- foldbarV end -->
+				<!-- crumbs -->
+				<div class="crumbs crumbsA">
+					<ul>
+						<li><a href="#">后台首页</a><em>&gt;</em></li>
+						<li><a href="#">卖家管理</a><em>&gt;</em></li>
+						<li><strong>店铺资料</strong></li>
+					</ul>
+				</div>
+				<!-- crumbs end -->
+				<!-- storeoutline -->
+					<div class="sellerData">
+						<div class="hintBar">
+							<dl>
+								<dt><i class="icon i-exclaim"></i></dt>
+								<dd>
+									<h4>请注意：</h4>
+									<ul>
+										<li><em>·</em>boss系统支持对店铺满减、满赠活动的查询、上线、撤销、终止等操作</li>
+										<li><em>·</em>已编辑但是未上线的活动，可以撤销</li>
+									</ul>
+								</dd>
+							</dl>
+						</div>
+						<!-- redpacket -->
+						<!-- tab -->
+						<div class="tab">
+							<div class="tabs">
+								<ul>
+									<li class="on"><a href="#">一网红包</a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- tba end -->
+						<div class="redpacket redpacketfix">
+							<form class="form formA">
+								<fieldset>
+									<div class="legend">
+										<div class="legend-meg">
+											<span>创建红包规则</span>
+											<div class="mod-help">
+												<i class="ico"></i>
+												<div class="text">
+													<div class="text-meg">
+														<h6>品牌输入规划：</h6>
+														<p>1.品牌名称严格采用该品牌官方描述名称，包括品牌中的中文描述、英文字符的大小写以及字符之间的符号（如两个单词间的空格有且仅有一个）；</p>
+														<p>2.对于没有明确官方描述的英文名称，品牌采用每个单词首字母大写，单词的其他字母小写方式录入；</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<h3>基本信息</h3>
+									</div>
+									<dl class="item">
+										<dt class="item-label"><label><em>*</em>红包名称：</label></dt>
+										<dd class="item-cont">
+											<input type="text" class="txt textD">
+											<em class="pastdue">20个字以内</em>
+											<div class="hint error">错误提示</div>
+										</dd>
+									</dl>
+									<dl class="item">
+										<dt class="item-label"><label><em>*</em>红包面值：</label></dt>
+										<dd class="item-cont">
+											<input type="text" class="txt textB">
+											<span>/ 元</span>
+										</dd>
+									</dl>
+									<dl class="item">
+										<dt class="item-label"><label><em>*</em>消费限额：</label></dt>
+										<dd class="item-cont">
+											<input type="text" class="txt textB">
+											<span>/ 元</span>
+											<input type="checkbox" class="chk" name="" id="wu"><label for="wu">无限额</label>
+											<div class="mod-help">
+												<i class="ico"></i>
+												<div class="text">
+													 <p>提示提示提示提示提示提示提示提示提示提示</p>
+												</div>
+											</div>
+										</dd>
+									</dl>
+									<dl class="item">
+										<dt class="item-label"><label><em>*</em>发行数量：</label></dt>
+										<dd class="item-cont">
+											<input type="text" class="txt textF">
+											<span>/ 张</span>
+										</dd>
+									</dl>
+									<dl class="item">
+										<dt class="item-label"><label><em>*</em>有效期类型：</label></dt>
+										<dd class="item-cont">
+											<input type="radio" class="rdo" name="fix" id="fix">
+											<label for="fix">固定有效期（起止时间）</label>
+											<input type="radio" class="rdo" name="fixno" id="fixno">
+											<label for="fixno">无固定有效期（指定天数）</label>
+											<div class="mod-help">
+												<i class="ico"></i>
+												<div class="text">
+													<div class="text-meg">
+													 <p>提示提示提示提示提示提示提示提示提示提示</p>
+													</div>
+												</div>
+											</div>
+										</dd>
+									</dl>
+									<dl class="item">
+										<dt class="item-label"><label><em>*</em>有效时间：</label></dt>
+										<dd class="item-cont">
+											<input type="text" class="dateTxt" placeholder="生效时间">
+											<input type="text" class="dateTxt" placeholder="失效时间">
+											<div class="mod-help">
+												<i class="ico"></i>
+												<div class="text">
+													<div class="text-meg">
+													 <p>提示提示提示提示提示提示提示提示提示提示</p>
+													</div>
+												</div>
+											</div>
+										</dd>
+									</dl>
+									<dl class="item">
+										<dt class="item-label"><label><em>*</em>是否预生成：</label></dt>
+										<dd class="item-cont">
+											<input type="radio" class="rdo" name="yes" id="yes">
+											<label for="yes">是</label>
+											<input type="radio" class="rdo" name="no" id="no">
+											<label for="no">否</label>
+											<div class="mod-help">
+												<i class="ico"></i>
+												<div class="text">
+													<div class="text-meg">
+													 <p>提示提示提示提示提示提示提示提示提示提示</p>
+													</div>
+												</div>
+											</div>
+										</dd>
+									</dl>
+									<dl class="item">
+										<dt class="item-label"><label><em>*</em>发放方式：</label></dt>
+										<dd class="item-cont">
+											<input type="checkbox" class="chk" name="" id="huo"><label for="huo">活动领用</label>
+											<input type="checkbox" class="chk" name="" id="zhu"><label for="zhu">注册发放</label>
+											<input type="checkbox" class="chk" name="" id="xian"><label for="xian">线下发放</label>
+											<input type="checkbox" class="chk" name="" id="qi"><label for="qi">其他</label>
+										</dd>
+									</dl>
+									<dl class="item">
+										<dt class="item-label">
+											<label>规则说明：</label>
+										</dt>
+										<dd class="item-cont item-pub">
+											<textarea name="" id="" cols="" rows="" placeholder="可添加红包的使用规则说明，最多300个字。"></textarea>
+											<div class="hint error">错误提示</div>
+										</dd>
+									</dl>
+								</fieldset>
+								<fieldset class="last">
+									<div class="legend"><h3>使用方式</h3></div>
+									<dl class="item">
+										<dt class="item-label"><label><em>*</em>使用范围：</label></dt>
+										<dd class="item-cont">
+											<div>
+												<input type="radio" class="rdo" name="zhi" id="zhi">
+												<label for="zhi">限制范围</label>
+												<input type="radio" class="rdo" name="zhino" id="zhino">
+												<label for="zhino">不限制范围</label>
+											</div>
+											<div class="astrictarea">
+												<div class="shoptype shoptypes">
+													<span>店铺类型：</span>
+													<input type="checkbox" class="chk" name="" id="zi"><label for="zi">自营店铺</label>
+														<input type="checkbox" class="chk" name="" id="di"><label for="di">第三方加盟</label>
+												</div>
+												<div class="banregion">
+													<span>限用地区：</span>
+													<div class="banreg">
+														<ul>
+															<li>辽宁省，黑龙江省，北京，河北省，山东省</li>
+															<li>吉林省：长春市，吉林市，白山市，通化市，延吉洲，辽原市，松原市</li>
+															<li>江苏省：南京市，常州市</li>
+														</ul>
+														<span><a href="#">+ 编辑地区</a></span>
+														<div class="mod-help">
+															<i class="ico"></i>
+															<div class="text">
+																<div class="text-meg">
+																 <p>提示提示提示提示提示提示提示提示提示提示</p>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</dd>
+									</dl>
+									<dl class="item">
+										<dt class="item-label"><label>每人限领：</label></dt>
+										<dd class="item-cont">
+											<input type="text" class="txt textF">
+											<span>/ 张，不填则为无限制</span>
+										</dd>
+									</dl>
+									<dl class="item">
+										<dt class="item-label"><label><em>*</em>使用位置：</label></dt>
+										<dd class="item-cont">
+											<input type="checkbox" class="chk" name="" id="wang"><label for="wang">网站</label>
+											<input type="checkbox" class="chk" name="" id="an"><label for="an">安卓客户端</label>
+											<input type="checkbox" class="chk" name="" id="ke"><label for="ke">IOS客户端</label>
+											<input type="checkbox" class="chk" name="" id="ban"><label for="ban">H5版</label>
+										</dd>
+									</dl>
+								</fieldset>
+							</form>
+							<div class="formBtn">
+								<button type="button" class="btnC">创建红包</button>
+								<input type="button" class="btn" value="取&nbsp;消">
+							</div>
+						</div>
+						<!-- redpacket end -->
+					</div>
+				<!-- storeoutline end-->
+			</div>
+			<!-- main end -->
+		</div>
+		<!-- bd end -->
+		<!-- footer -->
+		<div id="footer" class="wrap">
+			<div class="links">
+				<a href="#" title="关于一网全城" target="_blank">关于一网全城</a>|<a href="#" title="联系我们" target="_blank">联系我们</a>|<a href="#" title="网站地图" target="_blank">网站地图</a>|<a href="#" title="联系我们" target="_blank">网站合作</a>|<a href="#" title="友情链接" target="_blank">友情链接</a>|<a href="#" title="网站联盟" target="_blank">网站联盟</a>|<a href="#" title="帮助中心" target="_blank">帮助中心</a>|<a href="#" title="版权声明" target="_blank">版权声明</a>
+			</div>
+			<p>Copyright &copy; 2008-2013 Yiwang.com All Rights Reserved.</p>
+			<p>ICP经营许可证号：吉B2-20140008</p>
+		</div>
+		<!-- footer end -->
+	</div>
+</body>
+</html>

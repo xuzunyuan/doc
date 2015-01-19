@@ -1,0 +1,477 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>卖家|订单列表</title>
+	<link rel="stylesheet" type="text/css" href="css/allstyle.min.css"/>
+	<link rel="stylesheet" href="css/product.css" />
+</head>
+<body>
+	<div class="wrapper wrap-order">
+		<!-- header -->
+		<div id="header">
+			<div class="wrap">
+				<!-- logo -->
+				<div id="logo">
+					<div class="logo"><a href="#" title="logo"><img src="img/logo.png" alt="logo" /></a></div>
+					<h1>商家中心</h1>
+				</div>
+				<!-- logo end -->
+				<!-- site -->
+				<div id="site">
+					<ul class="item">
+						<li>|</li>
+						<li class="msg">
+							<div class="hd"><i class="icon"></i><a href="#">消息</a><em>2</em></div>
+						</li>
+						<li>|</li>
+						<li>
+							<div class="hd"><a href="#">帮助中心</a></div>
+						</li>
+					</ul>
+				</div>
+				<!-- site end -->
+				<!-- signin -->
+				<div id="signin">
+					<p><span>您好,醉逍遥</span><span><a href="#" class="exit">退出</a><!--<a href="#">登录</a>/<a href="#">注册</a>--></span></p>
+				</div>
+				<!-- signin end -->
+			</div>
+		</div>
+		<!-- header end -->
+		<!-- mainNav -->
+		<div id="mainNav">
+			<div class="wrap">
+				<ul>
+					<li class="nav-01"><a href="#"><i class="icon"></i>商家助手</a></li>
+					<li class="nav-02"><a href="#"><i class="icon"></i>商品管理</a></li>
+					<li class="nav-03"><a href="#"><i class="icon"></i>品牌特卖</a></li>
+					<li class="nav-04 curr"><a href="#"><i class="icon"></i>交易管理</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- mainNav end -->
+		<!-- container -->
+		<div id="container">
+			<div class="wrap">
+				<!-- aside -->
+				<div id="aside">
+					<div id="asideNav">
+						<ul>
+							<li class="curr"><a href="#"><i class="icon"></i>全部订单</a></li>
+							<li><a href="orderdeliver.html"><i class="icon"></i>订单发货</a></li>
+							<li><a href="orderreturn.html"><i class="icon"></i>退货管理</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- aside end -->
+				<!-- main -->
+				<div id="main">
+					<!-- mainCaption -->
+					<div class="mainCaption mc-mb">
+						<h2>我的订单</h2>
+					</div>
+					<!-- mainCaption end -->
+					<!-- screening -->
+					<div class="screening">
+						<form class="form form-inline">
+							<legend></legend>
+							<div class="formGroup">
+								<div class="form-item">
+									<div class="item-label">
+										<label>特卖专场：</label>
+									</div>
+									<div class="item-cont">
+										<select name="" id="" class="select w-sm">
+											<option value="1">全部专场</option>
+											<option value="2">361</option>
+										</select>
+									</div>
+								</div>
+								<div class="form-item">
+									<div class="item-label">
+										<label>下单时间：</label>
+									</div>
+									<div class="item-cont">
+										<div class="txt-section"><input type="text" class="txt txt-date w-sm"><i>至</i><input type="text" class="txt txt-date w-sm"></div>
+									</div>
+								</div>
+								<div class="form-item">
+									<div class="item-label">
+										<label>订单编号：</label>
+									</div>
+									<div class="item-cont">
+										<input type="text" class="txt w-lg">
+									</div>
+								</div>
+							</div>
+							<div class="searchBtn"><input type="button" class="btn btn-def" value="查&nbsp;&nbsp;询"></div>
+						</form>
+					</div>
+					<!-- screening end -->
+					<!-- table -->
+					<table class="table table-line table-order">
+						<colgroup>
+							<col width="366">
+							<col width="140">
+							<col width="107">
+							<col width="93">
+							<col width="104">
+							<col width="96">
+							<col width="119">
+						</colgroup>
+						<thead>
+							<tr>
+								<td>商品</td>
+								<td>商品编码</td>
+								<td>单价</td>
+								<td>数量</td>
+								<td>维权 <i class="textMark">/</i> 售后</td>
+								<td>实付款</td>
+								<td>
+									<select name="" id="" class="select w-sm">
+										<option value="1">全部专场</option>
+										<option value="2">361</option>
+									</select>
+								</td>
+							</tr>
+						</thead>
+					</table>
+					<table class="table table-line table-order">
+						<colgroup>
+							<col width="86">
+							<col width="280">
+							<col width="140">
+							<col width="107">
+							<col width="93">
+							<col width="104">
+							<col width="95">
+							<col width="118">
+						</colgroup>
+						<thead>
+							<tr>
+								<td colspan="8" class="o-select">
+									<span><input type="checkbox" class="chk" />订单编号：<a href="#" target="_blank">13110400000001</a></span>
+									<span>订单提交时间：2013-11-04  12:01</span>
+									<span>专场ID：<a href="#" target="_blank">108888</a></span>
+								</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<div class="order-img">
+										<img src="img/temp/pro_img.jpg" alt="" />
+									</div>
+								</td>
+								<td class="o-product">
+									<p><a href="#">沃格贝斯 2013秋装新款棉毛夹背心款棉毛夹背心款棉毛夹</a></p>
+									<p class="lightColor">颜色分类：精致OL系列</p>
+								</td>
+								<td>276222</td>
+								<td>
+									<p class="lightColor"><s>&yen;99.00</s></p>
+									<p><b>&yen;208.00</b></p>
+								</td>
+								<td>1</td>
+								<td class="borderL"><p class="warnColor">已退款</p></td>
+								<td class="borderL">
+									<p><b>&yen;49.00</b></p>
+									<p class="lightColor">（免运费）</p>
+								</td>
+								<td class="borderL td-operate">
+									<p class="successColor">交易成功</p>
+									<p><a href="#">订单详情</a></p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<table class="table table-line table-order">
+						<colgroup>
+							<col width="86">
+							<col width="280">
+							<col width="140">
+							<col width="107">
+							<col width="93">
+							<col width="104">
+							<col width="95">
+							<col width="118">
+						</colgroup>
+						<thead>
+							<tr>
+								<td colspan="8" class="o-select">
+									<span><input type="checkbox" class="chk" />订单编号：<a href="#" target="_blank">13110400000001</a></span>
+									<span>订单提交时间：2013-11-04  12:01</span>
+									<span>专场ID：<a href="#" target="_blank">108888</a></span>
+								</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<div class="order-img">
+										<img src="img/temp/pro_img.jpg" alt="" />
+									</div>
+								</td>
+								<td class="o-product">
+									<p>好孩子儿童用品有限公司 于1989年创立，以改善儿童生存环境，提高儿童生活品质”为使命，</p>
+									<p class="lightColor">颜色分类：精致OL系列</p>
+								</td>
+								<td>276222</td>
+								<td>
+									<p class="lightColor"><s>&yen;99.00</s></p>
+									<p><b>&yen;208.00</b></p>
+								</td>
+								<td>1</td>
+								<td rowspan="2" class="borderL"><p>-</p></td>
+								<td rowspan="2" class="borderL">
+									<p><b>&yen;49.00</b></p>
+									<p class="lightColor">（免运费）</p>
+								</td>
+								<td rowspan="2" class="borderL td-operate">
+									<p class="successColor">交易成功</p>
+									<p><a href="#">订单详情</a></p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="order-img">
+										<img src="img/temp/pro_img.jpg" alt="" />
+									</div>
+								</td>
+								<td class="o-product">
+									<p>好孩子儿童用品有限公司 于1989年创立，以改善儿童生存环境，提高儿童生活品质”为使命，</p>
+									<p class="lightColor">颜色分类：精致OL系列</p>
+								</td>
+								<td>276222</td>
+								<td>
+									<p class="lightColor"><s>&yen;99.00</s></p>
+									<p><b>&yen;208.00</b></p>
+								</td>
+								<td>1</td>
+							</tr>
+						</tbody>
+					</table>
+					<table class="table table-line table-order">
+						<colgroup>
+							<col width="86">
+							<col width="280">
+							<col width="140">
+							<col width="107">
+							<col width="93">
+							<col width="104">
+							<col width="95">
+							<col width="118">
+						</colgroup>
+						<thead>
+							<tr>
+								<td colspan="8" class="o-select">
+									<span><input type="checkbox" class="chk" />订单编号：<a href="#" target="_blank">13110400000001</a></span>
+									<span>订单提交时间：2013-11-04  12:01</span>
+									<span>专场ID：<a href="#" target="_blank">108888</a></span>
+								</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<div class="order-img">
+										<img src="img/temp/pro_img.jpg" alt="" />
+									</div>
+								</td>
+								<td class="o-product">
+									<p>好孩子儿童用品有限公司 于1989年创立，以改善儿童生存环境，提高儿童生活品质”为使命，</p>
+									<p class="lightColor">颜色分类：精致OL系列</p>
+								</td>
+								<td>276222</td>
+								<td>
+									<p class="lightColor"><s>&yen;99.00</s></p>
+									<p><b>&yen;208.00</b></p>
+								</td>
+								<td>1</td>
+								<td class="borderL"><p class="warnColor">已退款</p></td>
+								<td class="borderL">
+									<p><b>&yen;49.00</b></p>
+									<p class="lightColor">（免运费）</p>
+								</td>
+								<td class="borderL td-operate">
+									<p class="successColor">交易成功</p>
+									<p><a href="#">订单详情</a></p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<table class="table table-line table-order">
+						<colgroup>
+							<col width="86">
+							<col width="280">
+							<col width="140">
+							<col width="107">
+							<col width="93">
+							<col width="104">
+							<col width="95">
+							<col width="118">
+						</colgroup>
+						<thead>
+							<tr>
+								<td colspan="8" class="o-select">
+									<span><input type="checkbox" class="chk" />订单编号：<a href="#" target="_blank">13110400000001</a></span>
+									<span>订单提交时间：2013-11-04  12:01</span>
+									<span>专场ID：<a href="#" target="_blank">108888</a></span>
+								</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<div class="order-img">
+										<img src="img/temp/pro_img.jpg" alt="" />
+									</div>
+								</td>
+								<td class="o-product">
+									<p>好孩子儿童用品有限公司 于1989年创立，以改善儿童生存环境，提高儿童生活品质”为使命，</p>
+									<p class="lightColor">颜色分类：精致OL系列</p>
+								</td>
+								<td>276222</td>
+								<td>
+									<p class="lightColor"><s>&yen;99.00</s></p>
+									<p><b>&yen;208.00</b></p>
+								</td>
+								<td>1</td>
+								<td rowspan="2" class="borderL"><p>-</p></td>
+								<td rowspan="2" class="borderL">
+									<p><b>&yen;49.00</b></p>
+									<p class="lightColor">（免运费）</p>
+								</td>
+								<td rowspan="2" class="borderL td-operate">
+									<p class="successColor">交易成功</p>
+									<p><a href="#">订单详情</a></p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="order-img">
+										<img src="img/temp/pro_img.jpg" alt="" />
+									</div>
+								</td>
+								<td class="o-product">
+									<p>好孩子儿童用品有限公司 于1989年创立，以改善儿童生存环境，提高儿童生活品质”为使命，</p>
+									<p class="lightColor">颜色分类：精致OL系列</p>
+								</td>
+								<td>276222</td>
+								<td>
+									<p class="lightColor"><s>&yen;99.00</s></p>
+									<p><b>&yen;208.00</b></p>
+								</td>
+								<td>1</td>
+							</tr>
+						</tbody>
+					</table>
+					<table class="table table-line table-order">
+						<colgroup>
+							<col width="86">
+							<col width="280">
+							<col width="140">
+							<col width="107">
+							<col width="93">
+							<col width="104">
+							<col width="95">
+							<col width="118">
+						</colgroup>
+						<thead>
+							<tr>
+								<td colspan="8" class="o-select">
+									<span><input type="checkbox" class="chk" />订单编号：<a href="#" target="_blank">13110400000001</a></span>
+									<span>订单提交时间：2013-11-04  12:01</span>
+									<span>专场ID：<a href="#" target="_blank">108888</a></span>
+								</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<div class="order-img">
+										<img src="img/temp/pro_img.jpg" alt="" />
+									</div>
+								</td>
+								<td class="o-product">
+									<p>好孩子儿童用品有限公司 于1989年创立，以改善儿童生存环境，提高儿童生活品质”为使命，</p>
+									<p class="lightColor">颜色分类：精致OL系列</p>
+								</td>
+								<td>276222</td>
+								<td>
+									<p class="lightColor"><s>&yen;99.00</s></p>
+									<p><b>&yen;208.00</b></p>
+								</td>
+								<td>1</td>
+								<td rowspan="2" class="borderL"><p>-</p></td>
+								<td rowspan="2" class="borderL">
+									<p><b>&yen;49.00</b></p>
+									<p class="lightColor">（免运费）</p>
+								</td>
+								<td rowspan="2" class="borderL td-operate">
+									<p class="successColor">交易成功</p>
+									<p><a href="#">订单详情</a></p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="order-img">
+										<img src="img/temp/pro_img.jpg" alt="" />
+									</div>
+								</td>
+								<td class="o-product">
+									<p>好孩子儿童用品有限公司 于1989年创立，以改善儿童生存环境，提高儿童生活品质”为使命，</p>
+									<p class="lightColor">颜色分类：精致OL系列</p>
+								</td>
+								<td>276222</td>
+								<td>
+									<p class="lightColor"><s>&yen;99.00</s></p>
+									<p><b>&yen;208.00</b></p>
+								</td>
+								<td>1</td>
+							</tr>
+						</tbody>
+					</table>
+					<!-- table edn -->
+					<!-- paging -->
+					<div class="paging">
+						<div class="pagingWrap">
+							<div class="pagAll">共<span>4</span>条记录</div>
+							<div class="pageup disabled"><a href="javascript:;"><i class="icon"></i>&nbsp;上一页</a></div>
+							<ul>
+								<li><span class="on">1</span></li>
+								<li><a href="">2</a></li>
+								<li><a href="">3</a></li>
+								<li><a href="">4</a></li>
+								<li><b>...</b></li>
+								<li><a href="">100</a></li>
+							</ul>
+							<div class="pagedown"><a href="">下一页&nbsp;<i class="icon"></i></a></div>
+							<div class="goto"><span>到第</span><input type="text" value="1"><span>页</span><button class="btn btn-def">确定</button></div>
+						</div>
+					</div>
+					<!-- paging end -->
+				</div>
+				<!-- main end -->
+			</div>
+		</div>
+		<!-- container end -->
+		<!-- footer -->
+		<div id="footer">
+			<div class="links">
+				<a href="#" target="_blank">关于</a>|
+				<a href="#" target="_blank">联系我们</a>|
+				<a href="#" target="_blank">网站地图</a>|
+				<a href="#" target="_blank">网站合作</a>|
+				<a href="#" target="_blank">友情链接</a>|
+				<a href="#" target="_blank">帮助中心</a>|
+				<a href="#" target="_blank">版权声明</a>
+			</div>
+			<p class="copyright">Copyright &copy; 2013-2014 shop.com All Rights Reserved.</p>
+			<p><span>ICP经营许可证号：京AA-01334408</span></p>
+		</div>
+		<!-- footer end -->
+	</div>
+</body>
+</html>

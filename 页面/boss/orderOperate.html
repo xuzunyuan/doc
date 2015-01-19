@@ -1,0 +1,519 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>卖家后台|下单操作</title>
+	<link rel="stylesheet" href="css/all-debug.css" />
+</head>
+<body id="">
+	<div class="wrapper">
+		<!-- hd -->
+		<div id="hd">
+			<div class="header">
+				<h1><a href="#" title="阿凡达">阿凡达</a><span>后台管理系统</span></h1>
+		        <ul class="header-menu">
+		        	<li>欢迎您，邵秀云（系统管理员）<li>
+		            <li><a href="#">退出</a></li>
+		        </ul>
+			</div>
+		</div>		
+		<!-- hd end -->
+		<!-- bd -->
+		<div id="bd" class="wrap"><!-- 点击.foldbarV下的foldBtn后在此添加class名unfold来实现展开效果 -->
+			<!-- aside -->
+			<div class="aside">
+				<!-- boss-menu -->
+				<div class="boss-menu">
+					<h2>后台管理系统</h2>
+					<!--menu-->
+					<div class="menu">
+					<h3 class="system"><i class="ico"></i>系统管理 <i class="arrow arrA-D"></i></h3><!-- arrA-D是展开状态,arrA-R是收起状态 -->
+					<ul>
+						<li><a href="#">角色管理</a></li>
+						<li><a href="#">用户管理</a></li>
+						<li><a href="#" class="on">权限管理</a></li>
+						<li><a href="#">日志管理</a></li>
+						<li><a href="#">密码修改</a></li>
+						<li><a href="#">销售区域管理</a></li>
+					</ul>
+					<h3 class="category"><i class="ico"></i>类目管理 <i class="arrow arrA-R"></i></h3>
+					<ul>
+						<li><a href="#">基础类目管理</a></li>
+						<li><a href="#">签约类目管理</a></li>
+						<li><a href="#">销售类目管理</a></li>
+						<li><a href="#">品牌管理</a></li>
+						<li><a href="#">属性管理</a></li>
+						<li><a href="#">规格管理</a></li>
+					</ul>
+					<h3 class="goods"><i class="ico"></i>商品管理 <i class="arrow arrA-D"></i></h3>
+					<ul>
+						<li><a href="#">商品信息查询</a></li>
+						<li><a href="#">商品信息修改</a></li>
+						<li><a href="#">商品审核</a></li>
+						<li><a href="#">商品图片批量审核</a></li>
+					</ul>
+					<h3 class="order"><i class="ico"></i>订单管理 <i class="arrow arrA-D"></i></h3>
+					<ul>
+						<li><a href="#">电话下单</a></li>
+						<li><a href="#">订单查询</a></li>
+						<li><a href="#">退货订单</a></li>
+						<li><a href="#">换货订单</a></li>
+						<li><a href="#">订单收货</a></li>
+						<li><a href="#">订单分拣</a></li>
+						<li><a href="#">订单发货</a></li>
+						<li><a href="#">订单打印</a></li>
+						<li><a href="#">物流跟踪</a></li>
+					</ul>
+					<h3 class="logistics"><i class="ico"></i>物流管理 <i class="arrow arrA-D"></i></h3>
+					<ul>
+						<li><a href="#">物流公司管理</a></li>
+						<li><a href="#">标准运费管理</a></li>
+						<li><a href="#">运费折扣</a></li>
+					</ul>
+					<h3 class="seller"><i class="ico"></i>卖家管理 <i class="arrow arrA-D"></i></h3>
+					<ul>
+						<li><a href="#">卖家信息管理</a></li>
+						<li><a href="#">卖家申请审核</a></li>
+					</ul>
+					<h3 class="buyer"><i class="ico"></i>买家会员管理 <i class="arrow arrA-D"></i></h3>
+					<ul>
+						<li><a href="#">信息管理</a></li>
+						<li><a href="#">等级管理</a></li>
+					</ul>
+					<h3 class="coupon"><i class="ico"></i>优惠券管理 <i class="arrow arrA-D"></i></h3>
+					<ul>
+						<li><a href="#">创建优惠券</a></li>
+						<li><a href="#">优惠券批次查询</a></li>
+						<li><a href="#">优惠券明细查询</a></li>
+						<li><a href="#">优惠券申请审核</a></li>
+					</ul>
+					<h3 class="serve"><i class="ico"></i>客户服务 <i class="arrow arrA-D"></i></h3>
+					<ul>
+						<li><a href="#">咨询管理</a></li>
+						<li><a href="#">投诉管理</a></li>
+						<li><a href="#">取消订单查询</a></li>
+					</ul>
+					<h3 class="clearing"><i class="ico"></i>费用管理 <i class="arrow arrA-D"></i></h3>
+					<ul>
+						<li><a href="#">买家帐户管理</a></li>
+						<li><a href="#">退款单管理</a></li>
+						<li><a href="#">客户提现管理</a></li>
+					</ul>
+					</div>
+					<!-- menu end -->
+				</div>
+				<!-- boss-menu end-->
+			</div>
+			<!-- aside end -->
+			<!-- main -->
+			<div class="main">
+				<!-- foldbarV -->
+				<div id="foldbarV"><div class="foldbarV"><div class="foldBtn"></div></div></div>
+				<!-- foldbarV end -->
+				<!-- crumbs -->
+				<div class="crumbs crumbsA">
+					<ul>
+						<li><a href="#">后台首页</a><em>&gt;</em></li>
+						<li><a href="#">卖家管理</a><em>&gt;</em></li>
+						<li><strong>下单操作</strong></li>
+					</ul>
+				</div>
+				<!-- crumbs end -->
+				<!-- orderOperate -->
+				<div class="orderOperate">
+					<div class="hintBar">
+						<dl>
+							<dt><i class="icon i-exclaim"></i></dt>
+							<dd>
+								<h4>请注意：</h4>
+								<ul>
+									<li><em>·</em>只能购买吉林省内卖家店铺的东东，并且订单也只能配送到吉林省内</li>
+									<li><em>·</em>订单付款方式：只付款货到付款</li>
+									<li><em>·</em>订单配送方式：吉林省EMS统一发货</li>
+								</ul>
+							</dd>
+						</dl>
+					</div>
+					<!-- operateStep -->
+					<div class="operateStep">
+						<div class="os-caption"><h2><i class="icon i-minus"></i><span>第1步</span>确认客户信息</h2></div>
+						<div class="os-content block">
+							<form action="" class="form formB">
+								<fieldset>
+									<div class="content-hd">
+										<ul class="formBox">
+											<li class="item">
+												<div class="item-label"><label>手机号码：</label></div>
+												<div class="item-cont">
+													<input type="text" class="txt textC">
+												</div>
+											</li>
+											<li class="item">
+												<div class="item-label"><label>用户名：</label></div>
+												<div class="item-cont">
+													<input type="text" class="txt textC">
+												</div>
+											</li>
+										</ul>
+										<div class="searchBtn"><input type="button" class="btn btn-s" value="查&nbsp;&nbsp;询"></div>
+									</div>
+									<h3>客户注册信息：</h3>
+										<ul class="comMeg">
+											<li class="item">
+												<div class="item-label"><label>用户名：</label></div>
+												<div class="item-cont">
+													uesecdfdv230
+												</div>
+											</li>
+											<li class="item">
+												<div class="item-label"><label>注册时间：</label></div>
+												<div class="item-cont">
+													2014-06-28 14:51:02
+												</div>
+											</li>
+											<li class="item">
+												<div class="item-label"><label>账号状态：</label></div>
+												<div class="item-cont">
+													正常
+												</div>
+											</li>
+											<li class="item">
+												<div class="item-label"><label>注册方式：</label></div>
+												<div class="item-cont">
+													网站注册
+												</div>
+											</li>
+										</ul>
+									<h3><input type="button" class="btnA" value="+添加新收货地址">客户收货地址：</h3>
+									<div class="clamMeg">
+										<ul>
+											<li>
+												<p><b>寄送至：</b><label for="moren"><input type="radio" class="rdo" id="moren" checked="checked">
+												<span>赵云</span>  <span class="getAdr">天津市朝阳区朝内小街银河SOHO B座20309（200020）</span><span>13693123715/0416-832565412</span></label><span class="morenAdr">默认地址</span></p>
+											</li>
+											<li class="on">
+												<p><b>寄送至：</b><a href="#">编辑地址</a><label for="moren"><input type="radio" class="rdo" id="moren" checked="checked">
+												<span>赵云云</span>  <span class="getAdr">天津市朝阳区朝内小街银河SOHO B座20309（200020）</span><span>13693123715/0416-832565412</span></label></p>
+											</li>
+										</ul>
+									</div>
+									<h3>修改收货地址：</h3><!-- <h3>添加收货地址：</h3> -->
+									<dl class="item">
+										<dt class="item-label">
+											<label><em>*</em>所在地区：</label>
+										</dt>
+										<dd class="item-cont">
+											<div class="select slt-addr">
+												<select>
+												    <option>省份</option>
+												</select>
+											</div>
+											<div class="select slt-addr">
+												<select>
+												    <option>城市</option>
+												</select>
+											</div>
+											<div class="select slt-addr">
+												<select>
+												    <option>地区</option>
+												</select>
+											</div>
+										</dd>
+									</dl>
+									<dl class="item">
+										<dt class="item-label">
+											<label><em>*</em>详请地址：</label>
+										</dt>
+										<dd class="item-cont">
+											<p>吉林省 吉林市 龙潭区</p>
+											<input type="text" class="txt textC" />
+										</dd>
+									</dl>
+									<dl class="item none"><!-- 已注册用户显示 -->
+										<dt class="item-label">
+											<label><em>*</em>用户名：</label>
+										</dt>
+										<dd class="item-cont">
+											<input type="text" class="txt textC" />
+										</dd>
+									</dl>
+									<dl class="item">
+										<dt class="item-label">
+											<label>邮政编码：</label>
+										</dt>
+										<dd class="item-cont">
+											<input type="text" class="txt textB" />
+										</dd>
+									</dl>
+									<dl class="item">
+										<dt class="item-label">
+											<label><em>*</em>收货人姓名：</label>
+										</dt>
+										<dd class="item-cont">
+											<input type="text" class="txt textC" />
+										</dd>
+									</dl>
+									<dl class="item">
+										<dt class="item-label">
+											<label><em>*</em>手机号码：</label>
+										</dt>
+										<dd class="item-cont">
+											<input type="text" class="txt textC" />
+											<a href="#" class="checkCode">获取验证码</a>
+											<!--<a class="checkCode disabled">60秒后可再次获取验证码</a>-->
+											<div class="checkHint error">
+												<div class="hintBox"><span>该手机号码已被验证</span></div>
+											</div>
+										</dd>
+									</dl>
+									<dl class="item">
+										<dt class="item-label">
+											<label><em>*</em>短信验证码：</label>
+										</dt>
+										<dd class="item-cont">
+											<input type="text" class="txt textB" />
+											
+										</dd>
+									</dl>
+									<dl class="item item-tel">
+										<dt class="item-label">
+											<label>固定电话：</label>
+										</dt>
+										<dd class="item-cont">
+											<input type="text" class="txt telArea" /><span>-</span>
+											<input type="text" class="txt telNum" /><span>-</span>
+											<input type="text" class="txt telExt" />
+										</dd>
+									</dl>
+									<dl class="item">
+										<dt class="item-label">
+											<label class="hidden">保存收货信息</label>
+										</dt>
+										<dd class="item-cont">
+											<input type="button" class="btnC" value="保 存" />
+											<input type="button" class="btn" value="取 消" />
+										</dd>
+									</dl>
+								</fieldset>
+							</form>
+						</div>
+					</div>
+					<!-- operateStep end -->
+					<!-- operateStep -->
+					<div class="operateStep">
+						<div class="os-caption"><h2><i class="icon i-minus"></i><span>第2步</span>选择商品</h2></div><!-- 默认隐藏用加号 class为i-plus，展开用减号i-minus； -->
+						<div class="os-add"><input type="button" class="btnB" value="添加商品"></div>
+						<div class="os-content block">
+							<!-- table -->
+							<table class="table tableB">
+								<colgroup>
+									<col width="350" />
+									<col width="100" />
+									<col />
+									<col width="70" />
+									<col />
+									<col />
+									<col width="110" />
+									<col width="90" />
+								</colgroup>
+								<thead>
+									<tr>
+										<th>商品名称</th>
+										<th>商品编号</th>
+										<th>单价(元)</th>
+										<th>库存</th>
+										<th>状态</th>
+										<th>成交价</th>
+										<th>购买数量</th>
+										<th class="o-operate">操作</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td colspan="8" class="o-code">
+											<span>店铺名称：<a href="#" class="storeName">长春梦想家纺</a></span>
+											<span class="megs">全场清满100元免邮</span>
+										</td>
+									</tr>
+									<tr>
+										<td>
+		                                    <dl class="o-goodsName">
+		                                    	<dt><img src="img/temp/order_01.png"></dt>
+		                                    	<dd>
+		                                    		<a href="#">沃格贝斯 2013秋装新款棉毛夹背心款棉毛夹背心款棉毛夹</a>
+		                                    		<p class="o-property"><span>颜色分类：白色 </span><span>大小：40*35cm</span></p>
+		                                    		<span class="o-active">秋季狂甩直降50元</span>
+		                                    	</dd>
+		                                    </dl>
+										</td>
+										<td>100232153</td>
+										<td>105000.00</td>
+										<td>99999</td>
+										<td>上架</td>
+										<td>105000.00</td>
+										<td>
+											<div class="mod-modified">
+												<span class="minusBtn disable">-</span>
+												<input type="text" class="txt" value="1" />
+												<span class="plusBtn">+</span>
+											</div>
+										</td>
+										<td><a href="#">删除</a></td>
+									</tr>
+									<tr>
+										<td>
+		                                    <dl class="o-goodsName">
+		                                    	<dt><img src="img/temp/order_01.png"></dt>
+		                                    	<dd>
+		                                    		<a href="#">沃格贝斯 2013秋装新款棉毛夹背心款棉毛夹背心款棉毛夹</a>
+		                                    		<p class="o-property"><span>颜色分类：白色 </span><span>大小：40*35cm</span></p>
+		                                    	</dd>
+		                                    </dl>
+										</td>
+										<td>100232153</td>
+										<td>105000.00</td>
+										<td>99999</td>
+										<td>上架</td>
+										<td>105000.00</td>
+										<td>
+											<div class="mod-modified">
+												<span class="minusBtn disable">-</span>
+												<input type="text" class="txt" value="1" />
+												<span class="plusBtn">+</span>
+											</div>
+										</td>
+										<td class="o-operate"><span>删除</span></td>
+									</tr>
+									<tr class="amountAll">
+										<td colspan="8">
+											<div class="amount">
+												<p><span>商品金额：<em>¥800.00</em></span>+<span>运费：<em>¥6.80</em></span>=<span>店铺合计：<em>¥500.00</em></span></p>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+								<tbody>
+									<tr>
+										<td colspan="8" class="o-code">
+											<span>店铺名称：<a href="#" class="storeName">长春梦想家纺</a></span>
+											<span class="megs">全场清满100元免邮</span>
+										</td>
+									</tr>
+									<tr>
+										<td>
+		                                    <dl class="o-goodsName">
+		                                    	<dt><img src="img/temp/order_01.png"></dt>
+		                                    	<dd>
+		                                    		<a href="#">沃格贝斯 2013秋装新款棉毛夹背心款棉毛夹背心款棉毛夹</a>
+		                                    		<p class="o-property"><span>颜色分类：白色 </span><span>大小：40*35cm</span></p>
+		                                    	</dd>
+		                                    </dl>
+										</td>
+										<td>100232153</td>
+										<td>105000.00</td>
+										<td>99999</td>
+										<td>上架</td>
+										<td>105000.00</td>
+										<td>
+											<div class="mod-modified">
+												<span class="minusBtn disable">-</span>
+												<input type="text" class="txt" value="1" />
+												<span class="plusBtn">+</span>
+											</div>
+											<p class="meg">无法购买该商品，请删除</p>
+										</td>
+										<td><a href="#">删除</a></td>
+									</tr>
+									<tr class="last">
+										<td>
+		                                    <dl class="o-goodsName">
+		                                    	<dt><img src="img/temp/order_01.png"></dt>
+		                                    	<dd>
+		                                    		<a href="#">沃格贝斯 2013秋装新款棉毛夹背心款棉毛夹背心款棉毛夹</a>
+		                                    		<p class="o-property"><span>颜色分类：白色 </span><span>大小：40*35cm</span></p>
+		                                    	</dd>
+		                                    </dl>
+										</td>
+										<td>100232153</td>
+										<td>105000.00</td>
+										<td>99999</td>
+										<td>上架</td>
+										<td>105000.00</td>
+										<td>
+											<div class="mod-modified">
+												<span class="minusBtn disable">-</span>
+												<input type="text" class="txt" value="1" />
+												<span class="plusBtn">+</span>
+											</div>
+										</td>
+										<td class="o-operate"><span>删除</span></td>
+									</tr>
+									<tr class="amountAll">
+										<td colspan="8">
+											<div class="amount">
+												<p><span>商品金额：<em>¥800.00</em></span>+<span>运费：<em>¥6.80</em></span>=<span>店铺合计：<em>¥500.00</em></span></p>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<!-- table end -->
+							<!-- amount -->
+							<div class="amount amount-clearing">
+								<p><b>订单合计（含运费）：</b><strong>&yen;500.00</strong></p>
+							</div>
+							<!-- amount end -->
+							<div class="accountNo">
+								<span>暂无可结算商品</span>
+								<input type="button" class="btnB" value="添加商品">
+							</div>
+						</div>
+					</div>
+					<!-- operateStep end -->
+					
+					<!-- operateStep -->
+					<div class="operateStep">
+						<div class="os-caption"><h2><i class="icon i-minus"></i><span>第3步</span>选择支付方式</h2></div>
+						<div class="os-content block">
+							<div class="payMode">
+								<h3>支付方式</h3>
+								<div class="item">
+									<input type="radio" class="rdo" name="payMode" id="payModeCash" /><label for="payModeCash"><i class="icon i-cash"></i>货到付款 - 现金</label>
+								</div>
+								<div class="item">
+									<input type="radio" class="rdo" name="payMode" id="payModePos" /><label for="payModePos"><i class="icon i-pos"></i>货到付款 - POS机刷卡</label>
+								</div>
+							</div>
+							<!-- amount -->
+							<div class="amount amount-payMode">
+								<div class="amountAdr">
+									<p>寄送至：吉林省吉林市龙潭区徐州西路统泰科技大厦6层(100020)</p>
+									<p>收件人：邵秀云 13624566897</p>
+								</div>
+								<div class="amountMon">
+									<p><b>订单合计（含运费）：</b><strong>¥500.00</strong></p>
+								<input type="button" class="btnC" value="提交订单" />
+								</div>
+							</div>
+							<!-- amount end -->
+						</div>
+					</div>
+					<!-- operateStep end -->
+				</div>
+				<!-- orderOperate end -->
+			</div>
+			<!-- main end -->
+		</div>
+		<!-- bd end -->
+		<!-- footer -->
+		<div id="footer" class="wrap">
+			<div class="links">
+				<a href="#" title="关于一网全城" target="_blank">关于一网全城</a>|<a href="#" title="联系我们" target="_blank">联系我们</a>|<a href="#" title="网站地图" target="_blank">网站地图</a>|<a href="#" title="联系我们" target="_blank">网站合作</a>|<a href="#" title="友情链接" target="_blank">友情链接</a>|<a href="#" title="网站联盟" target="_blank">网站联盟</a>|<a href="#" title="帮助中心" target="_blank">帮助中心</a>|<a href="#" title="版权声明" target="_blank">版权声明</a>
+			</div>
+			<p>Copyright &copy; 2008-2013 Yiwang.com All Rights Reserved.</p>
+			<p>ICP经营许可证号：吉B2-20140008</p>
+		</div>
+		<!-- footer end -->
+	</div>
+</body>
+</html>

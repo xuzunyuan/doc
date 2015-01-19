@@ -1,0 +1,586 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>类目属性关联-维护页</title>
+	<link rel="stylesheet" href="css/all-debug.css" />
+</head>
+<body id="">
+	<div class="wrapper">
+		<!-- hd -->
+		<div id="hd">
+			<div class="header">
+				<h1><a href="#" title="阿凡达">阿凡达</a><span>后台管理系统</span></h1>
+		        <ul class="header-menu">
+		        	<li>欢迎您，邵秀云（系统管理员）<li>
+		            <li><a href="#">退出</a></li>
+		        </ul>
+			</div>
+		</div>		
+		<!-- hd end -->
+		<!-- bd -->
+		<div id="bd" class="wrap"><!-- 点击.foldbarV下的foldBtn后在此添加class名unfold来实现展开效果 -->
+			<!-- aside -->
+			<div class="aside">
+				<!-- boss-menu -->
+				<div class="boss-menu">
+					<h2>后台管理系统</h2>
+					<!--menu-->
+					<div class="menu">
+					<h3 class="system"><i class="ico"></i>系统管理 <i class="arrow arrA-D"></i></h3><!-- arrA-D是展开状态,arrA-R是收起状态 -->
+					<ul>
+						<li><a href="#">角色管理</a></li>
+						<li><a href="#">用户管理</a></li>
+						<li><a href="#">权限管理</a></li>
+						<li><a href="#">日志管理</a></li>
+						<li><a href="#">密码修改</a></li>
+						<li><a href="#">销售区域管理</a></li>
+					</ul>
+					<h3 class="category"><i class="ico"></i>类目管理 <i class="arrow arrA-R"></i></h3>
+					<ul>
+						<li><a href="#">基础类目管理</a></li>
+						<li><a href="#">签约类目管理</a></li>
+						<li><a href="#">销售类目管理</a></li>
+					</ul>
+					<h3 class="brand"><i class="ico"></i>品牌管理 <i class="arrow arrA-R"></i></h3>
+					<ul>
+						<li><a href="#">添加品牌</a></li>
+						<li><a href="#">品牌维护</a></li>
+					</ul>
+					<h3 class="property"><i class="ico"></i>属性管理 <i class="arrow arrA-R"></i></h3>
+					<ul>
+						<li><a href="#">属性值管理</a></li>
+						<li><a href="#">属性名管理</a></li>
+						<li><a href="#" class="on">类目属性管理</a></li>
+					</ul>
+					<h3 class="norms"><i class="ico"></i>规格管理 <i class="arrow arrA-R"></i></h3>
+					<ul>
+						<li><a href="#">规格值管理</a></li>
+						<li><a href="#">规格名管理</a></li>
+						<li><a href="#">类目规格管理</a></li>
+					</ul>
+					<h3 class="goods"><i class="ico"></i>商品管理 <i class="arrow arrA-D"></i></h3>
+					<ul>
+						<li><a href="#">商品信息查询</a></li>
+						<li><a href="#">商品信息修改</a></li>
+						<li><a href="#">商品审核</a></li>
+						<li><a href="#">商品图片批量审核</a></li>
+					</ul>
+					<h3 class="order"><i class="ico"></i>订单管理 <i class="arrow arrA-D"></i></h3>
+					<ul>
+						<li><a href="#">电话下单</a></li>
+						<li><a href="#">订单查询</a></li>
+						<li><a href="#">退货订单</a></li>
+						<li><a href="#">换货订单</a></li>
+						<li><a href="#">订单收货</a></li>
+						<li><a href="#">订单分拣</a></li>
+						<li><a href="#">订单发货</a></li>
+						<li><a href="#">订单打印</a></li>
+						<li><a href="#">物流跟踪</a></li>
+					</ul>
+					<h3 class="logistics"><i class="ico"></i>物流管理 <i class="arrow arrA-D"></i></h3>
+					<ul>
+						<li><a href="#">物流公司管理</a></li>
+						<li><a href="#">标准运费管理</a></li>
+						<li><a href="#">运费折扣</a></li>
+						<li><a href="#">运费模板</a></li>
+					</ul>
+					<h3 class="seller"><i class="ico"></i>卖家管理 <i class="arrow arrA-D"></i></h3>
+					<ul>
+						<li><a href="#">卖家信息管理</a></li>
+						<li><a href="#">卖家申请审核</a></li>
+					</ul>
+					<h3 class="buyer"><i class="ico"></i>买家会员管理 <i class="arrow arrA-D"></i></h3>
+					<ul>
+						<li><a href="#">信息管理</a></li>
+						<li><a href="#">等级管理</a></li>
+					</ul>
+					<h3 class="coupon"><i class="ico"></i>优惠券管理 <i class="arrow arrA-D"></i></h3>
+					<ul>
+						<li><a href="#">创建优惠券</a></li>
+						<li><a href="#">优惠券批次查询</a></li>
+						<li><a href="#">优惠券明细查询</a></li>
+						<li><a href="#">优惠券申请审核</a></li>
+					</ul>
+					<h3 class="serve"><i class="ico"></i>客户服务 <i class="arrow arrA-D"></i></h3>
+					<ul>
+						<li><a href="#">咨询管理</a></li>
+						<li><a href="#">投诉管理</a></li>
+						<li><a href="#">取消订单查询</a></li>
+					</ul>
+					<h3 class="clearing"><i class="ico"></i>费用管理 <i class="arrow arrA-D"></i></h3>
+					<ul>
+						<li><a href="#">买家帐户管理</a></li>
+						<li><a href="#">退款单管理</a></li>
+						<li><a href="#">客户提现管理</a></li>
+					</ul>
+					</div>
+					<!-- menu end -->
+				</div>
+				<!-- boss-menu end-->
+			</div>
+			<!-- aside end -->
+			<!-- main -->
+			<div class="main">
+				<!-- foldbarV -->
+				<div id="foldbarV"><div class="foldbarV"><div class="foldBtn"></div></div></div>
+				<!-- foldbarV end -->
+				<!-- crumbs -->
+				<div class="crumbs crumbsA">
+					<ul>
+						<li><a href="#">后台首页</a><em>&gt;</em></li>
+						<li><a href="#">属性管理</a><em>&gt;</em></li>
+						<li><strong>类目属性关联</strong></li>
+					</ul>
+				</div>
+				<!-- crumbs end -->
+				<!-- propertyMain -->
+				<div class="propertyMain">
+					<div class="hintBar">
+						<dl>
+							<dt><i class="icon i-exclaim"></i></dt>
+							<dd>
+								<h4>请注意：</h4>
+								<ul>
+									<li><em>·</em>该功能支持对某一个基础类目,添加或修改其关联属性</li>
+									<li><em>·</em>页面设置完毕，将及时立即保存</li>
+								</ul>
+							</dd>
+						</dl>
+					</div>
+					<form class="form formA">
+						<fieldset>
+							<div class="legend"><h3>分类关联管理</h3></div>
+							<dl class="item">
+								<dt class="item-label"><label><em>*</em>类目选择：</label></dt>
+								<dd class="item-cont">
+									<button type="button" class="btnA">+ 选择基础类目</button>
+									<div class="errMeg">
+										<p><em>*</em>每次只允许选择一个3级基础类目，重新选择则替换之前已选类目。</p>
+									</div>
+									<table class="table tableD">
+										<colgroup>
+											<col width="180">
+											<col width="180">
+											<col width="180">
+										</colgroup>
+										<thead>
+											<tr>
+												<th>一级类目</th>
+												<th>二级类目</th>
+												<th>三级类目</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>鞋包配饰</td>
+												<td>女鞋</td>
+												<td>靓鞋</td>
+											</tr>
+										</tbody>
+									</table>
+								</dd>
+							</dl>
+							<dl class="item">
+								<dt class="item-label"><label><em>*</em>关联属性：</label></dt>
+								<dd class="item-cont item-property">
+									<div class="actionBars">
+										<input type="button" class="btn" value="+ 选择关联属性">
+									</div>
+									<div class="checkAll">
+										<div><input type="checkbox" class="chk">全选</div>
+										<input type="button" value="批量取消关联" class="btn disabled">
+										<p class="sort-operate"><span class="sort-open">展开</span>|<span class="trigger">收起</span></p>
+									</div>
+									<!-- table -->
+									<table class="table tableA">
+										<colgroup>
+											<col width="60">
+											<col width="140">
+											<col width="140">
+											<col width="120">
+											<col width="90">
+											<col width="100">
+											<col width="100">
+											<col width="100">
+										</colgroup>
+										<thead>
+											<tr>
+												<th>序号</th>
+												<th class="align-l">关联属性</th>
+												<th>排序</th>
+												<th>填写方式</th>
+												<th>是否必填</th>
+												<th>是否web筛选项</th>
+												<th>是否手机标签</th>
+												<th class="align-c">操作</th>
+											</tr>
+										</thead>
+										<tbody class="l-1 on">
+											<tr class="l-1H">
+												<td><input type="checkbox" class="chk"><i class="arrow arrB-D"></i></td>
+												<td class="align-l">棉</td>
+												<td>
+													<ul>
+														<li><i class="arrM-T disable"></i></li>
+														<li><i class="arrM-B disable"></i></li>
+														<li><i class="arrM-P disable"></i></li>
+														<li><i class="arrM-N disable"></i></li>
+													</ul>
+												</td>
+												<td>
+													<div class="select">
+														<select>
+															<option>下拉菜单</option>
+															<option>复选框</option>
+														</select>
+													</div>
+												</td>
+												<td><input type="checkbox" class="chk chks"></td>
+												<td><input type="checkbox" class="chk chks"></td>
+												<td></td>
+												<td><a href="#">取消关联</a></td>
+											</tr>
+											<tr class="l-2 l-half on">
+												<td colspan="8">
+													<table class="table">
+														<colgroup>
+															<col width="60">
+															<col width="140">
+															<col width="140">
+															<col width="120">
+															<col width="90">
+															<col width="100">
+															<col width="100">
+															<col width="100">
+														</colgroup>
+														<tbody>
+															<tr class="l-2H">
+																<td></td>
+																<td class="align-l">
+																	<div class="t-box"><i class="joint"></i><span>90%棉</span></div>
+																</td>
+																<td>
+																	<ul>
+																		<li><i class="arrM-T disable"></i></li>
+																		<li><i class="arrM-B disable"></i></li>
+																		<li><i class="arrM-P disable"></i></li>
+																		<li><i class="arrM-N disable"></i></li>
+																	</ul>
+																</td>
+																<td>
+																	
+																</td>
+																<td></td>
+																<td><input type="checkbox" class="chk chks"></td>
+																<td><input type="checkbox" class="chk chks"></td>
+																<td><a href="#">取消关联</a></td>
+															</tr>
+															<tr class="l-3">
+																<td colspan="8">
+																	<table class="table">
+																		<colgroup>
+																			<col width="60">
+																			<col width="140">
+																			<col width="140">
+																			<col width="120">
+																			<col width="90">
+																			<col width="100">
+																			<col width="100">
+																			<col width="100">
+																		</colgroup>
+																		<tbody>
+																			<tr>
+																				<td></td>
+																				<td class="align-l">
+																					<div class="t-box t-boxs"><i class="joint"></i><span>90%棉</span></div>
+																				</td>
+																				<td>
+																					<ul>
+																						<li><i class="arrM-T disable"></i></li>
+																						<li><i class="arrM-B disable"></i></li>
+																						<li><i class="arrM-P disable"></i></li>
+																						<li><i class="arrM-N disable"></i></li>
+																					</ul>
+																				</td>
+																				<td>
+																				</td>
+																				<td></td>
+																				<td></td>
+																				<td></td>
+																				<td><a href="#">取消关联</a></td>
+																			</tr>
+																			<tr>
+																				<td></td>
+																				<td class="align-l">
+																					<div class="t-box t-boxs"><i class="joint"></i><span>90%棉</span></div>
+																				</td>
+																				<td>
+																					<ul>
+																						<li><i class="arrM-T disable"></i></li>
+																						<li><i class="arrM-B disable"></i></li>
+																						<li><i class="arrM-P disable"></i></li>
+																						<li><i class="arrM-N disable"></i></li>
+																					</ul>
+																				</td>
+																				<td>
+																				</td>
+																				<td></td>
+																				<td></td>
+																				<td></td>
+																				<td><a href="#">取消关联</a></td>
+																			</tr>
+																		</tbody>
+																	</table>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+												</td>
+											</tr>
+											<tr class="l-2">
+												<td colspan="8">
+													<table class="table">
+														<colgroup>
+															<col width="60">
+															<col width="140">
+															<col width="140">
+															<col width="120">
+															<col width="90">
+															<col width="100">
+															<col width="100">
+															<col width="100">
+														</colgroup>
+														<tbody>
+															<tr class="l-2H">
+																<td></td>
+																<td class="align-l">
+																	<div class="t-box"><i class="joint"></i><span>90%棉</span></div>
+																</td>
+																<td>
+																	<ul>
+																		<li><i class="arrM-T disable"></i></li>
+																		<li><i class="arrM-B disable"></i></li>
+																		<li><i class="arrM-P disable"></i></li>
+																		<li><i class="arrM-N disable"></i></li>
+																	</ul>
+																</td>
+																<td>
+																	
+																</td>
+																<td></td>
+																<td><input type="checkbox" class="chk chks"></td>
+																<td><input type="checkbox" class="chk chks"></td>
+																<td><a href="#">取消关联</a></td>
+															</tr>
+														</tbody>
+													</table>
+												</td>
+											</tr>
+											<tr class="l-2 l-half">
+												<td colspan="8">
+													<table class="table">
+														<colgroup>
+															<col width="60">
+															<col width="140">
+															<col width="140">
+															<col width="120">
+															<col width="90">
+															<col width="100">
+															<col width="100">
+															<col width="100">
+														</colgroup>
+														<tbody>
+															<tr class="l-2H">
+																<td></td>
+																<td class="align-l">
+																	<div class="t-box"><i class="joint"></i><span>90%棉</span></div>
+																</td>
+																<td>
+																	<ul>
+																		<li><i class="arrM-T disable"></i></li>
+																		<li><i class="arrM-B disable"></i></li>
+																		<li><i class="arrM-P disable"></i></li>
+																		<li><i class="arrM-N disable"></i></li>
+																	</ul>
+																</td>
+																<td>
+																	
+																</td>
+																<td></td>
+																<td><input type="checkbox" class="chk chks"></td>
+																<td><input type="checkbox" class="chk chks"></td>
+																<td><a href="#">取消关联</a></td>
+															</tr>
+														</tbody>
+													</table>
+												</td>
+											</tr>
+										</tbody>
+										<tbody class="l-1 on">
+											<tr class="l-1H">
+												<td><input type="checkbox" class="chk"><i class="arrow arrB-D"></i></td>
+												<td class="align-l">价格区间</td>
+												<td>
+													<ul>
+														<li><i class="arrM-T disable"></i></li>
+														<li><i class="arrM-B disable"></i></li>
+														<li><i class="arrM-P disable"></i></li>
+														<li><i class="arrM-N disable"></i></li>
+													</ul>
+												</td>
+												<td>
+													<div class="select">
+														<select>
+															<option>下拉菜单</option>
+															<option>复选框</option>
+														</select>
+													</div>
+												</td>
+												<td><input type="checkbox" class="chk chks"></td>
+												<td><input type="checkbox" class="chk chks"></td>
+												<td></td>
+												<td><a href="#">取消关联</a></td>
+											</tr>
+											<tr class="l-2 l-half">
+												<td colspan="8">
+													<table class="table">
+														<colgroup>
+															<col width="60">
+															<col width="140">
+															<col width="140">
+															<col width="120">
+															<col width="90">
+															<col width="100">
+															<col width="100">
+															<col width="100">
+														</colgroup>
+														<tbody>
+															<tr class="l-2H">
+																<td></td>
+																<td class="align-l">
+																	<div class="t-box"><i class="joint"></i><span>90%棉</span></div>
+																</td>
+																<td>
+																	<ul>
+																		<li><i class="arrM-T disable"></i></li>
+																		<li><i class="arrM-B disable"></i></li>
+																		<li><i class="arrM-P disable"></i></li>
+																		<li><i class="arrM-N disable"></i></li>
+																	</ul>
+																</td>
+																<td>
+																	
+																</td>
+																<td></td>
+																<td><input type="checkbox" class="chk chks"></td>
+																<td><input type="checkbox" class="chk chks"></td>
+																<td><a href="#">取消关联</a></td>
+															</tr>
+														</tbody>
+													</table>
+												</td>
+											</tr>
+											<tr class="l-2">
+												<td colspan="8">
+													<table class="table">
+														<colgroup>
+															<col width="60">
+															<col width="140">
+															<col width="140">
+															<col width="120">
+															<col width="90">
+															<col width="100">
+															<col width="100">
+															<col width="100">
+														</colgroup>
+														<tbody>
+															<tr class="l-2H">
+																<td></td>
+																<td class="align-l">
+																	<div class="t-box"><i class="joint"></i><span>90%棉</span></div>
+																</td>
+																<td>
+																	<ul>
+																		<li><i class="arrM-T disable"></i></li>
+																		<li><i class="arrM-B disable"></i></li>
+																		<li><i class="arrM-P disable"></i></li>
+																		<li><i class="arrM-N disable"></i></li>
+																	</ul>
+																</td>
+																<td>
+																	
+																</td>
+																<td></td>
+																<td><input type="checkbox" class="chk chks"></td>
+																<td><input type="checkbox" class="chk chks"></td>
+																<td><a href="#">取消关联</a></td>
+															</tr>
+														</tbody>
+													</table>
+												</td>
+											</tr>
+											<tr class="l-2 l-half">
+												<td colspan="8">
+													<table class="table">
+														<colgroup>
+															<col width="60">
+															<col width="140">
+															<col width="140">
+															<col width="120">
+															<col width="90">
+															<col width="100">
+															<col width="100">
+															<col width="100">
+														</colgroup>
+														<tbody>
+															<tr class="l-2H last">
+																<td></td>
+																<td class="align-l">
+																	<div class="t-box"><i class="joint"></i><span>90%棉</span></div>
+																</td>
+																<td>
+																	<ul>
+																		<li><i class="arrM-T disable"></i></li>
+																		<li><i class="arrM-B disable"></i></li>
+																		<li><i class="arrM-P disable"></i></li>
+																		<li><i class="arrM-N disable"></i></li>
+																	</ul>
+																</td>
+																<td>
+																	
+																</td>
+																<td></td>
+																<td><input type="checkbox" class="chk chks"></td>
+																<td><input type="checkbox" class="chk chks"></td>
+																<td><a href="#">取消关联</a></td>
+															</tr>
+														</tbody>
+													</table>
+												</td>
+											</tr>
+										</tbody>										
+									</table>
+									<!-- table end -->
+								</dd>
+							</dl>
+						</fieldset>
+					</form>
+				</div>
+				<!-- propertyMain end -->
+			</div>
+			<!-- main end -->
+		</div>
+		<!-- bd end -->
+		<!-- footer -->
+		<div id="footer" class="wrap">
+			<div class="links">
+				<a href="#" title="关于一网全城" target="_blank">关于一网全城</a>|<a href="#" title="联系我们" target="_blank">联系我们</a>|<a href="#" title="网站地图" target="_blank">网站地图</a>|<a href="#" title="联系我们" target="_blank">网站合作</a>|<a href="#" title="友情链接" target="_blank">友情链接</a>|<a href="#" title="网站联盟" target="_blank">网站联盟</a>|<a href="#" title="帮助中心" target="_blank">帮助中心</a>|<a href="#" title="版权声明" target="_blank">版权声明</a>
+			</div>
+			<p>Copyright &copy; 2008-2013 Yiwang.com All Rights Reserved.</p>
+			<p>ICP经营许可证号：吉B2-20140008</p>
+		</div>
+		<!-- footer end -->
+	</div>
+</body>
+</html>

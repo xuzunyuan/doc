@@ -1,0 +1,318 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>卖家后台|关联类目</title>
+	<link rel="stylesheet" href="css/all-debug.css" />
+</head>
+<body id="">
+	<div class="wrapper">
+		<!-- hd -->
+		<div id="hd">
+			<div class="header">
+				<h1><a href="#" title="阿凡达">阿凡达</a><span>后台管理系统</span></h1>
+		        <ul class="header-menu">
+		        	<li>欢迎您，邵秀云（系统管理员）<li>
+		            <li><a href="#">退出</a></li>
+		        </ul>
+			</div>
+		</div>		
+		<!-- hd end -->
+		<!-- bd -->
+		<div id="bd" class="wrap"><!-- 点击.foldbarV下的foldBtn后在此添加class名unfold来实现展开效果 -->
+			<!-- aside -->
+			<div class="aside">
+				<!-- boss-menu -->
+				<div class="boss-menu">
+					<h2>后台管理系统</h2>
+					<!--menu-->
+					<div class="menu">
+					<h3 class="system"><i class="ico"></i>系统管理 <i class="arrow arrA-D"></i></h3><!-- arrA-D是展开状态,arrA-R是收起状态 -->
+					<ul>
+						<li><a href="#">角色管理</a></li>
+						<li><a href="#">用户管理</a></li>
+						<li><a href="#" class="on">权限管理</a></li>
+						<li><a href="#">日志管理</a></li>
+						<li><a href="#">密码修改</a></li>
+						<li><a href="#">销售区域管理</a></li>
+					</ul>
+					<h3 class="category"><i class="ico"></i>类目管理 <i class="arrow arrA-R"></i></h3>
+					<ul>
+						<li><a href="#">基础类目管理</a></li>
+						<li><a href="#">签约类目管理</a></li>
+						<li><a href="#">销售类目管理</a></li>
+						<li><a href="#">品牌管理</a></li>
+						<li><a href="#">属性管理</a></li>
+						<li><a href="#">规格管理</a></li>
+					</ul>
+					<h3 class="goods"><i class="ico"></i>商品管理 <i class="arrow arrA-D"></i></h3>
+					<ul>
+						<li><a href="#">商品信息查询</a></li>
+						<li><a href="#">商品信息修改</a></li>
+						<li><a href="#">商品审核</a></li>
+						<li><a href="#">商品图片批量审核</a></li>
+					</ul>
+					<h3 class="order"><i class="ico"></i>订单管理 <i class="arrow arrA-D"></i></h3>
+					<ul>
+						<li><a href="#">电话下单</a></li>
+						<li><a href="#">订单查询</a></li>
+						<li><a href="#">退货订单</a></li>
+						<li><a href="#">换货订单</a></li>
+						<li><a href="#">订单收货</a></li>
+						<li><a href="#">订单分拣</a></li>
+						<li><a href="#">订单发货</a></li>
+						<li><a href="#">订单打印</a></li>
+						<li><a href="#">物流跟踪</a></li>
+					</ul>
+					<h3 class="logistics"><i class="ico"></i>物流管理 <i class="arrow arrA-D"></i></h3>
+					<ul>
+						<li><a href="#">物流公司管理</a></li>
+						<li><a href="#">标准运费管理</a></li>
+						<li><a href="#">运费折扣</a></li>
+					</ul>
+					<h3 class="seller"><i class="ico"></i>卖家管理 <i class="arrow arrA-D"></i></h3>
+					<ul>
+						<li><a href="#">卖家信息管理</a></li>
+						<li><a href="#">卖家申请审核</a></li>
+					</ul>
+					<h3 class="buyer"><i class="ico"></i>买家会员管理 <i class="arrow arrA-D"></i></h3>
+					<ul>
+						<li><a href="#">信息管理</a></li>
+						<li><a href="#">等级管理</a></li>
+					</ul>
+					<h3 class="coupon"><i class="ico"></i>优惠券管理 <i class="arrow arrA-D"></i></h3>
+					<ul>
+						<li><a href="#">创建优惠券</a></li>
+						<li><a href="#">优惠券批次查询</a></li>
+						<li><a href="#">优惠券明细查询</a></li>
+						<li><a href="#">优惠券申请审核</a></li>
+					</ul>
+					<h3 class="serve"><i class="ico"></i>客户服务 <i class="arrow arrA-D"></i></h3>
+					<ul>
+						<li><a href="#">咨询管理</a></li>
+						<li><a href="#">投诉管理</a></li>
+						<li><a href="#">取消订单查询</a></li>
+					</ul>
+					<h3 class="clearing"><i class="ico"></i>费用管理 <i class="arrow arrA-D"></i></h3>
+					<ul>
+						<li><a href="#">买家帐户管理</a></li>
+						<li><a href="#">退款单管理</a></li>
+						<li><a href="#">客户提现管理</a></li>
+					</ul>
+					</div>
+					<!-- menu end -->
+				</div>
+				<!-- boss-menu end-->
+			</div>
+			<!-- aside end -->
+			<!-- main -->
+			<div class="main">
+				<!-- foldbarV -->
+				<div id="foldbarV"><div class="foldbarV"><div class="foldBtn"></div></div></div>
+				<!-- foldbarV end -->
+				<!-- crumbs -->
+				<div class="crumbs crumbsA">
+					<ul>
+						<li><a href="#">后台首页</a><em>&gt;</em></li>
+						<li><a href="#">卖家管理</a><em>&gt;</em></li>
+						<li><strong>关联类目</strong></li>
+					</ul>
+				</div>
+				<!-- crumbs end -->
+				<!-- relateType -->
+				<div class="relateType">
+					<div class="hintBar">
+						<dl>
+							<dt><i class="icon i-exclaim"></i></dt>
+							<dd class=""><!-- 只有一行文字时需加class为middle -->
+								<p>关联类目是指将关联源（基本类目）中的一个或多类目和关联类目（销售类目）进行关联，以达到促进销售的目的联类目（销售类目）进行关联，以达到促进销售。</p>
+							</dd>
+						</dl>
+					</div>
+					<!-- typeSelect -->
+					<div class="typeSelect">
+						<label>您当前选择的类目是：</label>
+						<div class="select selectB">
+							<select>
+							    <option>靓丽女装</option>
+							</select>
+						</div>
+						<div class="select selectB">
+							<select>
+							    <option>应季女装</option>
+							</select>
+						</div>
+						<div class="select selectB">
+							<select>
+							    <option>羊绒衫</option>
+							</select>
+						</div>
+					</div>
+					<!-- typeSelect end -->
+					<!-- relateCtrl -->
+					<div class="relateCtrl">
+						<!-- relateSide -->
+						<div class="r-side">
+							<div class="hd">
+								<h2>已关联基础类目</h2>
+							</div>
+							<div class="bd">
+								<ul class="typeList">
+									<!-- l-1 -->
+									<li class="l-1 on">
+										<h3><i class="arrow arrB-D"></i><span>鞋</span></h3>
+										<ul>
+											<li class="l-2 on">
+												<h4><i class="arrow arrB-D"></i><span>男鞋</span></h4>
+												<ul class="l-3">
+													<li><i class="joint first"></i><span>商务正装鞋商务正装鞋</span></li>
+													<li><i class="joint"></i><span>休闲鞋</span></li>
+													<li><i class="joint"></i><span>凉鞋</span></li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<!-- l-1 end -->
+									<!-- l-1 -->
+									<li class="l-1 on">
+										<h3><i class="arrow arrB-D"></i><span>鞋</span></h3>
+										<ul>
+											<li class="l-2 on">
+												<h4><i class="arrow arrB-D"></i><span>男鞋</span></h4>
+												<ul class="l-3">
+													<li><i class="joint first"></i><span>商务正装鞋商务正装鞋</span></li>
+													<li><i class="joint"></i><span>休闲鞋</span></li>
+													<li><i class="joint"></i><span>凉鞋</span></li>
+												</ul>
+											</li>
+											<li class="l-2 on">
+												<h4><i class="arrow arrB-D"></i><span>男鞋</span></h4>
+												<ul class="l-3">
+													<li><i class="joint first"></i><span>商务正装鞋商务正装鞋</span></li>
+													<li><i class="joint"></i><span>休闲鞋</span></li>
+													<li><i class="joint"></i><span>凉鞋</span></li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<!-- l-1 end -->
+									<!-- l-1 -->
+									<li class="l-1">
+										<h3><i class="arrow arrB-R"></i><span>鞋</span></h3>
+										<ul>
+											<li class="l-2">
+												<h4><i class="arrow arrB-D"></i><span>男鞋</span></h4>
+												<ul class="l-3">
+													<li><i class="joint first"></i><span>商务正装鞋商务正装鞋</span></li>
+													<li><i class="joint"></i><span>休闲鞋</span></li>
+													<li><i class="joint"></i><span>凉鞋</span></li>
+												</ul>
+											</li>
+											<li class="l-2">
+												<h4><i class="arrow arrB-D"></i><span>男鞋</span></h4>
+												<ul class="l-3">
+													<li><i class="joint first"></i><span>商务正装鞋商务正装鞋</span></li>
+													<li><i class="joint"></i><span>休闲鞋</span></li>
+													<li><i class="joint"></i><span>凉鞋</span></li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<!-- l-1 end -->
+								</ul>
+							</div>
+						</div>
+						<!-- relateSide end -->
+						<!-- relateArea -->
+						<div class="r-area">
+							<div class="hd">
+								<h3>添加关联<span>（可关联多个类目）</span></h3>
+							</div>
+							<div class="bd">
+								<div class="searchType"><div class="searchTxt"><input type="text" placeholder="查找类目" /><i class="ico"></i></div></div>
+								<ul class="typeList">
+									<!-- l-1 -->
+									<li class="l-1 on">
+										<h3><i class="arrow arrB-D"></i><span>鞋</span></h3>
+										<ul>
+											<li class="l-2 on">
+												<h4><i class="arrow arrB-D"></i><span>男鞋</span><input type="button" class="btnA" value="删除关联"></h4>
+												<ul class="l-3">
+													<li><i class="joint first"></i><span>商务正装鞋商务正装鞋</span></li>
+													<li><i class="joint"></i><span>休闲鞋</span></li>
+													<li><i class="joint"></i><span>凉鞋</span></li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<!-- l-1 end -->
+									<!-- l-1 -->
+									<li class="l-1 on">
+										<h3><i class="arrow arrB-D"></i><span>鞋</span></h3>
+										<ul>
+											<li class="l-2 on">
+												<h4><i class="arrow arrB-D"></i><span>男鞋</span><input type="button" class="btnA" value="删除关联"></h4>
+												<ul class="l-3">
+													<li><i class="joint first"></i><span>商务正装鞋商务正装鞋</span></li>
+													<li><i class="joint"></i><span>休闲鞋</span></li>
+													<li><i class="joint"></i><span>凉鞋</span></li>
+												</ul>
+											</li>
+											<li class="l-2 on">
+												<h4><i class="arrow arrB-D"></i><span>男鞋</span><input type="button" class="btnA" value="删除关联"></h4>
+												<ul class="l-3">
+													<li><i class="joint first"></i><span>商务正装鞋商务正装鞋</span></li>
+													<li><i class="joint"></i><span>休闲鞋</span></li>
+													<li><i class="joint"></i><span>凉鞋</span></li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<!-- l-1 end -->
+									<!-- l-1 -->
+									<li class="l-1">
+										<h3><i class="arrow arrB-R"></i><span>鞋</span></h3>
+										<ul>
+											<li class="l-2">
+												<h4><i class="arrow arrB-D"></i><span>男鞋</span><input type="button" class="btnA" value="删除关联"></h4>
+												<ul class="l-3">
+													<li><i class="joint first"></i><span>商务正装鞋商务正装鞋</span></li>
+													<li><i class="joint"></i><span>休闲鞋</span></li>
+													<li><i class="joint"></i><span>凉鞋</span></li>
+												</ul>
+											</li>
+											<li class="l-2">
+												<h4><i class="arrow arrB-D"></i><span>男鞋</span><input type="button" class="btnA" value="删除关联"></h4>
+												<ul class="l-3">
+													<li><i class="joint first"></i><span>商务正装鞋商务正装鞋</span></li>
+													<li><i class="joint"></i><span>休闲鞋</span></li>
+													<li><i class="joint"></i><span>凉鞋</span></li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<!-- l-1 end -->
+								</ul>
+							</div>
+						</div>
+						<!-- relateArea end -->
+					</div>
+					<!-- relateCtrl end -->
+				</div>
+				<!-- relateType end -->
+			</div>
+			<!-- main end -->
+		</div>
+		<!-- bd end -->
+		<!-- footer -->
+		<div id="footer" class="wrap">
+			<div class="links">
+				<a href="#" title="关于一网全城" target="_blank">关于一网全城</a>|<a href="#" title="联系我们" target="_blank">联系我们</a>|<a href="#" title="网站地图" target="_blank">网站地图</a>|<a href="#" title="联系我们" target="_blank">网站合作</a>|<a href="#" title="友情链接" target="_blank">友情链接</a>|<a href="#" title="网站联盟" target="_blank">网站联盟</a>|<a href="#" title="帮助中心" target="_blank">帮助中心</a>|<a href="#" title="版权声明" target="_blank">版权声明</a>
+			</div>
+			<p>Copyright &copy; 2008-2013 Yiwang.com All Rights Reserved.</p>
+			<p>ICP经营许可证号：吉B2-20140008</p>
+		</div>
+		<!-- footer end -->
+	</div>
+</body>
+</html>

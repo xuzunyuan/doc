@@ -1,0 +1,388 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>卖家后台|订单详情页</title>
+	<link rel="stylesheet" href="css/all-debug.css" />
+</head>
+<body id="">
+	<div class="wrapper">
+		<!-- hd -->
+		<div id="hd">
+			<div class="header">
+				<h1><a href="#" title="阿凡达">阿凡达</a><span>后台管理系统</span></h1>
+		        <ul class="header-menu">
+		        	<li>欢迎您，邵秀云（系统管理员）<li>
+		            <li><a href="#">退出</a></li>
+		        </ul>
+			</div>
+		</div>		
+		<!-- hd end -->
+		<!-- bd -->
+		<div id="bd" class="wrap"><!-- 点击.foldbarV下的foldBtn后在此添加class名unfold来实现展开效果 -->
+			<!-- aside -->
+			<div class="aside">
+				<!-- boss-menu -->
+				<div class="boss-menu">
+					<h2>后台管理系统</h2>
+					<!--menu-->
+					<div class="menu">
+					<h3 class="system"><i class="ico"></i>系统管理 <i class="arrow arrA-D"></i></h3><!-- arrA-D是展开状态,arrA-R是收起状态 -->
+					<ul>
+						<li><a href="#">角色管理</a></li>
+						<li><a href="#">用户管理</a></li>
+						<li><a href="#" class="on">权限管理</a></li>
+						<li><a href="#">日志管理</a></li>
+						<li><a href="#">密码修改</a></li>
+						<li><a href="#">销售区域管理</a></li>
+					</ul>
+					<h3 class="category"><i class="ico"></i>类目管理 <i class="arrow arrA-R"></i></h3>
+					<ul>
+						<li><a href="#">基础类目管理</a></li>
+						<li><a href="#">签约类目管理</a></li>
+						<li><a href="#">销售类目管理</a></li>
+						<li><a href="#">品牌管理</a></li>
+						<li><a href="#">属性管理</a></li>
+						<li><a href="#">规格管理</a></li>
+					</ul>
+					<h3 class="goods"><i class="ico"></i>商品管理 <i class="arrow arrA-D"></i></h3>
+					<ul>
+						<li><a href="#">商品信息查询</a></li>
+						<li><a href="#">商品信息修改</a></li>
+						<li><a href="#">商品审核</a></li>
+						<li><a href="#">商品图片批量审核</a></li>
+					</ul>
+					<h3 class="order"><i class="ico"></i>订单管理 <i class="arrow arrA-D"></i></h3>
+					<ul>
+						<li><a href="#">电话下单</a></li>
+						<li><a href="#">订单查询</a></li>
+						<li><a href="#">退货订单</a></li>
+						<li><a href="#">换货订单</a></li>
+						<li><a href="#">订单收货</a></li>
+						<li><a href="#">订单分拣</a></li>
+						<li><a href="#">订单发货</a></li>
+						<li><a href="#">订单打印</a></li>
+						<li><a href="#">物流跟踪</a></li>
+					</ul>
+					<h3 class="logistics"><i class="ico"></i>物流管理 <i class="arrow arrA-D"></i></h3>
+					<ul>
+						<li><a href="#">物流公司管理</a></li>
+						<li><a href="#">标准运费管理</a></li>
+						<li><a href="#">运费折扣</a></li>
+					</ul>
+					<h3 class="seller"><i class="ico"></i>卖家管理 <i class="arrow arrA-D"></i></h3>
+					<ul>
+						<li><a href="#">卖家信息管理</a></li>
+						<li><a href="#">卖家申请审核</a></li>
+					</ul>
+					<h3 class="buyer"><i class="ico"></i>买家会员管理 <i class="arrow arrA-D"></i></h3>
+					<ul>
+						<li><a href="#">信息管理</a></li>
+						<li><a href="#">等级管理</a></li>
+					</ul>
+					<h3 class="coupon"><i class="ico"></i>优惠券管理 <i class="arrow arrA-D"></i></h3>
+					<ul>
+						<li><a href="#">创建优惠券</a></li>
+						<li><a href="#">优惠券批次查询</a></li>
+						<li><a href="#">优惠券明细查询</a></li>
+						<li><a href="#">优惠券申请审核</a></li>
+					</ul>
+					<h3 class="serve"><i class="ico"></i>客户服务 <i class="arrow arrA-D"></i></h3>
+					<ul>
+						<li><a href="#">咨询管理</a></li>
+						<li><a href="#">投诉管理</a></li>
+						<li><a href="#">取消订单查询</a></li>
+					</ul>
+					<h3 class="clearing"><i class="ico"></i>费用管理 <i class="arrow arrA-D"></i></h3>
+					<ul>
+						<li><a href="#">买家帐户管理</a></li>
+						<li><a href="#">退款单管理</a></li>
+						<li><a href="#">客户提现管理</a></li>
+					</ul>
+					</div>
+					<!-- menu end -->
+				</div>
+				<!-- boss-menu end-->
+			</div>
+			<!-- aside end -->
+			<!-- main -->
+			<div class="main">
+				<!-- foldbarV -->
+				<div id="foldbarV"><div class="foldbarV"><div class="foldBtn"></div></div></div>
+				<!-- foldbarV end -->
+				<!-- orderDetails -->
+				<div class="orderDetails">
+					<!-- mod-info -->
+					<div class="mod-info">
+						<div class="item">
+							<h2>订单信息<a href="#" class="lnkA" style="float:right;font-weight: normal;">返回列表页</a></h2>
+							<table>
+								<colgroup>
+									<col width="100" />
+									<col />
+									<col width="100" />
+									<col />
+								</colgroup>
+								<tbody>
+									<tr>
+										<th>订单编号：</th>
+										<td>1916483254846</td>
+										<th>支付类型：</th>
+										<td>工商银行</td>
+									</tr>
+									<tr>
+										<th>订单状态：</th>
+										<td>交易完成</td>
+										<th>付款状态：</th>
+										<td>已支付</td>
+									</tr>
+									<tr>
+										<th>下单时间：</th>
+										<td>2013-11-15 13:29:20</td>
+										<th>交易流水号：</th>
+										<td>4242452423131313</td>
+									</tr>
+									<tr>
+										<th>专场名称：</th>
+										<td><a href="#">好孩子品牌童装新品专场</a></td>
+										<th>订单来源：</th>
+										<td>网站下单</td>
+									</tr>
+								</tbody>
+							</table>
+						</div><!-- item end -->
+						<div class="item">
+							<h2>发货信息</h2>
+							<table>
+								<colgroup>
+									<col width="100" />
+									<col />
+									<col width="100" />
+									<col />
+								</colgroup>
+								<tbody>
+									<tr>
+										<th>商家名称：</th>
+										<td><a href="#" class="storeName"> wyacklsdf旗舰店</a></td>
+										<th>发货人：</th>
+										<td>马云</td>
+										
+									</tr>
+									<tr>
+										<th>入驻时间：</th>
+										<td>2013-11-15</td>
+										<th>联系电话：</th>
+										<td class="tell"><span>13142154444</span><span>/</span><span>010-7034407</span></td>
+									</tr>
+									<tr>
+										<th></th>
+										<td></td>
+										<th>发货地址：</th>
+										<td>吉林省吉林市龙潭区</td>
+									</tr>
+									<tr>
+										<th></th>
+										<td></td>
+										<th>邮政编码：</th>
+										<td>123456</td>
+									</tr>
+								</tbody>
+							</table>
+						</div><!-- item end -->
+						<div class="item">
+							<h2>收货信息</h2>
+							<table>
+								<colgroup>
+									<col width="100" />
+									<col />
+									<col width="100" />
+									<col />
+								</colgroup>
+								<tbody>
+									<tr>
+										<th>买家用户名：</th>
+										<td><a href="#" class="buyerName">喝北风的狮子</a></td>
+										<th>配送方式：</th>
+										<td>第三方配送</td>
+									</tr>
+									<tr>
+										<th>收货人：</th>
+										<td>马小云</td>
+										<th>买家留言：</th>
+										<td rowspan="2">请配送地址北京市东城区朝内银河soho北京市东城区 北京市东城区朝内银河soho做朝内银河soho做</td>
+									</tr>
+									<tr>
+										<th>收货地址：</th>
+										<td>北京市东城区朝内银河sohob座2320</td>
+									</tr>
+									<tr>
+										<th>联系电话：</th>
+										<td class="tell"><span>13142154444</span><span>/</span><span>010-7034407</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div><!-- item end -->
+					</div>
+					<!-- mod-info end -->
+					<!-- table -->
+					<table class="table tableB">
+						<colgroup>
+							<col width="360" />
+							<col width="150" />
+							<col width="110" />
+							<col width="100" />
+							<col width="80" />
+							<col width="90" />
+							<col width="120" />
+						</colgroup>
+						<thead>
+							<tr>
+								<th>商品</th>
+								<th>商品编号</th>
+								<th>市场价(元)</th>
+								<th>单价(元)</th>
+								<th>数量</th>
+								<th>优惠(元)</th>
+								<th>状态</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td colspan="7" class="o-code">
+									<span>包裹1：<em>EMS速递</em></span><span>运单号码：<em>15000120231562</em></span>
+									<div class="logistics">
+										<p class="now">2013-11-15   13:29:03   在天津滨海新区大港油田公司进公司公司行扫描港油田公司进公司公司行扫描</p>
+										<div class="mod-more">
+											<h3>更多<i class="arrow arrB-D"></i></h3>
+											<div class="bd">
+												<p class="new">2013-11-15   13:29:03   在天津滨海新区大港油田公司进公司公司行扫描</p>
+												<p>2013-11-15   13:29:03   在天津滨海新区大港油田公司进公司公司司公司行扫描</p>
+												<p>2013-11-15   13:29:03   在天津滨海新区大港油田公司进公司公</p>
+												<p>2013-11-15   13:29:03   在天津滨海新区大港油田公司进公司公司行扫描</p>
+												<p>2013-11-15   13:29:03   在天津滨海新区大港油田公司进公司公司扫描</p>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+                                    <dl class="o-goodsName">
+                                    	<dt><img src="img/temp/order_01.png"></dt>
+                                    	<dd>
+                                    		<a href="#">沃格贝斯 2013秋装新款棉毛夹背心款棉毛夹背心款棉毛夹</a>
+                                    		<p class="o-property"><span>颜色分类：白色 </span><span>大小：40*35cm</span></p>
+                                    	</dd>
+                                    </dl>
+								</td>
+								<td>11000028</td>
+								<td><p class="beforprice">110.00</p><p>105.00</p></td>
+								<td><p>5.00</p></td>
+								<td>3</td>
+								<td>50.00</td>
+								<td>已确认收货</td>
+							</tr>
+							<tr>
+								<td>
+                                    <dl class="o-goodsName">
+                                    	<dt><img src="img/temp/order_01.png"></dt>
+                                    	<dd>
+                                    		<a href="#">沃格贝斯 2013秋装新款棉毛夹背心款棉毛夹背心款棉毛夹</a>
+                                    		<p class="o-property"><span>颜色分类：白色 </span><span>大小：40*35cm</span></p>
+                                    	</dd>
+                                    </dl>
+								</td>
+								<td>11000028</td>
+								<td>105.00</td>
+								<td><p>5.00</p></td>
+								<td>3</td>
+								<td>105.00</td>
+								<td><img class="stateIco" src="img/yen.png" alt="" />已退款</td>
+							</tr>
+							<tr class="last">
+								<td>
+                                    <dl class="o-goodsName">
+                                    	<dt><img src="img/temp/order_01.png"></dt>
+                                    	<dd>
+                                    		<a href="#">沃格贝斯 2013秋装新款棉毛夹背心款棉毛夹背心款棉毛夹</a>
+                                    		<p class="o-property"><span>颜色分类：白色 </span><span>大小：40*35cm</span></p>
+                                    	</dd>
+                                    </dl>
+								</td>
+								<td>11000028</td>
+								<td>105.00</td>
+								<td><p>0.00</p></td>
+								<td>3</td>
+								<td>105.00</td>
+								<td>已确认收货</td>
+							</tr>
+						</tbody>
+					</table>
+					<!-- table end -->
+					<!-- amount -->
+					<div class="amounts">
+						<div class="allList">
+							<dl>
+								<dt>商品金额：</dt>
+								<dd>800.00元</dd>
+							</dl>
+							<dl>
+								<dt>运费：</dt>
+								<dd>0.00元</dd>
+							</dl>
+							<dl>
+								<dt>实付款：</dt>
+								<dd><strong class="meg">2600.00元</strong></dd>
+							</dl>
+						</div>
+					</div>
+					<!-- amount end -->
+					<!-- table -->
+					<table class="table tableC">
+						<colgroup>
+							<col />
+							<col />
+							<col width="420" />
+						</colgroup>
+						<thead>
+							<tr>
+								<th colspan="3" class="caption">订单状态更新历史</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>更新时间</th>
+								<th>状态名称</th>
+								<th>操作说明</th>
+							</tr>
+							<tr>
+								<td>2014-04-05 12:00:40</td>
+								<td>未妥投</td>
+								<td><p>未妥投原因：</p></td>
+							</tr>
+							<tr>
+								<td>2014-04-05 12:00:40</td>
+								<td>已付款</td>
+								<td><p></p></td>
+							</tr>
+						</tbody>
+					</table>
+					<!-- table end -->
+				</div>
+				<!-- orderDetails end -->
+			</div>
+			<!-- main end -->
+		</div>
+		<!-- bd end -->
+		<!-- footer -->
+		<div id="footer" class="wrap">
+			<div class="links">
+				<a href="#" title="关于一网全城" target="_blank">关于一网全城</a>|<a href="#" title="联系我们" target="_blank">联系我们</a>|<a href="#" title="网站地图" target="_blank">网站地图</a>|<a href="#" title="联系我们" target="_blank">网站合作</a>|<a href="#" title="友情链接" target="_blank">友情链接</a>|<a href="#" title="网站联盟" target="_blank">网站联盟</a>|<a href="#" title="帮助中心" target="_blank">帮助中心</a>|<a href="#" title="版权声明" target="_blank">版权声明</a>
+			</div>
+			<p>Copyright &copy; 2008-2013 Yiwang.com All Rights Reserved.</p>
+			<p>ICP经营许可证号：吉B2-20140008</p>
+		</div>
+		<!-- footer end -->
+	</div>
+</body>
+</html>
