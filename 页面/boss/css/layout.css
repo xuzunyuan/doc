@@ -478,7 +478,9 @@
 	float:left;
 	margin-right:10px;
 }
-
+.formA .item-img .item-cont li>p {
+	text-align:center;
+}
 .formB fieldset{
 	padding-bottom:30px;
 }
@@ -4285,4 +4287,95 @@
 .redpacketdel .tableA td{
 	padding: 9px 5px;
 	text-align: left;
+}
+
+/* select-time */
+.pop-paiqi .select-time {
+	height:26px;
+	width:50px;
+	border: 1px solid #c5c5c5;
+}
+.pop-paiqi .defInfo {
+	font-size: 14px;
+	line-height: 25px;
+}
+.orderDetails .info-orderDetails {
+	padding: 10px;
+	line-height: 26px;
+}
+.orderDetails .info-orderDetails span {
+	margin-right: 10px;
+}
+.orderDetails .info-orderDetails span em {
+	color: #f00;
+	font-size: 16px;
+	font-weight:700;
+}
+
+/* zhuanchang details */
+
+.zc-details .form {
+	border-top: 0;
+}
+.zc-details .item-kuaidi .item-cont span {
+	margin-right: 20px;
+}
+.zc-details .item-prve {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	border: 1px solid #c5c5c5;
+}
+.info-details dl {
+	*zoom: 1;
+	padding: 0 10px;
+}
+.info-details:after {
+	display: table;
+	clear: both;
+	content: " ";
+}
+.info-details dt {
+	float: left;
+	margin-right: 20px;
+}
+.info-details dd {
+	float: left;
+}
+.info-details dd p{
+	line-height: 18px;
+	margin-bottom: 5px;
+}
+.info-details dd p em {
+	color: #f00;
+	font-size: 16px;
+	font-weight: 700;
+}
+.activeProduct .table-wrap {
+	padding: 10px 10px;
+}
+.activeProduct .table td {
+	padding: 20px 10px;
+}
+.activeProduct .borderR {
+	border-right: 1px solid #c5c5c5;
+}
+.activeProduct .goodsdetal {
+	text-align: left;
+}
+.activeProduct .item-prve {
+	width: 100px;
+	height: 100px;
+	display: block;
+	margin-bottom: 10px;
+}
+.activeProduct .item-prve img {
+	width: 100%;
+	height: 100%;
+}
+.activeProduct .goodsdetal p {
+	margin-bottom: 6px;
+}
+.activeProduct .goodsdetal .title {
+	margin-bottom: 20px;
 }
