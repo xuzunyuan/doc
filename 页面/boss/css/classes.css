@@ -1919,7 +1919,7 @@ label.rightspace {
 	display:block;
 	width:340px;
 	height:47px;
-	margin-right:5px;
+	margin:10px 5px 0 0;
 	background:url(../img/logo.png) no-repeat 0 0;
 	text-indent:-9999em;
 }

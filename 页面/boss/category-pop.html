@@ -1,0 +1,239 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="css/classes.css" />
+</head>
+<body>
+	<div class="wrapper">
+		<div id="hd">
+        	<div class="header">
+				<h1><a href="#" title="一网全城购物中心">一网全城购物中心</a><span>后台管理系统</span></h1>
+                <ul class="header-menu">
+                	<li>欢迎您，邵秀云（系统管理员）<li>
+                    <li><a href="#">退出</a></li>
+                </ul>
+			</div><!--header end-->
+		</div><!--hd end-->
+		<div id="bd">
+            <div class="container">
+                <div class="aside">
+                    <div class="boss-menu">
+                    	<h2>业务运营支撑系统</h2>
+                        <div class="menu">
+                            <h3><i></i>系统管理</h3>
+                            <h3><i></i>类目管理</h3>
+                            <h3 class="act"><i></i>商品管理</h3>
+                            <ul>
+                                <li class="on"><a href="#">品牌管理</a></li>
+                                <li><a href="#">商品类目管理</a></li>
+                                <li><a href="#">商品属性管理</a></li>
+                                <li><a href="#">商品信息审核</a></li>
+                            </ul>
+                            <h3><i></i>订单管理</h3>
+                            <h3><i></i>物流管理</h3>
+                            <h3 class="act"><i></i>卖家管理</h3>
+                            <ul>
+                                <li><a href="#">卖家入驻管理</a></li>
+                                <li><a href="#">卖家信息管理</a></li>
+                                <li><a href="#">卖家信用管理</a></li>
+                            </ul>
+                            <h3 class="act"><i></i>买家管理</h3>
+                            <ul>
+                                <li><a href="#">买家信息管理</a></li>
+                                <li><a href="#">买家等级管理</a></li>
+                                <li><a href="#">买家信用管理</a></li>
+                                <li><a href="#">买家积分</a></li>
+                            </ul>
+                            <h3><i></i>优惠券管理</h3>
+                            <h3><i></i>客户服务</h3>
+                            <h3><i></i>费用管理</h3>
+                        </div><!--menu end-->
+                    </div><!--boss-menu end-->
+                </div><!--aside end-->
+                <div class="main">
+                    <div class="category-main">
+                    	<div class="category-main-left">
+                        	<input type="button" class="inputBtn" value="添加一级类目" >
+                        </div>
+                    	<div class="category-main-right">
+                        	<input type="button" class="inputBtn" value="(+)全部收起" >
+                        </div>
+                        <div class="clearfix"></div>
+                    	<ul class="boos-ul c-m-ul">
+                        	<li class="boos-ul-th">
+                            	<div class="boos-ul-td c-m-w1">分类名称</div>
+                            	<div class="boos-ul-td c-m-w2">显示顺序</div>
+                            	<div class="boos-ul-td c-m-w3">是否显示</div>
+                            	<div class="boos-ul-td c-m-w4">操作</div>
+                            </li>
+                            <!--1级列表-->
+                        	<li class="boos-ul-li">
+                            	<div class="boos-ul-list act">
+                                    <div class="boos-ul-td c-m-w1">
+                                    	<i class="arrowsRight"></i>婴童用品
+                                        <input type="button" class="inputBtn" value="添子类" >
+                                    </div>
+                                    <div class="boos-ul-td c-m-w2"><ul class="boos-ul-order"><li class="b-u-o-1"></li><li class="b-u-o-2"></li><li class="b-u-o-3"></li><li class="b-u-o-4"></li></ul></div>
+                                    <div class="boos-ul-td c-m-w3"><select>
+                                      <option value="1">显示</option>
+                                      <option value="0">不显示</option>
+                                  	</select></div>
+                                    <div class="boos-ul-td c-m-w4"><a href="#">修改</a> | <a href="#">删除</a></div>
+                                </div>
+                                <ul class="boos-ul-1">
+                                <!--2级列表-->
+                                	<li>
+                                    	<div class="boos-ul-list">
+                                            <div class="boos-ul-td c-m-w1">
+                                            	<i class="arrowsDown"></i>婴童用品
+                                                <input type="button" class="inputBtn" value="添子类" >
+                                            </div>
+                                            <div class="boos-ul-td c-m-w2"><ul class="boos-ul-order"><li class="b-u-o-1"></li><li class="b-u-o-2"></li><li class="b-u-o-3"></li><li class="b-u-o-4"></li></ul></div>
+                                            <div class="boos-ul-td c-m-w3"><select>
+                                              <option value="1">显示</option>
+                                              <option value="0">不显示</option>
+                                            </select></div>
+                                            <div class="boos-ul-td c-m-w4"><a href="#">修改</a> | <a href="#">删除</a></div>
+                                        </div>
+                                        <ul class="boos-ul-2">
+                                        <!--3级列表-->
+                                        	<li>
+                                                <div class="boos-ul-list">
+                                                    <div class="boos-ul-td c-m-w1">
+                                                    	婴童用品
+                                                        <input type="button" class="inputBtn" value="添同类" >
+                                                    </div>
+                                                    <div class="boos-ul-td c-m-w2"><ul class="boos-ul-order"><li class="b-u-o-1"></li><li class="b-u-o-2"></li><li class="b-u-o-3"></li><li class="b-u-o-4"></li></ul></div>
+                                                    <div class="boos-ul-td c-m-w3"><select>
+                                                      <option value="1">显示</option>
+                                                      <option value="0">不显示</option>
+                                                    </select></div>
+                                                    <div class="boos-ul-td c-m-w4"><a href="#">关联类目</a> | <a href="#">修改</a> | <a href="#">删除</a></div>
+                                                </div>
+                                            </li>
+                                        	<li>
+                                                <div class="boos-ul-list">
+                                                    <div class="boos-ul-td c-m-w1">
+                                                    	婴童用品
+                                                        <input type="button" class="inputBtn" value="添同类" >
+                                                    </div>
+                                                    <div class="boos-ul-td c-m-w2"><ul class="boos-ul-order"><li class="b-u-o-1"></li><li class="b-u-o-2"></li><li class="b-u-o-3"></li><li class="b-u-o-4"></li></ul></div>
+                                                    <div class="boos-ul-td c-m-w3"><select>
+                                                      <option value="1">显示</option>
+                                                      <option value="0">不显示</option>
+                                                    </select></div>
+                                                    <div class="boos-ul-td c-m-w4"><a href="#">关联类目</a> | <a href="#">修改</a> | <a href="#">删除</a></div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!--1级列表-->
+                        	<li class="boos-ul-li">
+                            	<div class="boos-ul-list">
+                                    <div class="boos-ul-td c-m-w1">
+                                    	<i class="arrowsRight"></i>婴童用品
+                                        <input type="button" class="inputBtn" value="添子类" >
+                                    </div>
+                                    <div class="boos-ul-td c-m-w2"><ul class="boos-ul-order"><li class="b-u-o-1"></li><li class="b-u-o-2"></li><li class="b-u-o-3"></li><li class="b-u-o-4"></li></ul></div>
+                                    <div class="boos-ul-td c-m-w3"><select>
+                                      <option value="1">显示</option>
+                                      <option value="0">不显示</option>
+                                  	</select></div>
+                                    <div class="boos-ul-td c-m-w4"><a href="#">修改</a> | <a href="#">删除</a></div>
+                                </div>
+                                <ul class="boos-ul-1">
+                                <!--2级列表-->
+                                	<li>
+                                    	<div class="boos-ul-list">
+                                            <div class="boos-ul-td c-m-w1">
+                                            	<i class="arrowsDown"></i>婴童用品
+                                                <input type="button" class="inputBtn" value="添子类" >
+                                            </div>
+                                            <div class="boos-ul-td c-m-w2"><ul class="boos-ul-order"><li class="b-u-o-1"></li><li class="b-u-o-2"></li><li class="b-u-o-3"></li><li class="b-u-o-4"></li></ul></div>
+                                            <div class="boos-ul-td c-m-w3"><select>
+                                              <option value="1">显示</option>
+                                              <option value="0">不显示</option>
+                                            </select></div>
+                                            <div class="boos-ul-td c-m-w4"><a href="#">修改</a> | <a href="#">删除</a></div>
+                                        </div>
+                                        <ul class="boos-ul-2">
+                                        <!--3级列表-->
+                                        	<li>
+                                                <div class="boos-ul-list">
+                                                    <div class="boos-ul-td c-m-w1">
+                                                    	婴童用品婴童用
+                                                        <input type="button" class="inputBtn" value="添同类" >
+                                                    </div>
+                                                    <div class="boos-ul-td c-m-w2"><ul class="boos-ul-order"><li class="b-u-o-1"></li><li class="b-u-o-2"></li><li class="b-u-o-3"></li><li class="b-u-o-4"></li></ul></div>
+                                                    <div class="boos-ul-td c-m-w3"><select>
+                                                      <option value="1">显示</option>
+                                                      <option value="0">不显示</option>
+                                                    </select></div>
+                                                    <div class="boos-ul-td c-m-w4"><a href="#">关联类目</a> | <a href="#">修改</a> | <a href="#">删除</a></div>
+                                                </div>
+                                            </li>
+                                        	<li>
+                                                <div class="boos-ul-list">
+                                                    <div class="boos-ul-td c-m-w1">
+                                                    	婴童用品
+                                                        <input type="button" class="inputBtn" value="添同类" >
+                                                    </div>
+                                                    <div class="boos-ul-td c-m-w2"><ul class="boos-ul-order"><li class="b-u-o-1"></li><li class="b-u-o-2"></li><li class="b-u-o-3"></li><li class="b-u-o-4"></li></ul></div>
+                                                    <div class="boos-ul-td c-m-w3"><select>
+                                                      <option value="1">显示</option>
+                                                      <option value="0">不显示</option>
+                                                    </select></div>
+                                                    <div class="boos-ul-td c-m-w4"><a href="#">关联类目</a> | <a href="#">修改</a> | <a href="#">删除</a></div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div><!--category-main end-->
+                    
+                </div><!--main end-->
+                
+            </div><!--container end-->
+        </div><!--bd end-->
+        <br>
+        <div id="footer"></div>
+    </div><!--wrapper end-->
+    
+<div class="mask-bg"></div>
+<div class="mask-show">
+    <form action="">
+	<h2>修改类目名称<a href="javascript:" title="关闭">关闭</a></h2>
+    <ul class="mask-form-list">
+        <li>
+        	<div class="m-f-l-left">原类目名称：</div>
+            <div class="m-f-l-right"><strong>美发</strong></div>
+        </li>
+        <li>
+        	<div class="m-f-l-left">新类目名称：</div>
+            <div class="m-f-l-right"><input type="text" class="inputText"></div>
+        </li>
+        <li>
+        	<div class="m-f-l-btn">
+            	<input type="button" class="inputBtn" value="保 存" >
+            	<input type="button" class="inputBtn" value="取 消" >
+            </div>
+        </li>
+    </ul>
+    </form>
+</div>
+
+
+<!--[if lte IE 6]>
+<script type="text/javascript" src="./script/DD_PNG08a-min.js"></script>
+<script>
+DD_belatedPNG.fix('.header h1 a');
+</script>
+<![endif]-->
+</body>
+</html>
