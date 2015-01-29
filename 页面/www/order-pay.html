@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8">
+	<title>订单支付</title>
+	<link rel="stylesheet" type="text/css" href="css/allstyle.css"/>
+	<link rel="stylesheet" type="text/css" href="css/order.css"/>
+</head>
+<body>
+	<div class="wrapper">
+		<!-- topbar -->
+		<div id="topbar">
+			<div class="wrap">
+				<div id="siteNav">
+					<dl class="noSubmenu">
+						<dt class="hd"><a href="#">我的订单</a></dt>
+					</dl>
+					<dl class="myCenter">
+						<dt class="hd"><a href="#">我的AFD<span class="arrow bottom-hollow xs"><b></b><i></i></span></a></dt>
+					  	<dd class="bd">
+					  		<ul>
+					  		  <li><a href="#">已买商品</a></li>
+					  		  <li><a href="#">我的足迹</a></li>
+					  		  <li><a href="#">我的购物车</a></li>
+					  		</ul>
+					  	</dd>
+					</dl>
+					<dl class="noSubmenu">
+				  		<dt class="hd"><a href="#">我是商家</a></dt>
+				 		
+					</dl>
+				</div>
+				<div class="signin">
+					<span>欢迎来到AFD！</span><span>请<a href="#">登录</a><em>/</em><a href="#">免费注册</a><a href="#" class="quit hide">[退出]</a></span>
+				</div>
+			</div>
+		</div>
+		<!-- topbar end -->
+		<!-- header -->
+		<div id="header">
+			<div class="wrap">
+				<div id="logo">
+					<div class="logo"><a href="#" title="logo"><img src="img/logo.png" alt="logo"></a></div>
+					<div class="slogan"><img src="img/slogan.png"/></div>
+				</div>
+				<!-- shopping cart -->
+				<div id="shoppingCart" class="hide">
+					<div class="cart">
+						<i class="icon"></i><a href="#">我的购物车 <span>(<em>9</em>)</span><i class="arrow bottom-solid danger xs"></i></a>
+					</div>
+					<div class="bd">
+						<div class="shoppingList">
+							<div class="hd">
+								<h2>最新加入的商品</h2>
+							</div>
+							<div class="list">
+								<dl>
+								  <dt><a href="#"><img src="img/temp/img50.jpg" alt="" /></a></dt>
+								  <dd class="goodsTitle">
+								  	<p><a href="#" title="">舒肤佳沐浴露400ml*2舒肤佳沐浴露400ml*2(任意两种香型随机发放）</a></p>
+								  </dd>
+								  <dd class="subtotal">
+								  	<p><span class="price">&yen;<strong>52.20</strong></span><em>x</em><span class="number">1</span></p>
+								  	<p><a href="#">删除</a></p>
+								  </dd>
+								</dl>
+								<dl>
+								  <dt><a href="#"><img src="img/temp/img50.jpg" alt="" /></a></dt>
+								  <dd class="goodsTitle">
+								  	<p><a href="#" title="">舒肤佳沐浴露400ml*2舒肤佳沐浴露400ml*2(任意两种香型随机发放）</a></p>
+								  </dd>
+								  <dd class="subtotal">
+								  	<p><span class="price">&yen;<strong>52.20</strong></span><em>x</em><span class="number">1</span></p>
+								  	<p><a href="#">删除</a></p>
+								  </dd>
+								</dl>
+							</div>
+							<div class="summation">
+								<p class="total">购物车里共有<em>1</em>件商品，总计<span class="priceTotal">&yen;<strong>50.20</strong></span></p>
+								<a href="#" class="btn btn-primary">查看我的购物车</a>
+							</div>
+						</div>
+						<div class="shoppingCart-empty"><!-- 购物车为空 -->
+							<p>您的购物车中还没有商品!</p>
+						</div>
+					</div>
+				</div>
+				<!-- shopping cart end -->
+				<div id="safeguard"><img src="img/safeguard.jpg"/></div>
+			</div>
+		</div>
+		<!-- header end -->
+		<!-- container -->
+		<div id="container">
+			<div class="wrap">
+				<!-- cartList -->
+				<div class="cartList">
+					<div class="hd">
+						<h2><i class="icon i-card"></i>在线支付</h2>
+						<ul class="mod-step">
+							<li class="first over">
+								<i class="num">1</i>
+								<p class="text">购物车</p>
+							</li>
+							<li class="over">
+								<i class="num">2</i>
+								<span class="strip"></span>
+								<span class="strip-over"></span>
+								<p class="text">确认订单</p>
+							</li>
+							<li class="now">
+								<i class="num">2</i>
+								<span class="strip"></span>
+								<span class="strip-over"></span>
+								<p class="text">在线支付</p>
+							</li>
+							<li class="last">
+								<i class="num">3</i>
+								<span class="strip"></span>
+								<span class="strip-over"></span>
+								<p class="text">完成</p>
+							</li>
+						</ul>
+					</div>
+					<div class="bd">
+						<div class="orderState payState">
+							<!-- submitState -->
+							<dl class="order-submitState">
+								<dt><i class="icon i-right"></i></dt>
+								<dd>
+									<h3>您的订单已经成功提交，请尽快付款。</h3>
+									<p>为了保证及时处理掉您的订单，请于下单<em>24小时内</em>付款，逾期未付款订单将被取消，需重新下单。</p>
+								</dd>
+							</dl>
+							<!-- submitState end -->
+						</div>
+						<!-- orderPay -->
+						<div class="orderPay">
+							<div class="wrap">
+								<div class="hd"><h3>支付方式</h3></div>
+								<div class="bd">
+									<div class="pay-ebank"><!--选择支付方式后加class  "selected"-->
+										<div class="whichEbank">
+											<p class="selectedMode"><em>支付方式：</em><span class="ico"><img src="img/pay/cbc.jpg" alt="" /></span><a href="javascript:;" class="hint1">修改适合您的在线支付方式</a></p>
+										</div>
+										<div class="ebankList">
+											<div class="tab">
+												<div class="tabs">
+													<ul>
+														<li class="curr">支付平台</li>
+														<li>网上银行</li>
+													</ul>
+												</div>
+												<div class="tabbed">
+													<div class="tabGroup show">
+														<div class="wrap">
+															<div class="bank-item on"><label><input type="radio" class="radio" name="banks" id="" value=""><img src="img/pay/alipay1.jpg" alt=""></label></div>
+														</div>
+													</div>
+													<div class="tabGroup">
+														<div class="wrap">
+															<div class="bank-item"><label><input type="radio" class="radio" name="banks" id="" value=""><img src="img/pay/icbc.jpg" alt=""></label></div>
+															<div class="bank-item"><label><input type="radio" class="radio" name="banks" id="" value=""><img src="img/pay/abc.jpg" alt=""></label></div>
+															<div class="bank-item"><label><input type="radio" class="radio" name="banks" id="" value=""><img src="img/pay/boc.jpg" alt=""></label></div>
+															<div class="bank-item"><label><input type="radio" class="radio" name="banks" id="" value=""><img src="img/pay/cbc.jpg" alt=""></label></div>
+															<div class="bank-item"><label><input type="radio" class="radio" name="banks" id="" value=""><img src="img/pay/ctb.jpg" alt=""></label></div>
+															<div class="bank-item"><label><input type="radio" class="radio" name="banks" id="" value=""><img src="img/pay/cmb.jpg" alt=""></label></div>
+															<div class="bank-item"><label><input type="radio" class="radio" name="banks" id="" value=""><img src="img/pay/ceb.jpg" alt=""></label></div>
+															<div class="bank-item"><label><input type="radio" class="radio" name="banks" id="" value=""><img src="img/pay/citic.jpg" alt=""></label></div>
+															<div class="bank-item"><label><input type="radio" class="radio" name="banks" id="" value=""><img src="img/pay/cmbc.jpg" alt=""></label></div>
+															<div class="bank-item"><label><input type="radio" class="radio" name="banks" id="" value=""><img src="img/pay/sdb.jpg" alt=""></label></div>
+															<div class="bank-item"><label><input type="radio" class="radio" name="banks" id="" value=""><img src="img/pay/hxb.jpg" alt=""></label></div>
+															<div class="bank-item"><label><input type="radio" class="radio" name="banks" id="" value=""><img src="img/pay/cgb.jpg" alt=""></label></div>
+															<div class="bank-item"><label><input type="radio" class="radio" name="banks" id="" value=""><img src="img/pay/spdb.jpg" alt=""></label></div>
+															<div class="bank-item"><label><input type="radio" class="radio" name="banks" id="" value=""><img src="img/pay/cib.jpg" alt=""></label></div>
+															<div class="bank-item"><label><input type="radio" class="radio" name="banks" id="" value=""><img src="img/pay/psbc.jpg" alt=""></label></div>
+															<div class="bank-item"><label><input type="radio" class="radio" name="banks" id="" value=""><img src="img/pay/bea.jpg" alt=""></label></div>
+															<div class="bank-item"><label><input type="radio" class="radio" name="banks" id="" value="" checked="checked"><img src="img/pay/jinlin.jpg" alt=""></label></div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<p class="payPrice">支付金额：<b>&yen;1590.00</b>共3笔订单</p>
+									<p class="payBtn"><a href="#" class="btn btn-primary disabled">确认支付</a></p>
+								</div>
+							</div>
+						</div>
+						<!-- orderPay end -->
+					</div>
+				</div>
+				<!-- cartList end -->
+			</div>
+		</div>
+		<!-- container end -->
+		<!-- footer -->
+		<div id="footer">
+			<div class="links">
+				<a href="#" target="_blank">关于</a>|
+				<a href="#" target="_blank">联系我们</a>|
+				<a href="#" target="_blank">网站地图</a>|
+				<a href="#" target="_blank">网站合作</a>|
+				<a href="#" target="_blank">友情链接</a>|
+				<a href="#" target="_blank">帮助中心</a>|
+				<a href="#" target="_blank">版权声明</a>
+			</div>
+			<p class="copyright">Copyright &copy; 2013-2014 shop.com All Rights Reserved.</p>
+		</div>
+		<!-- footer end -->
+	</div>
+	<!-- pop -->
+	<div class="popup popup-info pop-pay">
+		<div class="hd">
+			<i class="close"></i>
+		</div>
+		<div class="bd">
+			<h2>请在新开的网银页面完成付款后选择：</h2>
+			<p><i class="icon i-rightSM"></i><b>付款成功</b><span>您可以：<a href="#">返回购物车继续购物</a><a href="#">查看订单</a></span></p>
+			<p><i class="icon i-graveSM"></i><b>付款失败</b><span>建议您：<a href="#">重新支付</a><a href="#">更改支付方式</a></span></p>
+		</div>
+	</div>
+	<!-- popup end -->
+	<div class="mask"></div>
+</body>
+</html>
