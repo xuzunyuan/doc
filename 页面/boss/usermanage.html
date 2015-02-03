@@ -1,0 +1,471 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="css/classes.css" />
+</head>
+<body>
+	<div class="wrapper">
+		<div id="hd">
+        	<div class="header">
+				<h1><a href="#" title="">阿凡达</a><span>后台管理系统</span></h1>
+                <ul class="header-menu">
+                	<li>欢迎您，邵秀云（系统管理员）<li>
+                    <li><a href="#">退出</a></li>
+                </ul>
+			</div><!--header end-->
+		</div><!--hd end-->
+		<div id="bd">
+			<div class="container">
+                <div class="aside">
+                    <div class="boss-menu">
+                    	<h2>后台管理系统</h2>
+                        <div class="menu">
+                            <h3 class="act"><i></i>商品管理</h3>
+                            <ul>
+                                <li><a href="#" class="on">入驻审核</a></li>
+                                <li><a href="#">保证金审核</a></li>
+                                <li><a href="#">入驻申请查询</a></li>
+                                <li><a href="#">查询商户</a></li>
+                            </ul>
+                            <h3 class="act"><i></i>专场管理</h3>
+                            <ul>
+                                <li><a href="#">专场审核</a></li>
+                                <li><a href="#">排队管理</a></li>
+                                <li><a href="#">排期分配</a></li>
+                                <li><a href="#">专场管理</a></li>
+                            </ul>
+                            <h3 class="act"><i></i>商品管理</h3>
+                            <ul>
+                                <li><a href="#">商品查询</a></li>
+                                <li><a href="#">商品抽样</a></li>
+                            </ul>
+                            <h3 class="act"><i></i>订单管理</h3>
+                            <ul>
+                                <li><a href="#">订单查询</a></li>
+                                <li><a href="#">退款管理</a></li>
+                            </ul>
+                            <h3 class="act"><i></i>买家会员管理</h3>
+                            <ul>
+                                <li><a href="#">会员查询</a></li>
+                            </ul>
+                            <h3 class="act"><i></i>类目管理</h3>
+                            <ul>
+                                <li><a href="#">基础类目管理</a></li>
+                            </ul>
+                            <h3 class="act"><i></i>品牌管理</h3>
+                            <ul>
+                                <li><a href="#">添加新品牌</a></li>
+                                <li><a href="#">品牌维护</a></li>
+                                <li><a href="#">品牌申请审核</a></li>
+                            </ul>
+                            <h3 class="act"><i></i>属性管理</h3>
+                            <ul>
+                                <li><a href="#">类目属性管理</a></li>
+                                <li><a href="#">属性名管理</a></li>
+                                <li><a href="#">属性值管理</a></li>
+                            </ul>
+                            <h3 class="act"><i></i>规格管理</h3>
+                            <ul>
+                                <li><a href="#">类目规格管理</a></li>
+                                <li><a href="#">规格名管理</a></li>
+                                <li><a href="#">规格值管理</a></li>
+                            </ul>
+                            <h3 class="act"><i></i>系统管理</h3>
+                            <ul>
+                                <li><a href="#">角色管理</a></li>
+                                <li><a href="#">用户管理</a></li>
+                            </ul>
+                            <h3 class="act"><i></i>我的账号</h3>
+                            <ul>
+                                <li><a href="#">我的资料</a></li>
+                                <li><a href="#">修改密码</a></li>
+                            </ul>
+                        </div><!--menu end-->
+                    </div><!--boss-menu end-->
+                </div><!--aside end-->
+                <div class="main">
+                	
+<script type="text/javascript" src="../static/js/page.js?t=1422278667366"></script>
+<script type="text/javascript" src="../static/js/modaldialog/jquery.modaldialog.js?t=1422278667366"></script>
+<link rel="stylesheet" href="../static/js/modaldialog/css/jquery.modaldialog.css">
+<script type="text/javascript">
+
+$(function(){
+	$('a[name="resetPassword"]').click(function(e){
+		e.preventDefault();
+		$.modaldialog('您确定重置该用户的密码吗?',
+				{title :'确认',
+				 buttons : [{text : '确&nbsp;&nbsp;认',click:function(){
+					 self.location.href = $(e.target).attr('href');
+				 }}, 
+			            {text : '取&nbsp;&nbsp;消'}]
+				});
+	});
+});
+</script>
+<div class="crumbs-box">
+                   <div class="crumbs">
+                       <h3>当前位置 :</h3>
+                       <ul>
+                           <li><a href="#">BOSS</a>&gt;</li>
+                           <li><a href="#">系统管理</a>&gt;</li>
+                           <li>用户管理</li>
+                       </ul>
+                   </div>
+               </div><!--crumbs-box end-->
+<form action="" method="post" id="frm">
+<div class="returns-search" style="height:140px;">
+	<ul class="r-s-list clearfix">
+    	<li>
+        	<div class="r-s-left">登录名：</div>
+            <div class="r-s-right"><input type="text" value="" name="loginName" id="loginName" class="inputText inputW1"></div>
+        </li>    	    	
+    	<li>
+        	<div class="r-s-left">真实姓名：</div>
+            <div class="r-s-right"><input type="text" value="" name="realName" id="realName" class="inputText inputW1"></div>
+        </li>  
+        <li>
+        	<div class="r-s-left">联系手机：</div>
+            <div class="r-s-right"><input type="text" value="" name="nickName" id="nickName" class="inputText inputW1"></div>
+        </li>  
+        <li>
+        	<div class="r-s-left">角色：</div>
+            <div class="r-s-right">
+            	<select id="roleId" name="roleId">
+            		<option value=""></option>  
+            		<option value="1">系统管理员</option>
+            		<option value="3">客服</option>
+            		<option value="4">卖家运营</option>
+            		<option value="5">财务</option>
+            		<option value="7">EMS物流</option>
+            		<option value="8">产品运营</option>
+            		<option value="9">公司管理</option>
+            		<option value="10">结算</option>
+            		<option value="12">研发部门</option>
+            		<option value="13">数据监测</option>
+            		<option value="14">质检部</option>
+            		</select>
+            </div>
+        </li>  
+        <li></li>
+        <li>
+        	<div class="r-s-right"><input type="submit" value="查&nbsp;&nbsp;&nbsp;询" name="query" id="query" class="inputBtn inputW2">
+        	</div>
+        </li>
+    </ul>
+</div><!--returns-search end-->
+<div class="returns-list">
+	<div class="formTitle">
+          <i></i>
+          <span class="title">用户列表</span>
+          <a href="../sys/staffPage?staffId=0" class="inputBtn_a">新增用户</a>
+    </div>
+	
+	<table class="boos-table">
+    <tbody>
+    	<tr>
+        	<th>序号</th>
+			<th>登录名</th>
+        	<th>真实姓名</th>
+        	<th>联系手机</th>
+			<th>EMAIL</th>
+        	<th>系统角色</th>
+        	<th><select id="status" name="status" onchange="javascript:$('#query').trigger('click');">
+        			<option value=""></option>
+        			<option value="0">已删除</option>
+        			<option value="1" selected="selected">有效</option>        			
+        		</select>
+        	</th>
+        	<th>操作</th>
+        </tr>
+        <tr><td colspan="7" class="table-space"></td></tr>
+        
+      <tr><td colspan="7" class="table-space"></td></tr>
+      
+      <tr>
+      		<td>01</td>
+            <td>admin</td>
+      		<td>管理员</td>
+			<td>13647189287</td>
+			<td>shaoxy@fafa.com</td>
+      		<td>系统管理员sp</td>
+      		<td>
+      			有效</td>
+      		<td>
+   				<a style="cursor:pointer; color: #0000FF" href="../sys/resetStaffPassword?staffId=1" name="resetPassword">重置密码</a> | <a style="cursor:pointer; color: #0000FF" href="../sys/staffPage?staffId=1">详细</a>
+      		</td>
+      	</tr>      
+      <tr>
+      		<td>01</td>
+            <td>admin</td>
+      		<td>管理员</td>
+			<td>13647189287</td>
+			<td>shaoxy@fafa.com</td>
+      		<td>系统管理员sp</td>
+      		<td>
+      			有效</td>
+      		<td>
+   				<a style="cursor:pointer; color: #0000FF" href="../sys/resetStaffPassword?staffId=46" name="resetPassword">重置密码</a> | <a style="cursor:pointer; color: #0000FF" href="../sys/staffPage?staffId=46">详细</a>
+      		</td>
+      	</tr>      
+      <tr>
+      		<td>01</td>
+            <td>admin</td>
+      		<td>管理员</td>
+			<td>13647189287</td>
+			<td>shaoxy@fafa.com</td>
+      		<td>系统管理员sp</td>
+      		<td>
+      			有效</td>
+      		<td>
+   				<a style="cursor:pointer; color: #0000FF" href="../sys/resetStaffPassword?staffId=47" name="resetPassword">重置密码</a> | <a style="cursor:pointer; color: #0000FF" href="../sys/staffPage?staffId=47">详细</a>
+      		</td>
+      	</tr>      
+      <tr>
+      		<td>01</td>
+            <td>admin</td>
+      		<td>管理员</td>
+			<td>13647189287</td>
+			<td>shaoxy@fafa.com</td>
+      		<td>系统管理员sp</td>
+      		<td>
+      			有效</td>
+      		<td>
+   				<a style="cursor:pointer; color: #0000FF" href="../sys/resetStaffPassword?staffId=48" name="resetPassword">重置密码</a> | <a style="cursor:pointer; color: #0000FF" href="../sys/staffPage?staffId=48">详细</a>
+      		</td>
+      	</tr>      
+      <tr>
+      		<td>01</td>
+            <td>admin</td>
+      		<td>管理员</td>
+			<td>13647189287</td>
+			<td>shaoxy@fafa.com</td>
+      		<td>系统管理员sp</td>
+      		<td>
+      			有效</td>
+      		<td>
+   				<a style="cursor:pointer; color: #0000FF" href="../sys/resetStaffPassword?staffId=49" name="resetPassword">重置密码</a> | <a style="cursor:pointer; color: #0000FF" href="../sys/staffPage?staffId=49">详细</a>
+      		</td>
+      	</tr>      
+      <tr>
+      		<td>01</td>
+            <td>admin</td>
+      		<td>管理员</td>
+			<td>13647189287</td>
+			<td>shaoxy@fafa.com</td>
+      		<td>系统管理员sp</td>
+      		<td>
+      			有效</td>
+      		<td>
+   				<a style="cursor:pointer; color: #0000FF" href="../sys/resetStaffPassword?staffId=53" name="resetPassword">重置密码</a> | <a style="cursor:pointer; color: #0000FF" href="../sys/staffPage?staffId=53">详细</a>
+      		</td>
+      	</tr>      
+      <tr>
+      		<td>01</td>
+            <td>admin</td>
+      		<td>管理员</td>
+			<td>13647189287</td>
+			<td>shaoxy@fafa.com</td>
+      		<td>系统管理员sp</td>
+      		<td>
+      			有效</td>
+      		<td>
+   				<a style="cursor:pointer; color: #0000FF" href="../sys/resetStaffPassword?staffId=54" name="resetPassword">重置密码</a> | <a style="cursor:pointer; color: #0000FF" href="../sys/staffPage?staffId=54">详细</a>
+      		</td>
+      	</tr>      
+      <tr>
+      		<td>01</td>
+            <td>admin</td>
+      		<td>管理员</td>
+			<td>13647189287</td>
+			<td>shaoxy@fafa.com</td>
+      		<td>系统管理员sp</td>
+      		<td>
+      			有效</td>
+      		<td>
+   				<a style="cursor:pointer; color: #0000FF" href="../sys/resetStaffPassword?staffId=57" name="resetPassword">重置密码</a> | <a style="cursor:pointer; color: #0000FF" href="../sys/staffPage?staffId=57">详细</a>
+      		</td>
+      	</tr>      
+      <tr>
+      		<td>01</td>
+            <td>admin</td>
+      		<td>管理员</td>
+			<td>13647189287</td>
+			<td>shaoxy@fafa.com</td>
+      		<td>系统管理员sp</td>
+      		<td>
+      			有效</td>
+      		<td>
+   				<a style="cursor:pointer; color: #0000FF" href="../sys/resetStaffPassword?staffId=58" name="resetPassword">重置密码</a> | <a style="cursor:pointer; color: #0000FF" href="../sys/staffPage?staffId=58">详细</a>
+      		</td>
+      	</tr>      
+      <tr>
+      		<td>01</td>
+            <td>admin</td>
+      		<td>管理员</td>
+			<td>13647189287</td>
+			<td>shaoxy@fafa.com</td>
+      		<td>系统管理员sp</td>
+      		<td>
+      			有效</td>
+      		<td>
+   				<a style="cursor:pointer; color: #0000FF" href="../sys/resetStaffPassword?staffId=59" name="resetPassword">重置密码</a> | <a style="cursor:pointer; color: #0000FF" href="../sys/staffPage?staffId=59">详细</a>
+      		</td>
+      	</tr>      
+      <tr>
+      		<td>01</td>
+            <td>admin</td>
+      		<td>管理员</td>
+			<td>13647189287</td>
+			<td>shaoxy@fafa.com</td>
+      		<td>系统管理员sp</td>
+      		<td>
+      			有效</td>
+      		<td>
+   				<a style="cursor:pointer; color: #0000FF" href="../sys/resetStaffPassword?staffId=60" name="resetPassword">重置密码</a> | <a style="cursor:pointer; color: #0000FF" href="../sys/staffPage?staffId=60">详细</a>
+      		</td>
+      	</tr>      
+      <tr>
+      		<td>01</td>
+            <td>admin</td>
+      		<td>管理员</td>
+			<td>13647189287</td>
+			<td>shaoxy@fafa.com</td>
+      		<td>系统管理员sp</td>
+      		<td>
+      			有效</td>
+      		<td>
+   				<a style="cursor:pointer; color: #0000FF" href="../sys/resetStaffPassword?staffId=63" name="resetPassword">重置密码</a> | <a style="cursor:pointer; color: #0000FF" href="../sys/staffPage?staffId=63">详细</a>
+      		</td>
+      	</tr>      
+      <tr>
+      		<td>01</td>
+            <td>admin</td>
+      		<td>管理员</td>
+			<td>13647189287</td>
+			<td>shaoxy@fafa.com</td>
+      		<td>系统管理员sp</td>
+      		<td>
+      			有效</td>
+      		<td>
+   				<a style="cursor:pointer; color: #0000FF" href="../sys/resetStaffPassword?staffId=66" name="resetPassword">重置密码</a> | <a style="cursor:pointer; color: #0000FF" href="../sys/staffPage?staffId=66">详细</a>
+      		</td>
+      	</tr>      
+      <tr>
+      		<td>01</td>
+            <td>admin</td>
+      		<td>管理员</td>
+			<td>13647189287</td>
+			<td>shaoxy@fafa.com</td>
+      		<td>系统管理员sp</td>
+      		<td>
+      			有效</td>
+      		<td>
+   				<a style="cursor:pointer; color: #0000FF" href="../sys/resetStaffPassword?staffId=68" name="resetPassword">重置密码</a> | <a style="cursor:pointer; color: #0000FF" href="../sys/staffPage?staffId=68">详细</a>
+      		</td>
+      	</tr>      
+      <tr>
+      		<td>01</td>
+            <td>admin</td>
+      		<td>管理员</td>
+			<td>13647189287</td>
+			<td>shaoxy@fafa.com</td>
+      		<td>系统管理员sp</td>
+      		<td>
+      			有效</td>
+      		<td>
+   				<a style="cursor:pointer; color: #0000FF" href="../sys/resetStaffPassword?staffId=69" name="resetPassword">重置密码</a> | <a style="cursor:pointer; color: #0000FF" href="../sys/staffPage?staffId=69">详细</a>
+      		</td>
+      	</tr>      
+      <tr>
+      		<td>01</td>
+            <td>admin</td>
+      		<td>管理员</td>
+			<td>13647189287</td>
+			<td>shaoxy@fafa.com</td>
+      		<td>系统管理员sp</td>
+      		<td>
+      			有效</td>
+      		<td>
+   				<a style="cursor:pointer; color: #0000FF" href="../sys/resetStaffPassword?staffId=70" name="resetPassword">重置密码</a> | <a style="cursor:pointer; color: #0000FF" href="../sys/staffPage?staffId=70">详细</a>
+      		</td>
+      	</tr>      
+      <tr>
+      		<td>01</td>
+            <td>admin</td>
+      		<td>管理员</td>
+			<td>13647189287</td>
+			<td>shaoxy@fafa.com</td>
+      		<td>系统管理员sp</td>
+      		<td>
+      			有效</td>
+      		<td>
+   				<a style="cursor:pointer; color: #0000FF" href="../sys/resetStaffPassword?staffId=72" name="resetPassword">重置密码</a> | <a style="cursor:pointer; color: #0000FF" href="../sys/staffPage?staffId=72">详细</a>
+      		</td>
+      	</tr>      
+      <tr>
+      		<td>01</td>
+            <td>admin</td>
+      		<td>管理员</td>
+			<td>13647189287</td>
+			<td>shaoxy@fafa.com</td>
+      		<td>系统管理员sp</td>
+      		<td>
+      			有效</td>
+      		<td>
+   				<a style="cursor:pointer; color: #0000FF" href="../sys/resetStaffPassword?staffId=73" name="resetPassword">重置密码</a> | <a style="cursor:pointer; color: #0000FF" href="../sys/staffPage?staffId=73">详细</a>
+      		</td>
+      	</tr>      
+      <tr>
+      		<td>01</td>
+            <td>admin</td>
+      		<td>管理员</td>
+			<td>13647189287</td>
+			<td>shaoxy@fafa.com</td>
+      		<td>系统管理员sp</td>
+      		<td>
+      			有效</td>
+      		<td>
+   				<a style="cursor:pointer; color: #0000FF" href="../sys/resetStaffPassword?staffId=74" name="resetPassword">重置密码</a> | <a style="cursor:pointer; color: #0000FF" href="../sys/staffPage?staffId=74">详细</a>
+      		</td>
+      	</tr>      
+      <tr>
+      		<td>01</td>
+            <td>admin</td>
+      		<td>管理员</td>
+			<td>13647189287</td>
+			<td>shaoxy@fafa.com</td>
+      		<td>系统管理员sp</td>
+      		<td>
+      			有效</td>
+      		<td>
+   				<a style="cursor:pointer; color: #0000FF" href="../sys/resetStaffPassword?staffId=76" name="resetPassword">重置密码</a> | <a style="cursor:pointer; color: #0000FF" href="../sys/staffPage?staffId=76">详细</a>
+      		</td>
+      	</tr>      
+      </tbody>
+    </table>
+    <div class="pagination"><div class="page-allnum">共62条记录，本页显示20条</div>  <div class="inner"><span class="prev disabled"><i class="triangle"></i><span>上一页</span></span><a class="active" href="../sys/staff?pageNo=1">1</a><a class="btn" href="../sys/staff?pageNo=2">2</a><a class="btn" href="../sys/staff?pageNo=3">3</a><a class="btn" href="../sys/staff?pageNo=4">4</a><span class="next" onclick="javascript:location.href='../sys/staff?pageNo=2'"><i class="triangle"></i><span>下一页</span></span><span class="text">到第</span><input class="num" name="pageNo"><span class="text">页</span><button class="submit" type="button" action="../sys/staff">确定</button></div></div></div><!--returns-list end-->
+</form>
+</div><!--main end-->
+                
+            </div>
+        </div><!--bd end-->
+        <br>
+        <div id="footer">
+			<div class="links">
+				<a href="#" target="_blank">关于</a>|
+				<a href="#" target="_blank">联系我们</a>|
+				<a href="#" target="_blank">网站地图</a>|
+				<a href="#" target="_blank">网站合作</a>|
+				<a href="#" target="_blank">友情链接</a>|
+				<a href="#" target="_blank">帮助中心</a>|
+				<a href="#" target="_blank">版权声明</a>
+			</div>
+			<p class="copyright">Copyright © 2013-2014 shop.com All Rights Reserved.</p>
+			<p><span>ICP经营许可证号：京AA-01334408</span></p>
+		</div>
+    </div><!--wrapper end-->
+</body>
+</html>

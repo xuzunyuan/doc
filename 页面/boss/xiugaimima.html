@@ -1,0 +1,196 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="css/classes.css" />
+</head>
+<body>
+	<div class="wrapper">
+		<div id="hd">
+        	<div class="header">
+				<h1><a href="#" title="">阿凡达</a><span>后台管理系统</span></h1>
+                <ul class="header-menu">
+                	<li>欢迎您，邵秀云（系统管理员）<li>
+                    <li><a href="#">退出</a></li>
+                </ul>
+			</div><!--header end-->
+		</div><!--hd end-->
+		<div id="bd">
+			<div class="container">
+                <div class="aside">
+                    <div class="boss-menu">
+                    	<h2>业务运营支撑系统</h2>
+                        <div id="mainMenu" class="menu">
+                        	<h3 folderid="21" class="goods"><i class="ico"></i>商品管理<i class="arrow arrA-R"></i></h3>
+								<ul folderid="21" style="display:none">									
+								<li menuid="50" folderid="21"><a href="/product/productList" menuid="50">商品查询</a></li>
+								<li menuid="22" folderid="21"><a href="/prod/showProd" menuid="22">商品状态维护</a></li>
+								<li menuid="30" folderid="21"><a href="/goods/goodsauditList" menuid="30">商品审核</a></li>
+								</ul>
+							<h3 folderid="18" class="order"><i class="ico"></i>订单管理<i class="arrow arrA-R"></i></h3>
+								<ul folderid="18" style="display:none">									
+								<li menuid="20" folderid="18"><a href="/order/cart" menuid="20">电话下单</a></li>
+								<li menuid="19" folderid="18"><a href="/order/queryOrder" menuid="19">订单查询</a></li>
+								<li menuid="60" folderid="18"><a href="/payment/list" menuid="60">交易查询</a></li>
+								<li menuid="29" folderid="18"><a href="/order/manageOrder" menuid="29">订单管理</a></li>
+								<li menuid="26" folderid="18"><a href="/order/tpl/ems/downloadList" menuid="26">下载待配送订单</a></li>
+								<li menuid="27" folderid="18"><a href="/order/tpl/ems/uploadPage" menuid="27">上传已配送订单</a></li>
+								</ul>
+							<h3 folderid="34" class="active"><i class="ico"></i>平台活动<i class="arrow arrA-R"></i></h3>
+								<ul folderid="34" style="display:none">									
+								<li menuid="37" folderid="34"><a href="/ywProdPromotion/list" menuid="37">活动查询</a></li>
+								<li menuid="35" folderid="34"><a href="/ywProdPromotion/promotion?type=1" menuid="35">创建限时抢购活动</a></li>
+								<li menuid="36" folderid="34"><a href="/ywProdPromotion/promotion?type=2" menuid="36">创建直降活动</a></li>
+								</ul>
+							<h3 folderid="56" class="coupon"><i class="ico"></i>红包管理<i class="arrow arrA-R"></i></h3>
+								<ul folderid="56" style="display:none">									
+								<li menuid="57" folderid="56"><a href="/ywCoupon/createCoupon" menuid="57">创建红包</a></li>
+								<li menuid="58" folderid="56"><a href="/ywCoupon/queryBatch" menuid="58">红包批次查询</a></li>
+								<li menuid="59" folderid="56"><a href="/ywCoupon/queryYwCoupon" menuid="59">红包明细查询</a></li>
+								</ul>
+							<h3 folderid="51" class="storemanage"><i class="ico"></i>店铺管理<i class="arrow arrA-R"></i></h3>
+								<ul folderid="51" style="display:none">									
+								<li menuid="52" folderid="51"><a href="/store/queryStore" menuid="52">店铺查询</a></li>
+								<li menuid="53" folderid="51"><a href="/store/manageStore" menuid="53">店铺维护</a></li>
+								</ul>
+							<h3 folderid="48" class="storeactive"><i class="ico"></i>店铺活动<i class="arrow arrA-R"></i></h3>
+								<ul folderid="48" style="display:none">									
+								<li menuid="49" folderid="48"><a href="/storePromotion/list" menuid="49">活动管理</a></li>
+								</ul>
+							<h3 folderid="6" class="seller"><i class="ico"></i>卖家管理<i class="arrow arrA-R"></i></h3>
+								<ul folderid="6" style="display:none">									
+								<li menuid="8" folderid="6"><a href="/seller/info" menuid="8">卖家申请查询</a></li>
+								<li menuid="7" folderid="6"><a href="/seller/audit" menuid="7">卖家入驻审核</a></li>
+								<li menuid="23" folderid="6"><a href="/seller/deposit" menuid="23">保证金到账确认</a></li>
+								</ul>
+							<h3 folderid="1" class="buyer"><i class="ico"></i>买家管理<i class="arrow arrA-R"></i></h3>
+								<ul folderid="1" style="display:none">									
+								<li menuid="2" folderid="1"><a href="/user/info/uList" menuid="2">买家信息管理</a></li>
+								</ul>
+							<h3 folderid="14" class="category"><i class="ico"></i>类目管理<i class="arrow arrA-R"></i></h3>
+								<ul folderid="14" style="display:none">									
+								<li menuid="15" folderid="14"><a href="/category/bc/bcList" menuid="15">基础类目管理</a></li>
+								<li menuid="16" folderid="14"><a href="/category/cc/ccList" menuid="16">签约类目管理</a></li>
+								<li menuid="17" folderid="14"><a href="/category/sc/scList" menuid="17">销售类目管理</a></li>
+								</ul>
+							<h3 folderid="31" class="brand"><i class="ico"></i>品牌管理<i class="arrow arrA-R"></i></h3>
+								<ul folderid="31" style="display:none">									
+								<li menuid="33" folderid="31"><a href="/brand/list" menuid="33">品牌维护</a></li>
+								<li menuid="32" folderid="31"><a href="/brand/add" menuid="32">添加品牌</a></li>
+								</ul>
+							<h3 folderid="40" class="property"><i class="ico"></i>属性管理 <i class="arrow arrA-R"></i></h3>
+								<ul folderid="40" style="display:none">									
+								<li menuid="43" folderid="40"><a href="/cateattr/list" menuid="43">类目属性管理</a></li>
+								<li menuid="41" folderid="40"><a href="/attr/list" menuid="41">属性名管理</a></li>
+								<li menuid="42" folderid="40"><a href="/attrvalue/list" menuid="42">属性值管理</a></li>
+								</ul>
+							<h3 folderid="44" class="spec"><i class="ico"></i>规格管理<i class="arrow arrA-R"></i></h3>
+								<ul folderid="44" style="display:none">									
+								<li menuid="47" folderid="44"><a href="/catespec/bcSpecManage" menuid="47">类目规格管理</a></li>
+								<li menuid="45" folderid="44"><a href="/spec/querySpecs" menuid="45">规格名管理</a></li>
+								<li menuid="46" folderid="44"><a href="/specvalue/querySpecValues" menuid="46">规格值管理</a></li>
+								</ul>
+							<h3 folderid="24" class="logistics"><i class="ico"></i>物流管理<i class="arrow arrA-R"></i></h3>
+								<ul folderid="24" style="display:none">									
+								<li menuid="25" folderid="24"><a href="/logistics/showLogistics" menuid="25">物流公司</a></li>
+								<li menuid="28" folderid="24"><a href="/freight/freightList" menuid="28">运费模板</a></li>
+								<li menuid="54" folderid="24"><a href="/payRegion/list" menuid="54">区域支付查询</a></li>
+								<li menuid="55" folderid="24"><a href="/payRegion/edit" menuid="55">区域支付维护</a></li>
+								</ul>
+							<h3 folderid="38" class="feedback"><i class="ico"></i>信息管理<i class="arrow arrA-R"></i></h3>
+								<ul folderid="38" style="display:none">									
+								<li menuid="39" folderid="38"><a href="/info/manageFeedback" menuid="39">意见反馈</a></li>
+								</ul>
+							<h3 folderid="10" class="system"><i class="ico"></i>系统管理<i class="arrow arrA-R"></i></h3>
+								<ul folderid="10" style="display:none">									
+								<li menuid="11" folderid="10"><a href="/sys/staff" menuid="11">用户管理</a></li>
+								<li menuid="12" folderid="10"><a href="/sys/role" menuid="12">角色管理</a></li>
+								</ul>
+							<h3 folderid="-100" class="contNumber"><i class="ico"></i>我的账号<i class="arrow arrA-D"></i></h3>
+							<ul folderid="-100" style="">									
+								<li menuid="-101" folderid="-100"><a href="/myAccount/view" menuid="-101">我的资料</a></li>
+								<li menuid="-102" folderid="-100"><a href="/myPassword/view" menuid="-102" class="on">修改密码</a></li>
+							</ul>
+                        </div><!--menu end-->
+                    </div><!--boss-menu end-->
+                </div><!--aside end-->
+                <div class="main">
+                	
+	<script type="text/javascript" src="../static/js/modaldialog/jquery.modaldialog.js?t=1422279363433"></script>
+	<script type="text/javascript" src="../static/js/myPassword.js?t=1422279363433"></script>
+	<link rel="stylesheet" href="../static/js/modaldialog/css/jquery.modaldialog.css">
+	<script type="text/javascript">
+	</script>
+	<form action="../myPassword/update" id="frm" method="post">
+	<div class="crumbs-box">
+                        <div class="crumbs">
+                            <h3>当前位置 :</h3>
+                            <ul>
+                                <li><a href="#">BOSS</a>&gt;</li>
+                                <li><a href="#">系统管理</a>&gt;</li>
+                                <li>修改密码</li>
+                            </ul>
+                        </div>
+                    </div><!--crumbs-box end-->
+                    <div class="returns-operation">
+                        <div class="formTitle">
+                            <i></i>
+                            <span class="title">修改密码</span>
+                            <!-- <a href="../myAccount/view" class="inputBtn_a">我的账号</a>  -->
+                        </div>
+                        <div class="r-o-list">
+                            <div class="r-o-left"><em>*</em>旧密码：</div>
+                            <div class="r-o-right">                            	
+                            	<input type="password" id="oldPassword" name="oldPassword" maxlength="18">
+							</div>
+                        </div>
+                        <div class="r-o-list">
+                            <div class="r-o-left"><em>*</em>新密码：</div>
+                            <div class="r-o-right">                            	
+                            	<input type="password" id="newPassword" name="newPassword" maxlength="18">
+							</div>
+                        </div>
+                        <div class="r-o-list">
+                            <div class="r-o-left"><em>*</em>重复新密码：</div>
+                            <div class="r-o-right">                            	
+                            	<input type="password" id="newPassword2" name="newPassword2" maxlength="18">
+							</div>
+                        </div>
+                      
+                    </div><!--returns-operation end-->
+        
+        	  <hr>
+              <div class="returns-operation">
+                  <div class="r-g-btns">
+                      <div class="r-g-b-left">
+                          <input type="submit" id="saveBtn" name="saveBtn" class="inputBtnA" value="保存">                       
+                      </div> 
+                      
+                      <div class="r-g-b-right">
+                         <input type="reset" id="resetBtn" name="resetBtn" class="inputBtnA" value="取消">   
+                      </div>                         
+                  </div>
+              </div>  
+        </form>      	 
+</div><!--main end-->
+                
+            </div>
+        </div><!--bd end-->
+        <br>
+        <div id="footer">
+			<div class="links">
+				<a href="#" target="_blank">关于</a>|
+				<a href="#" target="_blank">联系我们</a>|
+				<a href="#" target="_blank">网站地图</a>|
+				<a href="#" target="_blank">网站合作</a>|
+				<a href="#" target="_blank">友情链接</a>|
+				<a href="#" target="_blank">帮助中心</a>|
+				<a href="#" target="_blank">版权声明</a>
+			</div>
+			<p class="copyright">Copyright © 2013-2014 shop.com All Rights Reserved.</p>
+			<p><span>ICP经营许可证号：京AA-01334408</span></p>
+		</div>
+    </div><!--wrapper end-->
+</body>
+</html>
