@@ -2,9 +2,9 @@
 <html>
 <head>
 	<meta charset="utf-8" />
-	<title>找回密码1</title>
+	<title>找回密码2</title>
 	<link rel="stylesheet" href="css/allstyle.css" />
-	<link rel="stylesheet" href="css/register.css" />
+	<link rel="stylesheet" href="css/member.css" />
 </head>
 <body id="regsignin">
 	<div class="wrapper">
@@ -26,25 +26,19 @@
 					<!-- findpw-hd -->
 					<div class="auditStep">
 						<h2>找回密码</h2>
-						<ul class="mod-step theme-reg">
+						<ul class="mod-step">
 							<li class="first now">
 								<i class="num">1</i>
-								<p class="text">输入用户名</p>
+								<p class="text">验证身份</p>
 							</li>
-							<li class="">
+							<li class="now">
 								<i class="num">2</i>
 								<span class="strip"></span>
 								<span class="strip-over"></span>
-								<p class="text">验证身份</p>
-							</li>
-							<li class="">
-								<i class="num">3</i>
-								<span class="strip"></span>
-								<span class="strip-over"></span>
-								<p class="text">设置新密码</p>
+								<p class="text">重置密码</p>
 							</li>
 							<li class="last">
-								<i class="num">4</i>
+								<i class="num">3</i>
 								<span class="strip"></span>
 								<span class="strip-over"></span>
 								<p class="text">完成</p>
@@ -52,31 +46,41 @@
 						</ul>
 					</div>
 					<!-- findpw-hd end -->
-					<form class="form">
+					<form class="form formA">
 						<fieldset>
 							<dl class="form-item">
-								<dt class="item-label"><label><em>*</em>用户名：</label></dt>
+								<dt class="item-label"><label>用户名：</label></dt>
 								<dd class="item-cont">
-									<input type="text" class="txt w-xl xl">
+									<input type="text" class="txt w-xl xl" disabled="disabled" value="惆怅的僵尸">
+								</dd>
+							</dl>
+							<dl class="form-item">
+								<dt class="item-label"><label>手机号：</label></dt>
+								<dd class="item-cont">
+									<input type="text" class="txt w-xl xl" disabled="disabled" value="133****3333">
+								</dd>
+							</dl>
+							<dl class="form-item">
+								<dt class="item-label"><label><em>*</em>登录密码：</label></dt>
+								<dd class="item-cont">
+									<input type="password" class="txt w-xl xl" placeholder="请输入6-20位的字母、数字、汉字">
 									<div class="checkHint errTxt">
-										<div class="hintBox"><span><i class="icon i-ok"></i>此号码已经注册，请直接<a href="#">登录</a></span></div>
+										<div class="hintBox"><span><i class="icon i-ok"></i>请输入6-20位的字母、数字、符号。</span></div>
 									</div>
 								</dd>
 							</dl>
 							<dl class="form-item">
-								<dt class="item-label"><label><em>*</em>验证码：</label></dt>
+								<dt class="item-label"><label><em>*</em>确认密码：</label></dt>
 								<dd class="item-cont">
-									<div class="item-code">CeDc</div>
-									<p class="changeone"><a href="#">换一张</a></p>
-									<input type="text" class="txt w-lg xl">
+									<input type="password" class="txt w-xl xl" disabled="disabled">
 									<div class="checkHint errTxt">
-										<div class="hintBox"><span><i class="icon i-ok"></i>验证码输入错误</span></div>
+									<div class="hintBox"><span><i class="icon i-ok"></i>两次输入密码不一致。</span></div>
 									</div>
 								</dd>
 							</dl>
 							<dl class="form-item">
-								<dt class="item-label hidden"><label>下一步：</label></dt>
-								<dd class="item-cont"><a href="findpw2.html" class="btn btn-primary lgl p-lgl disabled">下一步</a></dd>
+								<dt class="item-label hidden"><label>提交：</label></dt>
+								<dd class="item-cont"><input type="submit" class="btn btn-primary lgl p-lgl" disabled="disabled" value="完成" /></dd>
 							</dl>
 						</fieldset>
 					</form>
