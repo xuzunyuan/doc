@@ -2,7 +2,7 @@
 <html lang="zh-cn">
 <head>
 	<meta charset="utf-8">
-	<title>订单关闭</title>
+	<title>退货详情</title>
 	<link rel="stylesheet" type="text/css" href="css/allstyle.css"/>
 	<link rel="stylesheet" type="text/css" href="css/order.css"/>
 </head>
@@ -93,8 +93,8 @@
 		<!-- container -->
 		<div id="container">
 			<div class="wrap">
-				<!-- orderDetail -->
-				<div class="orderDetail">
+				<!-- salesDetail -->
+				<div class="salesDetail">
 					<div class="hd">
 						<div class="breadnav">
 							<span class="index"><a href="">首页</a></span>
@@ -107,53 +107,67 @@
 					<div class="bd">
 						<div class="orderFlow">
 							<div class="orderFlow-process">
-									<div class="wrap order-close">
+								<ul class="train-nav train-nav1">
+									<li class="first-child bef"><i class="head"></i><a href="">1、退货申请</a><em class="follow">2013-12-12&nbsp;23:32:30</em></li>
+									<li class="bef"><i class="head"></i><i class="end"></i><a href="">2、卖家受理</a><em class="follow">2013-12-12&nbsp;23:32:30</em></li>
+									<li class="on"><i class="head"></i><i class="end"></i><a href="">3、卖家确认</a><em class="follow">2013-12-12&nbsp;23:32:30</em></li>
+									<li class="last-child"><i class="end"></i><a href="">4、退款到账</a></li>
+								</ul>
+								<div class="tooltip guide-TC three">
+									<span class="arrow top-hollow xl"><b></b><i></i></span>
+									<div class="wrap" style=" height:;">
 										<div class="bd">
-											<h2>当前订单状态：已取消</h2>
-											<p>关闭类型：买家取消订单</p>
-											<p>关闭原因：我不想买了</p>
+											<h2>当前退货单状态：卖家已确认</h2>
+											<div class="selleraccept true">
+												<dl>
+													<dt><i class="icon i-danger"></i></dt>
+													<dd>
+														<h2>卖家已经确认收到寄回的商品，系统将在48小时内自动将款项退回您支付时所用的账户里。</h2>
+													</dd>
+												</dl>
+											</div>
+											<div class="waitseller waitsellers">
+												<h3>卖家信息</h3>
+												<ul>
+													<li>真实姓名：潘金莲</li>
+													<li>联系电话：123546984515</li>
+													<li>QQ号码：2568445854</li>
+													<li>电子邮箱：panjinlian@mail.cpm</li>
+												</ul>
+											</div>
 										</div>
+									</div>
 								</div>
 							</div>
 							<div class="orderMeg">
-								<h2>订单信息</h2>
-								<div class="getMeg">
+								<h2>退货单信息</h2>
+								<div class="">
 									<ul>
-										<li><b>收货信息：</b><span>西门庆 1345698424 北京市 朝阳区  朝阳门 23058</span></li>
-										<li><b>订单编号：</b><span>100259548531</span></li>
+										<li><b>退货单号：</b><span>10234894512212</span></li>
 										<li>
-											<p>成交时间：<span>2015-02-01 14:14:30</span></p>
-											<p>支付时间：<span>2015-02-01 14:14:30</span></p>
+											<p>申请时间：<span>2015-02-01 14:14:30</span></p>
+											<p>受理时间：<span>2015-02-01 14:14:30</span></p>
 										</li>
-									</ul>
-								</div>
-								<div class="buyerMeg">
-									<h3>卖家信息</h3>
-									<ul>
-										<li>真实姓名：<span>潘金莲</span></li>
-										<li>联系电话：<span>1236548951</span></li>
-										<li>QQ号码：<span>125468758</span></li>
-										<li>电子邮箱：<span>jinlianPan@mail.com</span></li>
 									</ul>
 								</div>
 							</div>
 							<div class="cartList-group merchBill">
-							<div class="row head">
-								<table>
-								<tbody>
-									<tr>
-										<th width="10"></th>
-										<th width="330">商品</th>
-										<th width="150">规格</th>
-										<th width="130">单元（元）</th>
-										<th width="116">数量</th>
-										<th width="130">成交价（元）</th>
-										<th width="134">状态</th>
-									</tr>
-								</tbody>
-							</table>
-							</div>
-							<div class="row first">
+								<div class="row head">
+									<table>
+									<tbody>
+										<tr>
+											<th width="10"></th>
+											<th width="330">商品</th>
+											<th width="150">规格</th>
+											<th width="130">单元（元）</th>
+											<th width="116">数量</th>
+											<th width="130">成交价（元）</th>
+											<th width="134">状态</th>
+										</tr>
+									</tbody>
+								</table>
+								</div>
+								<div class="row first">
 								<table>
 									<colgroup>
 										<col width="10">
@@ -187,132 +201,55 @@
 											</td>
 											<td>
 												<p class="nowPrice">¥238.00</p>
-												
 											</td>
 											<td>2</td>
 											<td>
 												<p class="subtotal">¥568.00</p>
 											</td>
 											<td>
-												<p class="note">等待支付</p>
+												<p class="note">卖家已受理</p>
 											</td>
 										</tr>
 									</tbody>
 								</table>
+								</div>
 							</div>
-							<div class="row">
-								<table>
-									<colgroup>
-										<col width="10">
-										<col width="330">
-										<col width="150">
-										<col width="130">
-										<col width="116">
-										<col width="130">
-										<col width="134">
-									</colgroup>
-									<tbody>
-										<tr>
-											<td class="alloption"></td>
-											<td>
-												<dl class="mod-orderGoods">
-													<dt>
-														<a href="#" class="thumbnail"><img src="img/temp/img4.jpg" alt=""></a>
-													</dt>
-													<dd>
-														<p class="title"><a href="#">骆驼冲锋衣男正品抓绒两件套户外男装绒两件套户外男装三绒两件套户外男装三一保暖防水防</a></p>
-													</dd>
-												</dl>
-											</td>
-											<td class="information">
-												<div class="mod-goodsAttr">
-													<div class="selectedAttr">
-														<p>颜色分类：<span>军绿色</span></p>
-														<p>尺码：<span>XL(175/88A)</span></p>
-													</div>
-												</div>
-											</td>
-											<td>
-												<p class="nowPrice">¥238.00</p>
-												
-											</td>
-											<td>2</td>
-											<td>
-												<p class="subtotal">¥568.00</p>
-											</td>
-											<td>
-												<p class="note">等待支付</p>
-											</td>
-										</tr>
-									</tbody>
-								</table>
+							<div class="salerturnDetail">
+								<dl>
+									<dt><b>退货订单：</b></dt>
+									<dd><p><a href="#">12548951368</a></p></dd>
+								</dl>
+								<dl>
+									<dt><b>退货原因：</b></dt>
+									<dd><p>商品质量问题</p></dd>
+								</dl>
+								<dl>
+									<dt>退货说明：</dt>
+									<dd>
+										<p>不是很喜欢，比预想的要差，不想要不是很喜欢，比预想的要差，不想要不是很喜欢，比预想的要差，不想要不是很喜欢，比预想的要差，不想要不是很喜欢，比预想的要差，不想要不是很喜欢，比预想的要差，不想要</p>
+										<div class="uploadImg">
+											<ul>
+												<li>
+													<a href="#"><img src="img/temp/upload1.jpg" alt=""></a>
+												</li>
+												<li>
+													<a href="#"><img src="img/temp/upload1.jpg" alt=""></a>
+												</li>
+												<li>
+													<a href="#"><img src="img/temp/upload1.jpg" alt=""></a>
+												</li>
+												<li>
+													<a href="#"><img src="img/temp/upload1.jpg" alt=""></a>
+												</li>
+											</ul>
+										</div>
+									</dd>
+								</dl>
 							</div>
-							<div class="row">
-								<table>
-									<colgroup>
-										<col width="10">
-										<col width="330">
-										<col width="150">
-										<col width="130">
-										<col width="116">
-										<col width="130">
-										<col width="134">
-									</colgroup>
-									<tbody>
-										<tr>
-											<td class="alloption"></td>
-											<td>
-												<dl class="mod-orderGoods">
-													<dt>
-														<a href="#" class="thumbnail"><img src="img/temp/img4.jpg" alt=""></a>
-													</dt>
-													<dd>
-														<p class="title"><a href="#">骆驼冲锋衣男正品抓绒两件套户外男装绒两件套户外男装三绒两件套户外男装三一保暖防水防</a></p>
-													</dd>
-												</dl>
-											</td>
-											<td class="information">
-												<div class="mod-goodsAttr">
-													<div class="selectedAttr">
-														<p>颜色分类：<span>军绿色</span></p>
-														<p>尺码：<span>XL(175/88A)</span></p>
-													</div>
-												</div>
-											</td>
-											<td>
-												<p class="nowPrice">¥238.00</p>
-												
-											</td>
-											<td>2</td>
-											<td>
-												<p class="subtotal">¥568.00</p>
-											</td>
-											<td>
-												<p class="note">等待支付</p>
-											</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-							<div class="row">
-								<table>
-									<colgroup>
-										<col width="1000">
-									</colgroup>
-									<tbody>
-										<tr>
-											<td colspan="7" class="storeTotal">
-												<p>实付款：<span>￥3140.00</span></p>
-											</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-						</div>
 						</div>
 					</div>
 				</div>
-				<!-- orderDetail end -->
+				<!-- salesDetail end -->
 			</div>
 		</div>
 		<!-- container end -->
