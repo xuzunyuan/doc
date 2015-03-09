@@ -310,6 +310,18 @@ textarea{
 	text-shadow:1px 1px 1px #333;
 	line-height:normal;
 }
+/*icon------------------------------*/
+.i-right,
+.i-danger{
+	width: 40px;
+	height: 40px;
+}
+.i-right {
+	background-position: -87px -255px;
+}
+.i-danger {
+	background-position: -127px -255px;
+}
 /* arrows
  ---------------------------------------- */
 .arrows {
@@ -505,7 +517,21 @@ textarea{
 .checkCode{
 	width:90px;
 }
-
+.btn-primary,
+a.btn-primary,
+span.btn-primary {
+	background: #7a39b2;
+	border-color: #7a39b2;
+	color: #fff;
+}
+.btn-primary:hover {
+	background: #a26cd0;
+	border-color: #a26cd0;
+}
+.btn-primary:active {
+	background: #a26cd0;
+	border-color: #a26cd0;
+}
 /* select */
 .select{
 	position:relative;
