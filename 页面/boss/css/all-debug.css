@@ -3,5 +3,6 @@
 @import url("reset.css");
 @import url("common.css");
 @import url("layout.css");
+@import url("popup.css");
 
 /* all-debug.css 仅作调试使用，最终样式文件为 style.min.css */
